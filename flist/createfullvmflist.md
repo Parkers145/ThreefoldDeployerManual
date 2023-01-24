@@ -58,20 +58,20 @@ virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword
 	<details>
   		<summary>letter "X" is a placeholder for the next available nbd device number. To know what to use for "X", Click Here </summary>
   		
-		```
-		ls /dev/nbd*
+```
+ls /dev/nbd*
 		
-		```	
+```	
 		This command will list all of the nbd devices that are currently available on your system. If you don't have any nbd devices connected, you can use "X" as 0. If you already have some nbd devices connected, you can use the next available number. For example, if you have /dev/nbd0 and /dev/nbd1 connected, you can use "X" as 2.
 
-		Also, you could use a command such as 
+Also, you could use a command such as 
 		
-		```
-		ls /dev/nbd* | grep -o '[0-9]' | tail -1
+```
+ls /dev/nbd* | grep -o '[0-9]' | tail -1
 		
-		```
-		to get the next available nbd device number. This command will list all nbd devices, pick only the numbers, and get the last one, so it will give you the next available one.
-	</details>
+```
+to get the next available nbd device number. This command will list all nbd devices, pick only the numbers, and get the last one, so it will give you the next available one.
+</details>
 
 - **2.) Start GParted:**
 
