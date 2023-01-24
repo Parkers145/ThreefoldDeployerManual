@@ -54,9 +54,8 @@ virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword
 	```
 	qemu-nbd -c /dev/nbdX your_image.img
 	(replace X with the next available nbd device number and your_image.img with the actual name of your image file)
-	```
-	- 	
-	- <details>
+	```	
+	<details>
   		<summary>letter "X" is a placeholder for the next available nbd device number. To know what to use for "X", Click Here </summary>
   		```
 		ls /dev/nbd*
