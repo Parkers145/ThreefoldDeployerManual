@@ -1,4 +1,6 @@
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tutorial will guide you through the process of creating a custom Full VM Flist using Linux. A Flist image is a pre-configured virtual machine that can be easily deployed on the Grid. By creating a custom image, you can add your own software and settings to the image, making it easier to set up and configure new instances on the cloud.
+# Creating a Customized Ubuntu Cloud Image Flist
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tutorial will guide you through the process of creating a custom Ubuntu Full VM Flist using Linux. A Flist image is a pre-configured virtual machine that can be easily deployed on the Grid. By creating a custom image, you can add your own software and settings to the image, making it easier to set up and configure new instances on the cloud.
 
 Before we begin, there are a few things you will need:
 
