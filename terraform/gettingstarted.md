@@ -116,9 +116,10 @@ mkdir /deployments/testdeployment
 - copy the main.tf file and write it to the directory you just created.
 ```
 nano main.tf
+```
 
 # paste the contents of the main tf then press Ctrl+X, and confirm 
-```
+
 
 - If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them
 ```
