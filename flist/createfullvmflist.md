@@ -9,7 +9,7 @@ Before we begin, there are a few things you will need:
 	```
 - Some basic knowledge of Linux
 
-**Step 1: Download the Cloud Image You Want To Use** 
+# Step 1: Download the Cloud Image You Want To Use
 
 To start, you will need to download a cloud image of your choice. In this example, we will use Ubuntu 20.04. You can download the image by visiting this [link:](https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img)
 
@@ -19,7 +19,7 @@ or with
 wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
 ```
 
-**Step 2: Resize the partition of the image**
+# Step 2: Resize the partition of the image
 
 The standard Ubuntu cloud image is 2.1GB in size. If you need more space for the software you will add later, you can use a tool called "qemu-img" to resize the partition of the image. To do this, open the command prompt and type the following command: 
 ```
@@ -28,11 +28,11 @@ qemu-img resize focal-server-cloudimg-amd64.img +1G
 -  This will add 1GB to the image.
 
 
-**Step 3: Set a root password**
+# Step 3: Set a root password
 
 We need to set a root password so we can login to the VM console to set up our image. To do this, open the command prompt and type the following command: "virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword" (replace "yourpassword" with the password of your choice)
 
-**Step 4: Expand the file system on the cloud image**
+# Step 4: Expand the file system on the cloud image
 
 Expanding the file system of an Ubuntu cloud image after using the qemu-img resize command can be done using the GParted partition editor tool. GParted is a graphical tool that allows you to view and modify the partitions on your disk.
 
@@ -85,7 +85,7 @@ It's worth noting that, depending on the size of the partition and the amount of
 
 
 
-**Step 5: Install your custom software**
+# Step 5: Install your custom software
 
 To start the temporary VM for customizing the cloud image using the QEMU hypervisor, you will need to use the command line. The process is as follows:
 
@@ -113,7 +113,7 @@ To start the temporary VM for customizing the cloud image using the QEMU hypervi
 	```
 	To access the virtual machine console, you can use this  command 
 
-**Step 6: Cleanup**
+# Step 6: Cleanup
 
 Once everything has been set up to your liking and before shutting down the vm, it's important to do some cleanup to ensure the image is secure and ready for deployment. The following are the steps you need to take via the VM console:
 
@@ -197,7 +197,7 @@ Once everything has been set up to your liking and before shutting down the vm, 
 
 	Once you have completed all the cleanup steps, you can shut down the VM and use the cloud image for deployment. Keep in mind that the image can be reused multiple times, and it's important to keep the image up-to-date and maintain the security of the image.
 
-**Step 7: Upload image to the Hub**
+# Step 7: Upload image to the Hub
 
 Once you have completed customizing the cloud image and have done the necessary cleanup, the next step is to package and upload the image to the Hub. The Hub is a centralized repository where you can store and share your custom images.
 
