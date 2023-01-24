@@ -42,6 +42,7 @@ virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword
 (replace "yourpassword" with the password of your choice)
 ```
 </details>
+
 <details>
   <summary>Step 4: Expand the file system on the cloud image</summary>
  Expanding the file system of an Ubuntu cloud image after using the qemu-img resize command can be done using the GParted partition editor tool. GParted is a graphical tool that allows you to view and modify the partitions on your disk.
