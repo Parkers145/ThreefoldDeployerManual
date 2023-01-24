@@ -31,7 +31,6 @@ The standard Ubuntu cloud image is 2.1GB in size. If you need more space for the
 qemu-img resize focal-server-cloudimg-amd64.img +1G
 ```
 -  This will add 1GB to the image.
-  ```
 </details>
 
 <details>
