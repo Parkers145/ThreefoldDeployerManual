@@ -73,13 +73,13 @@ Expanding the file system of an Ubuntu cloud image after using the qemu-img resi
 - **4.) Expand the partition:**
 
 	Move the used ‘partition space bar’ to the right to expand the file system.
-![movepart1](https://user-images.githubusercontent.com/44621168/214429564-964f07ce-9a88-4852-a636-82da9a0697f1.png)
+![movepart1](https://user-images.githubusercontent.com/44621168/214429564-964f07ce-9a88-4852-a636-82da9a0697f1.png)-> ![moverpart2](https://user-images.githubusercontent.com/44621168/214429587-b8d5040b-1a08-495a-9704-eecef77f6bcc.png)
+
 
 - **5.) Apply the changes:**
 
 	Then press ‘Resize/Move’, next the green check mark to apply the changes, confirm with ‘Apply’
-![apply all operatiosn](https://user-images.githubusercontent.com/44621168/214429522-f19bd0a0-df8b-4aa3-80b7-3d5fc2fbebc3.png) -> ![moverpart2](https://user-images.githubusercontent.com/44621168/214429587-b8d5040b-1a08-495a-9704-eecef77f6bcc.png)
-
+![apply all operatiosn](https://user-images.githubusercontent.com/44621168/214429522-f19bd0a0-df8b-4aa3-80b7-3d5fc2fbebc3.png) 
 
 By doing this, you will expand the partition and the file system on the cloud image.
 
