@@ -11,8 +11,9 @@ Before we begin, there are a few things you will need:
 	```
 - Some basic knowledge of Linux
 
-# Step 1: Download the Cloud Image You Want To Use
-
+<details>
+  <summary># Step 1: Download the Cloud Image You Want To Use</summary>
+  
 To start, you will need to download a cloud image of your choice. In this example, we will use Ubuntu 20.04. You can download the image by visiting this [link:](https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img)
 
 or with 
@@ -20,6 +21,8 @@ or with
 ```
 wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
 ```
+</details>
+
 
 # Step 2: Resize the partition of the image
 
