@@ -23,27 +23,29 @@ wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.i
 ```
 </details>
 
-
-# Step 2: Resize the partition of the image
-
+<details>
+  <summary>Step 2: Resize the partition of the image</summary>
+  
 The standard Ubuntu cloud image is 2.1GB in size. If you need more space for the software you will add later, you can use a tool called "qemu-img" to resize the partition of the image. To do this, open the command prompt and type the following command: 
 ```
 qemu-img resize focal-server-cloudimg-amd64.img +1G
 ```
 -  This will add 1GB to the image.
+  ```
+</details>
 
-
-# Step 3: Set a root password
-
-We need to set a root password so we can login to the VM console to set up our image. To do this, open the command prompt and type the following command: 
+<details>
+  <summary>
+# Step 3: Set a root password</summary>
+  We need to set a root password so we can login to the VM console to set up our image. To do this, open the command prompt and type the following command: 
 ```
 virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword
 (replace "yourpassword" with the password of your choice)
 ```
-
-# Step 4: Expand the file system on the cloud image
-
-Expanding the file system of an Ubuntu cloud image after using the qemu-img resize command can be done using the GParted partition editor tool. GParted is a graphical tool that allows you to view and modify the partitions on your disk.
+</details>
+<details>
+  <summary>Step 4: Expand the file system on the cloud image</summary>
+ Expanding the file system of an Ubuntu cloud image after using the qemu-img resize command can be done using the GParted partition editor tool. GParted is a graphical tool that allows you to view and modify the partitions on your disk.
 
 - **1.) Mount the image:**
 
@@ -101,9 +103,10 @@ By doing this, you will expand the partition and the file system on the cloud im
 It's worth noting that, depending on the size of the partition and the amount of data on it, this process may take some time, so it's best to be patient.
 
 
-
-# Step 5: Install your custom software
-
+</details>
+<details>
+  <summary>Step 5: Install your custom software</summary>
+ 
 To start the temporary VM for customizing the cloud image using the QEMU hypervisor, you will need to use the command line. The process is as follows:
 
 - **1.) Open the command prompt or terminal on your computer.**
@@ -130,10 +133,10 @@ To start the temporary VM for customizing the cloud image using the QEMU hypervi
 	qemu-system-x86_64 -enable-kvm -m 2048 -hda your_image.img -monitor stdio"
 	```
 	
-
-# Step 6: Cleanup
-
-Once everything has been set up to your liking and before shutting down the vm, it's important to do some cleanup to ensure the image is secure and ready for deployment. The following are the steps you need to take via the VM console:
+</details>
+<details>
+  <summary>Step 6: Cleanup</summary>
+  Once everything has been set up to your liking and before shutting down the vm, it's important to do some cleanup to ensure the image is secure and ready for deployment. The following are the steps you need to take via the VM console:
 
 - **1.) Default the sshd config:**
 
@@ -214,9 +217,10 @@ Once everything has been set up to your liking and before shutting down the vm, 
 	```
 
 	Once you have completed all the cleanup steps, you can shut down the VM and use the cloud image for deployment. Keep in mind that the image can be reused multiple times, and it's important to keep the image up-to-date and maintain the security of the image.
-
-# Step 7: Upload image to the Hub
-
+</details>
+<details>
+  <summary>Step 7: Upload image to the Hub</summary>
+ 
 Once you have completed customizing the cloud image and have done the necessary cleanup, the next step is to package and upload the image to the Hub. The Hub is a centralized repository where you can store and share your custom images.
 
 - **1.) Convert the image format:**
@@ -243,3 +247,7 @@ Once you have completed customizing the cloud image and have done the necessary 
 	It's worth noting that you should keep the image updated and maintain the security of the image to ensure that it's safe to use.
 
 	Also, depending on the size of the image, the upload may take some time, so it's best to be patient and wait for the upload to complete.
+</details>
+
+
+
