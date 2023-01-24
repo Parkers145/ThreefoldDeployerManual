@@ -104,6 +104,7 @@ It's worth noting that, depending on the size of the partition and the amount of
 
 
 </details>
+
 <details>
   <summary>Step 5: Install your custom software</summary>
  
@@ -134,6 +135,7 @@ To start the temporary VM for customizing the cloud image using the QEMU hypervi
 	```
 	
 </details>
+
 <details>
   <summary>Step 6: Cleanup</summary>
   Once everything has been set up to your liking and before shutting down the vm, it's important to do some cleanup to ensure the image is secure and ready for deployment. The following are the steps you need to take via the VM console:
@@ -218,6 +220,7 @@ To start the temporary VM for customizing the cloud image using the QEMU hypervi
 
 	Once you have completed all the cleanup steps, you can shut down the VM and use the cloud image for deployment. Keep in mind that the image can be reused multiple times, and it's important to keep the image up-to-date and maintain the security of the image.
 </details>
+
 <details>
   <summary>Step 7: Upload image to the Hub</summary>
  
