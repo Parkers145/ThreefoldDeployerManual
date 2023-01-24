@@ -12,7 +12,7 @@ Before we begin, there are a few things you will need:
 - Some basic knowledge of Linux
 
 <details>
-  <summary>Step 1: Download the Cloud Image You Want To Use</summary>
+	<summary><b>Step 1: Download the Cloud Image You Want To Use</b></summary>
   
 To start, you will need to download a cloud image of your choice. In this example, we will use Ubuntu 20.04. You can download the image by visiting this [link:](https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img)
 
