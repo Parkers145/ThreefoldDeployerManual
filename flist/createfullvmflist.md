@@ -63,8 +63,11 @@ Expanding the file system of an Ubuntu cloud image after using the qemu-img resi
 
 - **2.) Start GParted:**
 
-	Once you have mounted the image, open a terminal and run the command "sudo gparted /dev/nbdX" (replace X with the nbd device number used in the previous step) to start GParted.
-
+	Once you have mounted the image, open a terminal and run the command 
+	```
+	sudo gparted /dev/nbdX" 
+	(replace X with the nbd device number used in the previous step) to start GParted.
+	```
 - **3.) Select the cloud image:**
 
 	In GParted, select the cloud image(the ext4 partition) from the device list, and right-click on it and choose ‘Resize/Move’.
