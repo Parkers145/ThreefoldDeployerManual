@@ -98,24 +98,25 @@ To start the temporary VM for customizing the cloud image using the QEMU hypervi
 - **2.) Navigate to the location of the cloud image you downloaded earlier using the "cd" command.**
 
 - **3.) Start and modify your image**
+	you can use this command to start the virtual machine.
 	```
 	qemu-system-x86_64 -enable-kvm -m 2048 -hda your_image.img to start the virtual machine.
 	```
-	you can use this command to start the virtual machine.
 	- -enable-kvm will enable hardware acceleration, -m 2048 will assign 2048MB of memory to the virtual machine, 
 	- -hda your_image.img will specify the path to the cloud image you want to use.
 
-
+	
+	Once the virtual machine is running, you can use this command to check if the image is running.
 	```
 	qemu-monitor-command --hmp 'info block' 
 	```
-	Once the virtual machine is running, you can use this command to check if the image is running.
+	
 
-
+	To access the virtual machine console, you can use this  command 
 	```
 	qemu-system-x86_64 -enable-kvm -m 2048 -hda your_image.img -monitor stdio"
 	```
-	To access the virtual machine console, you can use this  command 
+	
 
 # Step 6: Cleanup
 
