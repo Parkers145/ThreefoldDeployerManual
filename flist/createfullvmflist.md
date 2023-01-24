@@ -30,7 +30,11 @@ qemu-img resize focal-server-cloudimg-amd64.img +1G
 
 # Step 3: Set a root password
 
-We need to set a root password so we can login to the VM console to set up our image. To do this, open the command prompt and type the following command: "virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword" (replace "yourpassword" with the password of your choice)
+We need to set a root password so we can login to the VM console to set up our image. To do this, open the command prompt and type the following command: 
+```
+virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword
+(replace "yourpassword" with the password of your choice)
+```
 
 # Step 4: Expand the file system on the cloud image
 
