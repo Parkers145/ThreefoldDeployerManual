@@ -24,7 +24,7 @@ wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.i
 </details>
 
 <details>
-  <summary>Step 2: Resize the partition of the image</summary>
+	<summary><b>Step 2: Resize the partition of the image</b></summary>
   
 The standard Ubuntu cloud image is 2.1GB in size. If you need more space for the software you will add later, you can use a tool called "qemu-img" to resize the partition of the image. To do this, open the command prompt and type the following command: 
 ```
@@ -45,7 +45,7 @@ virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword
 </details>
 
 <details>
-  <summary>Step 4: Expand the file system on the cloud image</summary>
+	<summary><b>Step 4: Expand the file system on the cloud image</b></summary>
  Expanding the file system of an Ubuntu cloud image after using the qemu-img resize command can be done using the GParted partition editor tool. GParted is a graphical tool that allows you to view and modify the partitions on your disk.
 
 - **1.) Mount the image:**
@@ -107,7 +107,7 @@ It's worth noting that, depending on the size of the partition and the amount of
 </details>
 
 <details>
-  <summary>Step 5: Install your custom software</summary>
+	<summary><b>Step 5: Install your custom software</b></summary>
  
 To start the temporary VM for customizing the cloud image using the QEMU hypervisor, you will need to use the command line. The process is as follows:
 
@@ -138,7 +138,7 @@ To start the temporary VM for customizing the cloud image using the QEMU hypervi
 </details>
 
 <details>
-  <summary>Step 6: Cleanup</summary>
+  <summary><b>Step 6: Cleanup</b></summary>
   Once everything has been set up to your liking and before shutting down the vm, it's important to do some cleanup to ensure the image is secure and ready for deployment. The following are the steps you need to take via the VM console:
 
 - **1.) Default the sshd config:**
@@ -223,7 +223,7 @@ To start the temporary VM for customizing the cloud image using the QEMU hypervi
 </details>
 
 <details>
-  <summary>Step 7: Upload image to the Hub</summary>
+	<summary><b>Step 7: Upload image to the Hub</b></summary>
  
 Once you have completed customizing the cloud image and have done the necessary cleanup, the next step is to package and upload the image to the Hub. The Hub is a centralized repository where you can store and share your custom images.
 
