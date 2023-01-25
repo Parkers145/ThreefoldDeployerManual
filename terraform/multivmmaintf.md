@@ -4,6 +4,39 @@ up to date as of 01/03/2023
 
 # The Main.TF 
 
+
+This is a configuration file written in Terraform, which is a tool for building, changing, and versioning infrastructure safely and efficiently. The file describes resources that will be created in the Grid platform by ThreeFold Tech.
+
+**Variable Blocks**
+
+The file first defines several variables that the user can specify when running the Terraform configuration. These include 
+- the "MNEMONICS" (a mnemonic phrase used to generate a seed for a node), 
+- the "NETWORK" to connect the node to (with a default value of "main"), 
+- and "SSH_KEY" (the type of which is specified as a string).
+
+**Terraform Blocks**
+
+The file then specifies that it will use the "grid" provider (which is provided by ThreeFold Tech) and specifies the
+- "MNEMONICS" and 
+- "NETWORK" 
+variables as arguments for the provider.
+
+**Resource Blocks**
+
+The file then creates three resources: 
+- a "grid_network" resource named "net1" and 
+- two "grid_deployment" resources named "d1" and "d2". The "grid_network" resource creates an internal network with the specified IP range and adds WireGuard access. The "grid_deployment" resources create virtual machines (VMs) on nodes 311 and 312, respectively, with the specified properties (e.g. CPU, memory, etc.). The VMs are also connected to the "internal" network created by the "grid_network" resource and have disks attached to them.
+
+**Output Block**
+
+Finally, the file defines several output variables that will be displayed to the user after running the configuration, such as 
+- the IP address of the first VM, 
+- the public IP address of the VM, and 
+- the VM's WireGuard IP address.
+
+<details>
+    <summary><b>The Multi-Node Example Main.tf</b></Summary>
+
 ```
 variable "MNEMONICS" {
   type        = string
@@ -108,38 +141,10 @@ output "ygg_ip" {
 value = grid_deployment.d1.vms[0].ygg_ip
 }
 ```
-# What Does it Do 
+</details>
 
-This is a configuration file written in Terraform, which is a tool for building, changing, and versioning infrastructure safely and efficiently. The file describes resources that will be created in the Grid platform by ThreeFold Tech.
-
-**Variable Blocks**
-
-The file first defines several variables that the user can specify when running the Terraform configuration. These include 
-- the "MNEMONICS" (a mnemonic phrase used to generate a seed for a node), 
-- the "NETWORK" to connect the node to (with a default value of "main"), 
-- and "SSH_KEY" (the type of which is specified as a string).
-
-**Terraform Blocks**
-
-The file then specifies that it will use the "grid" provider (which is provided by ThreeFold Tech) and specifies the
-- "MNEMONICS" and 
-- "NETWORK" 
-variables as arguments for the provider.
-
-**Resource Blocks**
-
-The file then creates three resources: 
-- a "grid_network" resource named "net1" and 
-- two "grid_deployment" resources named "d1" and "d2". The "grid_network" resource creates an internal network with the specified IP range and adds WireGuard access. The "grid_deployment" resources create virtual machines (VMs) on nodes 311 and 312, respectively, with the specified properties (e.g. CPU, memory, etc.). The VMs are also connected to the "internal" network created by the "grid_network" resource and have disks attached to them.
-
-**Output Block**
-
-Finally, the file defines several output variables that will be displayed to the user after running the configuration, such as 
-- the IP address of the first VM, 
-- the public IP address of the VM, and 
-- the VM's WireGuard IP address.
-
-# How To Deploy
+<details>
+    <summary><b> How To Deploy</b></Summary>
 
 To deploy the main.tf IF the file is located in /deployments/testdeployments, you would need to navigate to the /deployments/testdeployments directory and run the following command:
 
@@ -170,8 +175,10 @@ After the resources have been created, you can view the output variables by runn
 ```
 terraform output
 ```
+</details>
 
-# How Can I make My Own 
+<details>
+    <summary><b>How Can I make My Own</b></Summary> 
 
 Here is a detailed explanation of each block and sub-block in the provided main.tf file:
 
@@ -344,3 +351,4 @@ output "ygg_ip" {
 ```
 
 This block defines an output variable called "ygg_ip" that will display the Yggdrasil IP address of the first VM created by the "grid_deployment" resource "d1".
+</details>
