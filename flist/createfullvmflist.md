@@ -295,14 +295,24 @@ Command Success
 Go to https://remotedesktop.google.com/ and login/create account as necessary
 
 then select setup via ssh 
+    
+![1](https://user-images.githubusercontent.com/44621168/214491282-49fbd749-cf65-47cb-b13e-a7e97b1d5902.png)
 
 follow the prompts begin->
+    
+![2](https://user-images.githubusercontent.com/44621168/214491304-ca348ffd-1d56-4864-9ac0-69a5125edf31.png)
 
 next->
 
+![3](https://user-images.githubusercontent.com/44621168/214491333-2ea38344-6beb-470a-b031-3d5098c2145a.png)
+
 authorize 
 
-Copy the Debian linux box 
+![4](https://user-images.githubusercontent.com/44621168/214491353-1e23f458-89f4-4474-a707-4a3b27c9165a.png)
+
+Copy the Debian\linux box 
+    
+![getcommand](https://user-images.githubusercontent.com/44621168/214491436-e4d1705a-b523-4479-8f6e-600de1ec37e2.png)
 
 <details>
         <summary>Jump to Get Command From Chrome Web Browser Under Add By SSH Video Section</summary>
