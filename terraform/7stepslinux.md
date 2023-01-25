@@ -3,6 +3,7 @@
 In this tutorial, you will learn how to install Terraform, create a configuration file, and use Terraform to deploy infrastructure on the Threefold Grid. By the end of this tutorial, you will have deployed a network and two virtual machines (VMs) on the Threefold Grid.
 
 **Prerequisites**
+
 Before you begin, you will need the following:
 
 A computer with the following software installed:
