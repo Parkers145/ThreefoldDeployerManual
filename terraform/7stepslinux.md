@@ -10,7 +10,7 @@ A computer with the following software installed:
 - A Threefold Grid mnemonic phrase. This is used to generate the seed for your node. You can get a mnemonic phrase by creating a Threefold Grid account.
 
 <details>
-    <summary><b>Step 1: Create a Configuration Directory</summary>
+ <summary><b>Step 1: Create a Configuration Directory</b></summary>
 Create a new directory where you want to store your Terraform configuration. This directory can be named anything you like. In this tutorial, we will create a deployments directory and a testdeployment subdirectory inside of it.
 
 ```
