@@ -74,9 +74,11 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=236s
 
 Console Input 
 
+![rebootinput](https://user-images.githubusercontent.com/44621168/214490044-420959bd-34df-4e16-a763-7061bc32056b.png)
 
 Command Success 
 
+![Rebootsuccess](https://user-images.githubusercontent.com/44621168/214490053-35a396ac-67dc-4fac-87af-d34bec204ef6.png)
 
    </details>
 </details>
@@ -100,10 +102,12 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=283s
             <summary>Jump to Install the Desktop Enviroment Expected Behavior Section</b></summary>
 
 Console Input 
+![installdesktopinput](https://user-images.githubusercontent.com/44621168/214490077-32d6a6c6-c348-4758-8375-566ba867baf3.png)
 
 
 Command Success 
 
+![installdesktopsucess](https://user-images.githubusercontent.com/44621168/214490087-3ef7748c-baed-47bc-aa4c-60b128e44151.png)
 
    </details>
 </details>
@@ -127,10 +131,12 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=349s
             <summary>Jump to Download Chrome Remote Desktop Expected Behavior Section</summary>
 
 Console Input 
+![wgetinput](https://user-images.githubusercontent.com/44621168/214490144-d685573d-7c35-48a2-a93e-41f109515efd.png)
 
 
 Command Success 
 
+![wgetsuccess](https://user-images.githubusercontent.com/44621168/214490159-31a6037c-05fd-469e-a9a5-ae4dea6c9b9a.png)
 
    </details>
 </details>
@@ -154,9 +160,11 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=362s
             <summary>Jump to Install Chrome Remote Desktop Expected Behavior Section</summary>
 
 Console Input 
+![aptgetinput](https://user-images.githubusercontent.com/44621168/214490216-d49c5525-f264-49f6-b6c8-183a80ef0f1e.png)
 
 
 Command Success 
+![aptgetsucess](https://user-images.githubusercontent.com/44621168/214490225-2ebc06e1-bfa7-4b65-b564-d8a14d79c377.png)
 
 
    </details>
@@ -181,8 +189,10 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=390s
 
 Console Input 
 
+![bashinput](https://user-images.githubusercontent.com/44621168/214490290-73f271ff-d128-4601-9205-8fda3b77a0a6.png)
 
 Command Success 
+![bashsucess](https://user-images.githubusercontent.com/44621168/214490306-a3d79128-287d-40b0-b00c-325b76ebbe70.png)
 
 
    </details>
@@ -207,9 +217,11 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=409s
 
 Console Input 
 
+![adduserinput](https://user-images.githubusercontent.com/44621168/214490357-3c41137e-af4a-4c1e-8bf4-5fe19a1c6e66.png)
 
 Command Success 
 
+![addusersucess](https://user-images.githubusercontent.com/44621168/214490365-6fc0838f-3dca-4226-bb2b-0a708520cedb.png)
 
    </details>
 </details>
@@ -233,9 +245,11 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=433s
 
 Console Input 
 
+![sudoinput](https://user-images.githubusercontent.com/44621168/214490419-6fe7f105-095d-420d-b000-6ce45bb8c61b.png)
 
 Command Success 
 
+![sudosucess](https://user-images.githubusercontent.com/44621168/214490456-31a6cb19-ccbe-42a4-b739-face79214c6a.png)
 
    </details>
 </details>
@@ -258,9 +272,11 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=236s
             <summary>Jump to Restart Your VM Expected Behavior Section</summary>
 
 Console Input 
+![rebootinput](https://user-images.githubusercontent.com/44621168/214490485-a88e8e3a-a326-4eb9-9196-6f020a1094fb.png)
 
 
 Command Success 
+![Rebootsuccess](https://user-images.githubusercontent.com/44621168/214490502-d74883ed-a0e7-4d78-8f5b-abbac7668eb3.png)
 
 
    </details>
@@ -291,10 +307,8 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=456s
    <details>
             <summary>Jump to Get Command From Chrome Web Browser Under Add By SSH Expected Behavior Section</summary>
 
-Console Input 
 
-
-Command Success 
+![getcommand](https://user-images.githubusercontent.com/44621168/214490764-ddeaef37-953c-40fd-afaa-0565ce127d97.png)
 
 
    </details>
@@ -318,9 +332,11 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=477s
             <summary>Jump to Return to Your VM Console and Switch To Your User Expected Behavior Section</summary>
 
 Console Input 
+![suinput](https://user-images.githubusercontent.com/44621168/214490800-69dc032b-d367-4f71-a4c2-22f1b40cbab0.png)
 
 
 Command Success 
+![susucess](https://user-images.githubusercontent.com/44621168/214490808-be74c5ec-12df-463f-9706-14772414b563.png)
 
 
    </details>
@@ -342,9 +358,11 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=482s
             <summary>Jump to Paste The Key From The Browser Into Your VMs Console Expected Behavior Section</summary>
 
 Console Input 
+![pasteinput](https://user-images.githubusercontent.com/44621168/214490829-f9a2eca7-59a8-4592-8ab6-377e0721eb82.png)
 
 
 Command Success 
+![pastesucess](https://user-images.githubusercontent.com/44621168/214490839-ab46e886-e711-4f51-b2a8-ed63cb38929d.png)
 
 
    </details>
