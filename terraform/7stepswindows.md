@@ -2,7 +2,7 @@
 
 In this tutorial, you will learn how to install Terraform, create a configuration file, and use Terraform to deploy infrastructure on the Threefold Grid from a Windows computer. By the end of this tutorial, you will have deployed a network and two virtual machines (VMs) on the Threefold Grid. 
 
-Prerequisites 
+**Prerequisites** 
 
 Before you begin, you will need the following: 
 
@@ -20,7 +20,8 @@ You will Also Need,
 
 Once you have all of this you can Get started 
 
-**Step 1: Create a Configuration Directory**
+<details>
+    <summary><b>Step 1: Create a Configuration Directory</b></summary>
 
 Create a new directory where you want to store your Terraform configuration. This directory can be named anything you like. In this tutorial, we will create a deployments directory and a testdeployment subdirectory inside of it. 
 
@@ -30,9 +31,10 @@ From the Git for Windows command prompt:
 mkdir deployments 
 mkdir deployments\testdeployment 
 ```
- 
+</details>
 
-**Step 2: Create the main.tf File** 
+<details>
+    <summary><b>Step 2: Create the main.tf File</b></summary> 
 
 Copy the contents of the provided main.tf file and write it to the testdeployment directory you just created. 
 
@@ -40,40 +42,50 @@ Copy the contents of the provided main.tf file and write it to the testdeploymen
 notepad main.tf 
 # paste the contents of the main tf then save and close the file 
 ```
-If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them
-```
-# ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
-variable "MNEMONICS" {
-  type        = string
-  description = "The mnemonic phrase used to generate the seed for the node."
-}
 
-variable "NETWORK" {
-  type        = string
-  default     = "main"
-  description = "The network to connect the node to."
-}
+  <details>
+        <summary><b>If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them</b></summary>
 
-variable "SSH_KEY" {
-  type = string
-}
- 
-# CHANGE THESE SECTIONS OF THE main.tf to use the variables 
+         ```
+         # ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
+         variable "MNEMONICS" {
+         type        = string
+         description = "The mnemonic phrase used to generate the seed for the node."
+          }
 
-provider "grid" {
-    mnemonics = "${var.MNEMONICS}"
-    network   = "${var.NETWORK}"  
-}
-and 
- env_vars = { 
-      SSH_KEY = "${var.SSH_KEY}" 
-    } variable "MNEMONICS" {
+         variable "NETWORK" {
+         type        = string
+         default     = "main"
+         description = "The network to connect the node to."
+         }
+    
+         variable "SSH_KEY" {
+         type = string
+         }
+    
 
 
-    } 
-```
 
-**Step 3: Initialize the Directory as a Terraform Configuration Directory** 
+          # CHANGE THESE SECTIONS OF THE main.tf to use the variables 
+
+          provider "grid" {
+          mnemonics = "${var.MNEMONICS}"
+          network   = "${var.NETWORK}"  
+           }
+          and 
+          env_vars = { 
+                      SSH_KEY = "${var.SSH_KEY}" 
+          } variable "MNEMONICS" {
+
+
+         } 
+         ```
+   </details>
+</details>
+
+<details>
+    <summary><b>Step 3: Initialize the Directory as a Terraform Configuration Directory</b></summary>
+    
 
 From the Git for Windows command prompt, navigate to the testdeployment directory where you placed the main.tf file. 
 
@@ -87,8 +99,10 @@ Run the following command to initialize the directory as a Terraform configurati
 ```
 terraform init 
 ```
+</details>
 
-**Step 4: Create the Infrastructure Resources** 
+<details>
+    <summary><b>Step 4: Create the Infrastructure Resources</b></summary>
 
 To apply the changes specified in the configuration and create the resources defined in main.tf, you will need to provide values for the variables in your configuration. You can do this by creating a .tfvars file and specifying the values you want to use. 
 
@@ -107,8 +121,10 @@ To use this file, pass the -var-file flag to the terraform apply command, follow
 ```
 terraform apply -parallelism=1 -auto-approve -var-file="deployments\yourfile.tfvar" 
 ```
+</details>
 
-**Step 5: View the Output Values** 
+<details>
+    <summary><b>Step 5: View the Output Values</b></summary>
 
 After the resources have been created, you can view the output values by running the following command: 
 
@@ -118,8 +134,10 @@ terraform output
 ```
 
 This will display the values of the output variables defined in the main.tf file. In this example, the output values include the WireGuard configuration for the network, and the IP addresses of the VMs. 
+</details>
 
-**Step 6: Test Your Deployment** 
+<details>
+    <summary><b>Step 6: Test Your Deployment</b></summary>
 
 To test your deployment, you will need to use an SSH client to connect to the VMs. We recommend using PuTTY with agent forwarding and your SSH key. 
 
@@ -134,16 +152,19 @@ To test your deployment, you will need to use an SSH client to connect to the VM
 - Click the "Open" button to open the connection to the VM. 
 
 When prompted, enter your username (ubuntu) and press Enter. 
+</details>
 
-**Step 7: Clean Up Your Deployment** 
+<details>
+    <summary><b>Step 7: Clean Up Your Deployment</b></summary>
 
 When you're finished testing your deployment, you can clean up the resources you created by running the following command: 
 
 ```
 terraform destroy -parallelism=1 -auto-approve -var-file="deployments\yourfile.tfvar" 
 ```
+</details>
 
-**Conclusion**
+# Conclusion
 
 In this tutorial, you learned how to install Terraform, create a configuration file, and use Terraform to deploy infrastructure on the Threefold Grid from a Windows computer. You also learned how to use .tfvars files to provide values for the variables in your configuration, and how to view the output values of your deployment and clean up your resources when you're finished. 
 
@@ -151,7 +172,9 @@ I hope this tutorial was helpful! If you have any questions or need further assi
 
 I invite you to join us in building on the Threefold Grid in 2023! 
 
- # Example Main.tf 
+# Resources 
+<details>
+    <summary><b>Example Main.tf</b></summary> 
 
 ```
 variable "MNEMONICS" {
@@ -256,3 +279,4 @@ output "ygg_ip" {
 value = grid_deployment.d1.vms[0].ygg_ip
 }
 ```
+</details>
