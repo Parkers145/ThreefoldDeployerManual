@@ -1,260 +1,350 @@
-# Creating a Customized Ubuntu Cloud Image Flist
+# Creating a Cloud Linux Desktop environment on the Threefold Grid 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tutorial will guide you through the process of creating a custom Ubuntu Full VM Flist using Linux. A Flist image is a pre-configured virtual machine that can be easily deployed on the Grid. By creating a custom image, you can add your own software and settings to the image, making it easier to set up and configure new instances on the cloud.
 
-Before we begin, there are a few things you will need:
+**Video Tutorial**
 
-- A hypervisor (such as KVM or Virtualbox)
-- Two tools called virt-customize and qemu-img, which you will need to install on your computer.
-	```
-	apt install libguestfs-tools qemu-utils
-	```
-- Some basic knowledge of Linux
+
+[![Video Tutorial](https://img.youtube.com/vi/FVy-nOcyKJQ/0.jpg)](https://www.youtube.com/watch?v=FVy-nOcyKJQ)
+
+
+An often requested feature is desktop environments hosted on the Threefold Grid. I have recently found a viable solution solution to this using relatively user friendly tools and this will be a tutorial on how how you can accomplish the same. 
+
+For this tutorial we will be using a 
+- Full VM deployment with 4 cores, 4096 mb of ram and 50 gb of storage
+- Ubuntu 22.04 image
+- Chrome Remote Desktop 
+- Putty / SSH client of your choice. 
+
+# Steps to Complete the Project 
+
 
 <details>
-	<summary><b>Step 1: Download the Cloud Image You Want To Use</b></summary>
-  
-To start, you will need to download a cloud image of your choice. In this example, we will use Ubuntu 20.04. You can download the image by visiting this [link:](https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img)
+    <summary><b>Update and Upgrade Your VM</b></summary> 
 
-or with 
-
+After Connecting to your VM via SSH, run these commands in your terminal for Ubuntu 22.04 
 ```
-wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
-```
-</details>
-
-<details>
-	<summary><b>Step 2: Resize the partition of the image</b></summary>
-  
-The standard Ubuntu cloud image is 2.1GB in size. If you need more space for the software you will add later, you can use a tool called "qemu-img" to resize the partition of the image. To do this, open the command prompt and type the following command: 
-```
-qemu-img resize focal-server-cloudimg-amd64.img +1G
-```
--  This will add 1GB to the image.
-</details>
-
-<details>
-	<summary><b>Step 3: Set a root password</b></summary>
-We need to set a root password so we can login to the VM console to set up our image. To do this, open the command prompt and type the following command: 
-
-```
-virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword
-(replace "yourpassword" with the password of your choice)
+apt update && apt upgrade -y 
 ```
 
-</details>
-
-<details>
-	<summary><b>Step 4: Expand the file system on the cloud image</b></summary>
- Expanding the file system of an Ubuntu cloud image after using the qemu-img resize command can be done using the GParted partition editor tool. GParted is a graphical tool that allows you to view and modify the partitions on your disk.
-
-- **1.) Mount the image:**
-
-	You will need to mount the image to the qemu hypervisor. You can do this by running the command 
-	```
-	qemu-nbd -c /dev/nbdX your_image.img
-	(replace X with the next available nbd device number and your_image.img with the actual name of your image file)
-	```	
-	<details>
-  		<summary>letter "X" is a placeholder for the next available nbd device number. To know what to use for "X", Click Here </summary>
-  		
-	```
-	ls /dev/nbd*
-		
-	```	
-	This command will list all of the nbd devices that are currently available on your system. If you don't have any nbd devices connected, you can use "X" as 0. If you already have some nbd devices connected, you can use the next available number. For example, if you have /dev/nbd0 and /dev/nbd1 connected, you can use "X" as 2.
-
-	Also, you could use a command such as 
-		
-	```
-	ls /dev/nbd* | grep -o '[0-9]' | tail -1
-		
-	```
-	to get the next available nbd device number. This command will list all nbd devices, pick only the numbers, and get the last one, so it will give you the next 		available one.
-	</details>
-
-- **2.) Start GParted:**
-
-	Once you have mounted the image, open a terminal and run the command 
-	```
-	sudo gparted /dev/nbdX" 
-	(replace X with the nbd device number used in the previous step) to start GParted.
-	```
-- **3.) Select the cloud image:**
-
-	In GParted, select the cloud image(the ext4 partition) from the device list, and right-click on it and choose ‘Resize/Move’.
-![selectthecloudimage](https://user-images.githubusercontent.com/44621168/214429547-b1b8583f-4949-4f4e-9c5b-0c73e3b78f38.png)
-
-- **4.) Expand the partition:**
-
-	Move the used ‘partition space bar’ to the right to expand the file system.
-![movepartcmb](https://user-images.githubusercontent.com/44621168/214430335-edf566da-8793-40ab-be5e-4caae247c81b.png)
+If you encouter an error about a grub update on a pink screen, simply press yes and proceed, this is a incompatability between that update and the hypervisor firmware, it will not affect peformance, but this error can be avoided by running this command prior to updating 
+```
+apt-mark hold grub-efi-amd64-signed
+```
 
 
+   <details>
+            <summary>Jump to Update and Upgrade Your VM Video Section</summary>
 
-- **5.) Apply the changes:**
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=199s
 
-	Then press ‘Resize/Move’, next the green check mark to apply the changes, confirm with ‘Apply’
-![apply all operatiosn](https://user-images.githubusercontent.com/44621168/214429522-f19bd0a0-df8b-4aa3-80b7-3d5fc2fbebc3.png) 
+   </details>
 
-By doing this, you will expand the partition and the file system on the cloud image.
+   <details>
+            <summary>Jump to Update and Upgrade Your Expected Behavior Section</summary>
 
-- **6.) Unmount the image:**
-	You can unmount the image by running the command "
-	```
-	qemu-nbd -d /dev/nbdX"
-	(replace X with the nbd device number used in the previous step)
-	```
-It's worth noting that, depending on the size of the partition and the amount of data on it, this process may take some time, so it's best to be patient.
+Console Input 
 
+
+Command Success 
+
+
+   </details>
 
 </details>
 
 <details>
-	<summary><b>Step 5: Install your custom software</b></summary>
- 
-To start the temporary VM for customizing the cloud image using the QEMU hypervisor, you will need to use the command line. The process is as follows:
+    <summary><b>Restart Your VM</b></summary> 
 
-- **1.) Open the command prompt or terminal on your computer.**
+```
+reboot -f
+```
 
-- **2.) Navigate to the location of the cloud image you downloaded earlier using the "cd" command.**
+<details>
+        <summary>Jump to Restart Your VM Video Section</summary>
 
-- **3.) Start and modify your image**
-	you can use this command to start the virtual machine.
-	```
-	qemu-system-x86_64 -enable-kvm -m 2048 -hda your_image.img to start the virtual machine.
-	```
-	- -enable-kvm will enable hardware acceleration, -m 2048 will assign 2048MB of memory to the virtual machine, 
-	- -hda your_image.img will specify the path to the cloud image you want to use.
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=236s
 
-	
-	Once the virtual machine is running, you can use this command to check if the image is running.
-	```
-	qemu-monitor-command --hmp 'info block' 
-	```
-	
+   </details>
 
-	To access the virtual machine console, you can use this  command 
-	```
-	qemu-system-x86_64 -enable-kvm -m 2048 -hda your_image.img -monitor stdio"
-	```
-	
+   <details>
+            <summary>Jump to Restart Your VM Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
 </details>
 
 <details>
-  <summary><b>Step 6: Cleanup</b></summary>
-  Once everything has been set up to your liking and before shutting down the vm, it's important to do some cleanup to ensure the image is secure and ready for deployment. The following are the steps you need to take via the VM console:
+    <summary><b>Install the Desktop Enviroment</b></summary> 
 
-- **1.) Default the sshd config:**
+Once you have update your VM you will want to run this command, this is a large download and the install takes awhile 
+```
+apt install ubuntu-desktop
+```
 
-	The first step is to default the sshd config file to remove any changes that were made to enable root login and password authentication. This is important to ensure that the image is secure when it's deployed on the grid.
-	You can do this by running the command:
+<details>
+        <summary>Jump to Install the Desktop Enviroment Video Section</summary>
 
-	```
-	cp /etc/ssh/sshd_config_backup /etc/ssh/sshd_config
-	```
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=283s
 
-	This command will copy the original sshd config file that was backed up earlier, replacing the current config file with the original.
+   </details>
 
-- **2.) Remove ssh key files:**
+   <details>
+            <summary>Jump to Install the Desktop Enviroment Expected Behavior Section</b></summary>
 
-	It's important to remove the ssh key files that were generated when enabling SSH, as they can be used to access the image remotely. You can remove these files by running the command:
-	```
-	rm /etc/ssh/ssh_host_*
-	```
-	This command will remove all files that start with "ssh_host_" in the /etc/ssh/ directory.
+Console Input 
 
-- **3.) Remove the directory /run/sshd:**
 
-	The directory /run/sshd is used by the SSH daemon and it's important to remove it as well. You can remove this directory by running the command:
-	```
-	rm -r /run/sshd
-	```
+Command Success 
 
-- **4.) Enable all required systemd services:**
 
-	This step is important to ensure that your custom software or service will start automatically when the image boots. You can enable a systemd service by running the command:
-	```
-	systemctl enable your-service
-	(replace "your-service" with the service name)
-	```
-
-- **5.) Check and enable the firewall:**
-
-	It's important to check and enable the firewall to ensure the image is secure when it's deployed. You can check the firewall status by running the command:
-	```
-	ufw status
-	```
-
-	If the firewall is not enabled, you can enable it by running the command:
-
-	```
-	ufw enable
-	```
-
-- **6.) Change root password:**
-
-	It's important to clear the root password to ensure the image is secure when it's deployed. You can clear the root password by running the command:
-	```
-	passwd -d "your User"
-	```
-
-- **7.) Clear bash history:**
-
-	To ensure that your commands and configurations are not visible to others, it's important to clear the bash history for root and other users. You can clear the bash history for root
-
-	by running the command:
-
-	```
-	echo "" > /root/.bash_history
-	```
-	This command will overwrite the .bash_history file with an empty string, effectively clearing it.
-
-	If you have created other users on the VM, you will also need to clear their bash history by running the command:
-
-	```
-	echo "" > /home/username/.bash_history
-	(replace "username" with the actual username)
-	```
-
-	It's also a good idea to logout of the VM console, log back in, and use a text editor such as Vim or Nano to edit the .bash_history file and put a space in front of the text editor command (so it’s not stored in the bash history when you logout). This can be done by running the command :
-
-	```
-	space + text editor command (ex: vim /root/.bash_history)
-	```
-
-	Once you have completed all the cleanup steps, you can shut down the VM and use the cloud image for deployment. Keep in mind that the image can be reused multiple times, and it's important to keep the image up-to-date and maintain the security of the image.
+   </details>
 </details>
 
 <details>
-	<summary><b>Step 7: Upload image to the Hub</b></summary>
- 
-Once you have completed customizing the cloud image and have done the necessary cleanup, the next step is to package and upload the image to the Hub. The Hub is a centralized repository where you can store and share your custom images.
+    <summary><b>Download Chrome Remote Desktop</b></summary>
 
-- **1.) Convert the image format:**
+Now we will download the software package that will install the chrome remote desktop extension 
+```
+wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+```
 
-	You will need to convert the image format from qcow2 to raw using the command 
-	```
-	qemu-img convert -p -f qcow2 -O raw your_image.img image.raw"
-	```
+<details>
+        <summary>Jump to Download Chrome Remote Desktop Video Section</summary>
 
-	This command will convert the image format and save the output as "image.raw", you must use this name for a full vm. 
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=349s
 
-- **2.) Create a tarball of the image:**
+   </details>
 
-	Create a tarball of the image by running the command 
-	```
-	tar -czf name_of_release.tar.gz image.raw
-	```
-	This command will create a compressed archive file "name_of_release.tar.gz" of the image.raw file. you can name your image here this file name is not important.
+   <details>
+            <summary>Jump to Download Chrome Remote Desktop Expected Behavior Section</summary>
 
-- **3.) Upload the image to the Hub:**
+Console Input 
 
-	Once you have the tarball, you can upload it to the Hub by going to https://hub.grid.tf/ and use the upload feature. Once the upload is complete, you will be able to find the uploaded image in your personal repository https://hub.grid.tf/your-username.3bot
 
-	It's worth noting that you should keep the image updated and maintain the security of the image to ensure that it's safe to use.
+Command Success 
 
-	Also, depending on the size of the image, the upload may take some time, so it's best to be patient and wait for the upload to complete.
+
+   </details>
+</details>
+
+<details>
+    <summary><b>Install Chrome Remote Desktop</b></summary> 
+
+Now We will install the package the package we just downloaded from the directory we downloaded it to (should be where you are)
+```
+apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.deb
+```
+
+<details>
+        <summary>Jump to Install Chrome Remote Desktop Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=362s
+
+   </details>
+
+   <details>
+            <summary>Jump to Install Chrome Remote Desktop Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
+</details>
+
+<details>
+    <summary><b>Set Desktop Environment Display Manager For Chrome</b></summary> 
+
+```
+bash -c echo “exec /etc/X11/Xsession /usr/bin/gnome-session” > /etc/chrome-remote-desktop-session’
+```
+
+<details>
+        <summary>Jump to Set Desktop Environment Display Manager For Chrome Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=390s
+
+   </details>
+
+   <details>
+            <summary>Jump to Set Desktop Environment Display Manager For Chrome Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
+</details>
+
+<details>
+    <summary><b>Create A New User</b></summary> 
+
+```
+adduser parker 
+```
+
+<details>
+        <summary>Jump to Create A New User Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=409s
+
+   </details>
+
+   <details>
+            <summary>Jump to Create A New User Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
+</details>
+
+<details>
+    <summary><b>Make User a Sudoer</b></summary>
+
+```
+usermod -aG sudo parker
+```
+
+<details>
+        <summary>Jump to Make User a Sudoer Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=433s
+
+   </details>
+
+   <details>
+            <summary>Jump to Make User a Sudoer Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
+</details>
+
+<details>
+    <summary><b>Restart Your VM</b></summary> 
+
+```
+reboot -f
+```
+
+<details>
+        <summary>Jump to Restart Your VM Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=236s
+
+   </details>
+
+   <details>
+            <summary>Jump to Restart Your VM Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
+</details>
+
+<details>
+    <summary><b>Get Command From Chrome Web Browser Under Add By SSH</b></summary> 
+
+Go to https://remotedesktop.google.com/ and login/create account as necessary
+
+then select setup via ssh 
+
+follow the prompts begin->
+
+next->
+
+authorize 
+
+Copy the Debian linux box 
+
+<details>
+        <summary>Jump to Get Command From Chrome Web Browser Under Add By SSH Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=456s
+
+   </details>
+
+   <details>
+            <summary>Jump to Get Command From Chrome Web Browser Under Add By SSH Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
+</details>
+
+<details>
+    <summary><b>Return to Your VM Console and Switch To Your User</b></summary> 
+
+```
+su parker
+```
+
+<details>
+        <summary>Jump to Return to Your VM Console and Switch To Your User Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=477s
+
+   </details>
+
+   <details>
+            <summary>Jump to Return to Your VM Console and Switch To Your User Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
+</details>
+
+<details>
+    <summary><b>Paste The Key From The Browser Into Your VMs Console</b></summary> 
+
+you should now be able to login into your into Linux desktop by returning to the remote access tab. 
+
+
+<details>
+        <summary>Jump to Paste The Key From The Browser Into Your VMs Console Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=482s
+   </details>
+
+   <details>
+            <summary>Jump to Paste The Key From The Browser Into Your VMs Console Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
 </details>
 
 
