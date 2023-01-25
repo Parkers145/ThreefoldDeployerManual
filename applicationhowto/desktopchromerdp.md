@@ -228,6 +228,3 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=482s
 
 
 
-
-</details>
-
