@@ -43,9 +43,12 @@ https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=199s
             <summary>Jump to Update and Upgrade Your Expected Behavior Section</summary>
 
 Console Input 
-
+       
+![image](https://user-images.githubusercontent.com/44621168/214485444-a7f20911-7c81-4e40-8fd2-8f47cea5e845.png)
 
 Command Success 
+       
+![image](https://user-images.githubusercontent.com/44621168/214485463-060dec07-441a-48e8-8b03-8c6e78d3f0d0.png)
 
 
    </details>
