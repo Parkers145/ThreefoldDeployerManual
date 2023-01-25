@@ -1,10 +1,10 @@
 # Creating a Cloud Linux Desktop environment on the Threefold Grid 
 
 
-**Video Tutorial**
+**The End Result of This Tutorial**
 
 
-[![Video Tutorial](https://img.youtube.com/vi/FVy-nOcyKJQ/0.jpg)](https://www.youtube.com/watch?v=FVy-nOcyKJQ)
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=501s
 
 
 An often requested feature is desktop environments hosted on the Threefold Grid. I have recently found a viable solution solution to this using relatively user friendly tools and this will be a tutorial on how how you can accomplish the same. 
