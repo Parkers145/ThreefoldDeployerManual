@@ -190,7 +190,29 @@ Once you arrive on the [Playground](https://play.grid.tf) you will click the gea
 - Mnemonics: These are the words from the wallet you created in the extension or the threefold connect app. 
 - Public SSH Key: This where you put the text of your .pub ssh key file that coincides with the private key you wish to access your deployments with. This key will be added to the known hosts of each deployment and typically represents how you will initially gain access to your deployment. 
 </details>
-<<<<<<< HEAD
+
+
+<details>
+	<summary><b>Fund your Playground Deployment Account</b></summary>
+
+In order to use the TFT in our wallet for a deployment we have to move it from the Stellar chain to the TFChain. How you will do this will depend on if your Stellar wallet was created in Threefold Connect or not 
+  
+  <details>
+	<summary>For Wallets Created In Threefold Connect</summary>
+
+After Creating your profile, it will load the twin id you created in the [Dashboard](https://dashboard.grid.tf) and generate a QR code that allows you to transfer your funds from the Threefold Connect App wallet onto your deployment profile. Simply open the Threefold Connect and click the QR scan button in the top corner. 
+  </details>
+
+  <details>
+	<summary>For Wallets NOT Created in Threefold Connect</summary>
+
+If you are using a third-party wallet the QR code may not be functional in your wallet, you can go to "swap" on the [Dashboard](https://dashboard.grid.tf) and retrieve the Wallet address and memo for depositing to your twin from any stellar wallet address. 
+
+**be sure you use the address and memo for twin deposits**
+  </details>
+</details>
+
+Once you have completed these steps you will be ready to deploy your first workload on the Threefold Grid using The Playground. 
 
 <details>
 	<summary><b>Fund your Playground Deployment Account</b></summary>
@@ -215,50 +237,3 @@ If you are using a third-party wallet the QR code may not be functional in your 
 
 Once you have completed these steps you will be ready to deploy your first workload on the Threefold Grid using The Playground. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-
-<details>
-	<summary><b>Fund your Playground Deployment Account</b></summary>
-
-In order to use the TFT in our wallet for a deployment we have to move it from the Stellar chain to the TFChain. How you will do this will depend on if your Stellar wallet was created in Threefold Connect or not 
-  
-  <details>
-	<summary>For Wallets Created In Threefold Connect</summary>
-
-After Creating your profile, it will load the twin id you created in the [Dashboard](https://dashboard.grid.tf) and generate a QR code that allows you to transfer your funds from the Threefold Connect App wallet onto your deployment profile. Simply open the Threefold Connect and click the QR scan button in the top corner. 
-  </details>
-
-  <details>
-	<summary>For Wallets NOT Created in Threefold Connect</summary>
-
-If you are using a third-party wallet the QR code may not be functional in your wallet, you can go to "swap" on the [Dashboard](https://dashboard.grid.tf) and retrieve the Wallet address and memo for depositing to your twin from any stellar wallet address. 
-
-**be sure you use the address and memo for twin deposits**
-  </details>
-</details>
-
-
-Once you have completed these steps you will be ready to deploy your first workload on the Threefold Grid using The Playground. 
->>>>>>> 024e5c438c0212242f11b57a75c63945c43504cf
