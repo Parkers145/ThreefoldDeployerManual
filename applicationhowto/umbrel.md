@@ -1,10 +1,9 @@
-**The End Result of This Tutorial**
 
 
-***Umbrel Demostration Video*** 
+***Umbrel Demostration Videos, Tutorial Steps Videos to Come*** 
 
 
-During one of the recent Comuunity Q&A and Tech Calls, one of our community members brought up installing [Umbrel](https://umbrel.com/) on Threefold Grid, I found this to be an amazing resource that allows users to self host their own cloud. Combining this with the abilities of the grid creates a truly incredible resource.  
+During one of the recent Comuunity Q&A and Tech Calls, one of our community members brought up installing [Umbrel](https://umbrel.com/) on The Threefold Grid, I found this to be an amazing resource that allows users to self host their own cloud. Combining this with the abilities of the grid creates a truly incredible resource.  
 
 For this tutorial we will be using  
 - Full VM deployment with 4 cores, 8000 mb of ram and 900 gb of storage
@@ -14,11 +13,12 @@ For this tutorial we will be using
 - Umbrel  
 - Putty / SSH client of your choice. 
 
-# Steps to setup your Grid Accounts
+# Steps to Setup Your Grid Deployment Accounts
 
-If you have never deployed on the threefold grid you will have to set a few things up
+If you have never deployed on the Threefold grid you will have to set a few things up
 
 <details>
+&nbsp;
 	<summary><b>Install the Polkadot-Js Exstension</b></summary>
 
 Open Google Chrome and go to the Chrome Web Store by typing "chrome.google.com/webstore" in the address bar.
@@ -35,6 +35,7 @@ Note: Make sure you have the latest version of Google Chrome installed to use th
 </details>
 
 <details>
+&nbsp;
 	<summary><b>Create Your Wallet</b></summary>
 
 You have Three options for creating this wallet
@@ -85,6 +86,7 @@ You will want to follow this Tutorial to Setup your Threefold Connect Wallet htt
 </details>
 
 <details>
+&nbsp;
 	<summary><b>Acquire TFT</b></summary>
 
 In order to purchase TFT we will need to use an interface compatible with the stellar decentralized exchanges for this example we will use LOBSTR
@@ -188,6 +190,7 @@ Note: Swap feature may not be available in all regions or jurisdictions, and als
 </details>
 
 <details>
+&nbsp;
 	<summary><b>Create Your Twin</b></summary>
 
 you will visit the [Threefold Dashboard](https://Dashboard.grid.tf) Here you will 
@@ -197,6 +200,7 @@ you will visit the [Threefold Dashboard](https://Dashboard.grid.tf) Here you wil
 </details>
 
 <details>
+&nbsp;
     <summary><b>Fund your Twin</b></summary>
 
 go to "swap" on the [Dashboard](https://dashboard.grid.tf) and retrieve the Wallet address and memo for depositing to your twin from any stellar wallet address. 
@@ -340,11 +344,12 @@ Now you are ready to use Terraform to deploy the main.tf configuration file.
 </details>
 
  
-# Steps To Deploy Your Workload 
+# Steps to Deploy Your Workload 
 
 If you are working in Linux these steps will be performed in the Terminal, in Windows we will be performing these tasks in WSL 
 
 <details>
+&nbsp;
     <summary><b>Create a Directory to Store Your Terraform Deployments</b></summary>
 
 Create a new directory where you want to store your Terraform deployments. This directory can be named anything you like. In this tutorial, we will create a deployments directory in this step and your deployment directory in the next. 
@@ -355,6 +360,7 @@ mkdir deployments
 </details>
 
 <details>
+&nbsp;
     <summary><b>Create a Directory to Store Your Umbrel Deployment</b></summary>
 
 Create a new directory where you want to store your Umbrel Deployment. This directory can be named anything you like. In this tutorial, we will create a deployments directory and a testdeployment subdirectory inside of it.
@@ -365,6 +371,7 @@ mkdir deployments/umbrel
 </details>
 
 <details>
+&nbsp;
     <summary><b>Create Your Env.tfvars file</b></summary>
 
 To apply the changes specified in the configuration and create the resources defined in main.tf, you will need to provide values for the variables in your configuration. You can do this by creating a .tfvars file and specifying the values you want to use.
@@ -385,6 +392,7 @@ nano /deployments/production.tfvars
 </details>
 
 <details>
+&nbsp;
     <summary><b> Create Your Main.Tf </b></Summary>
 
 you will create a "main.tf" file in your umbrel deployment directory, This file is the "recipe" for the how the grid will create your VM. I have provided an example below, in order to use it we will use nano to copy the contents into a new file in the umbrel deployment directory
@@ -394,7 +402,6 @@ nano /deployments/umbrel/main.tf
 
 # Paste to contents of your main.tf into the window and press Ctrl+X to save and Y to Confirm
 ```
-&nbsp;
 
   <details>
     <summary> The "Example" Umbrel Main.tf </summary>
@@ -521,8 +528,9 @@ If you're running Umbrel OS on Bitcoin mainnet (default), the storage disk shoul
 </details>
 
 <details>
-    <summary><b>Deploy Your Main.tf</summary>
 &nbsp;
+    <summary><b>Deploy Your Main.tf</summary>
+
   <details>
     <summary> Initialize The Deployment Directory </summary>
 
@@ -538,6 +546,7 @@ terraform init
 ```
   </details>
   <details>
+  &nbsp;
     <summary> Apply Your Main.tf </summary>
 
 
@@ -557,14 +566,14 @@ Wait for the terraform apply command to complete. This may take a few minutes. W
 Now we will need to connect to our deployed workload, for this tutorial we will be making our connection through Wiregaurd that we installed earlier
 
 <details>
+&nbsp;
     <summary><b> Connect to the Wiregaurd Network</b></Summary>
 
-&nbsp;
+
 
 <details>
     <summary><b> Retrieve Wiregaurd Configuration from Terraform </b></Summary>
 
-&nbsp;
 
 This information is printed in the console after you run the "terraform apply" command, If you have lost the window navigate to your umbrel deployment directory 
 ```
@@ -619,9 +628,8 @@ copy this file we will pasting it into a file in the next step.
 </details>
 
 <details>
-    <summary><b> Connect to your VM via SSH</b></summary>
-
 &nbsp;
+    <summary><b> Connect to your VM via SSH</b></summary>
 
 <details>
     <summary>SSH VM From Windows using Putty</summary>
@@ -794,6 +802,173 @@ ssh root@your.vms.wiregaurd.ip
 </details>
 
 # Steps To Install Umbrel on Your Deployment 
+
+Next, we will install Umbrel on the deployment we just created
+
+<details>
+&nbsp;
+    <summary><b>Update and Upgrade Your VM</b></summary> 
+
+After Connecting to your VM via SSH, run these commands in your terminal for Ubuntu 22.04 
+```
+apt update && apt upgrade -y 
+```
+
+If you encouter an error about a grub update on a pink screen, simply press yes and proceed, this is a incompatability between that update and the hypervisor firmware, it will not affect peformance, but this error can be avoided by running this command prior to updating 
+```
+apt-mark hold grub-efi-amd64-signed
+```
+
+
+   <details>
+            <summary>Jump to Update and Upgrade Your VM Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=199s
+
+   </details>
+
+   <details>
+            <summary>Jump to Update and Upgrade Your VM Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+
+
+   </details>
+
+</details>
+
+<details>
+&nbsp;
+    <summary><b>Restart Your VM</b></summary> 
+
+```
+reboot -f
+```
+
+<details>
+        <summary>Jump to Restart Your VM Video Section</summary>
+
+https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=236s
+
+   </details>
+
+   <details>
+            <summary>Jump to Restart Your VM Expected Behavior Section</summary>
+
+Console Input 
+
+
+Command Success 
+</details>
+</details>
+
+<details>
+&nbsp;
+    <summary><b> Create A New User </b></summary>
+
+We will want to create a new user and make that user a sudoer (admin) to create the New User use 
+```
+adduser yourusername
+```
+
+to make that user a sudoer (admin) you will use 
+
+```
+usermod -aG sudo yourusername
+```
+</details>
+
+<details>
+&nbsp;
+    <summary><b> Switch to New User </b></summary> 
+
+We will to install/run umbrel as the new user that we just created in order to switch to that user to execute the commands we will use 
+
+```
+su yourusername
+```
+
+</details>
+
+<details>
+&nbsp;
+    <summary><b>Install Umbrel</b></summary>
+
+Umbrel Includes single command install functionality, If you've made it to this point breathe a sigh of relief once command to go, run 
+
+```
+curl -L https://umbrel.sh | bash
+```
+
+This will install Umbrel and anytime you are connected to the wiregaurd network you will be able to access the services provided from your regular web browser at the ip addresses displayed when this script finishes
+</details>
+
+# Steps to Attach your Umbrel Deployment to Your Home  Network 
+
+The major benefit to using wiregaurd in the way we have above is the ability to create a private, persistent, link between your home network and your Umbrel deployment, This will require your router to support connecting to Wiregaurd Networks, but once you have performed this step any devices on your network will be able to access the Umbrel Here's some examples of how to do that, 
+
+<details>
+&nbsp;
+    <summary><b> Connecting an OpenWRT Router to your WireGaurd Network </b></summary>
+
+[Openwrt Wiki Page](https://openwrt.org/docs/guide-user/services/vpn/wireguard/client)
+
+1. Install WireGuard on OpenWRT:
+   - Connect to your OpenWRT router via SSH or web interface
+   - Install the WireGuard packages: 
+     `opkg update`
+     `opkg install luci-app-wireguard kmod-wireguard wireguard-tools`
+     
+2. Configure the WireGuard interface:
+   - Go to the Network > Interfaces menu in the LuCI web interface
+   - Click on the "Add new interface" button and select "WireGuard"
+   - Fill in the interface name, private key, and peer information
+   - Set the firewall zone for the WireGuard interface
+   
+3. Configure the routing:
+   - Go to the Network > Routing menu in the LuCI web interface
+   - Create a new route, select the WireGuard interface as the source and set the desired target network and gateway
+   
+4. Enable the WireGuard interface:
+   - Go to the Network > Interfaces menu in the LuCI web interface
+   - Click on the "Edit" button for the WireGuard interface
+   - Change the status to "Enabled"
+   - Save the changes and apply them
+   
+5. Test the connection:
+   - Verify that the WireGuard interface has been assigned an IP address
+   - Ping a remote host to verify that the routing is working
+   - Check the WireGuard logs for any errors or warnings
+
+Note: Make sure to use the information from your Terrafom Output for this Configuration
+</details>
+
+<details>
+&nbsp;
+    <summary><b> Connecting a Pfsense Router to Your WireGaurd Network</b></summary>
+
+[Pfsense Wiregaurd Wiki Page](https://docs.netgate.com/pfsense/en/latest/recipes/wireguard-ra.html)
+
+</details>
+
+<details>
+&nbsp;
+    <summary><b> Connecting an Asus Router to Your Wiregaurd Network </b></summary>
+
+[Asus FAQ Page](https://www.asus.com/support/FAQ/1048282/)
+</details>
+
+<details>
+&nbsp;
+    <summary><b> Connecting a Gl.Inet router to your Wiregaurd Network</b></summary>
+
+[GL.Inet Wiregaurd Setup Page](https://docs.gl-inet.com/en/3/tutorials/wireguard_client/)
+
+</details>
+
 
 
 
