@@ -116,4 +116,8 @@ A featured-rich software that offers a very simple start through its intuitive u
      <summary>Node Pilot</summary>
   - [Node Pilot](https://nodepilot.tech/), a simple Linux executable, making your deployment options endless. No command-line experience is required. Whether on VMs or bare-metal, anyone can run crypto nodes with Node Pilot. Entry-level friendly. Self-host or Cloud VPS.
 
+<<<<<<< HEAD
 </details>
+=======
+</details>
+>>>>>>> 024e5c438c0212242f11b57a75c63945c43504cf

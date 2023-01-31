@@ -11,7 +11,11 @@ A computer with the following software installed:
 - A Threefold Grid mnemonic phrase. This is used to generate the seed for your node. You can get a mnemonic phrase by creating a Threefold Grid account.
 
 <details>
+<<<<<<< HEAD
     <summary><b>Step 1: Create a Configuration Directory</b></summary>
+=======
+ <summary><b>Step 1: Create a Configuration Directory</b></summary>
+>>>>>>> 024e5c438c0212242f11b57a75c63945c43504cf
 Create a new directory where you want to store your Terraform configuration. This directory can be named anything you like. In this tutorial, we will create a deployments directory and a testdeployment subdirectory inside of it.
 
 ```
@@ -137,14 +141,25 @@ terraform destroy -parallelism=1 -auto-approve -var-file="/deployments/prod.tfva
 
 This will delete the infrastructure resources from the Threefold Grid.
 </details>
+<<<<<<< HEAD
 
 # Conclusion
 
+=======
+
+# Conclusion
+ 
+>>>>>>> 024e5c438c0212242f11b57a75c63945c43504cf
 In this tutorial, you learned how to install Terraform, create a configuration file, and use Terraform to deploy infrastructure on the Threefold Grid. You also learned how to use .tfvars files to provide values for the variables in your configuration, and how to view the output values of your deployment and clean up your resources when you're finished.
 
 I hope this tutorial was helpful! If you have any questions or need further assistance, please don't hesitate to ask. I'm happy to help you get started with Terraform and deploying your infrastructure on the Threefold Grid.
 
+<<<<<<< HEAD
 # Resources 
+=======
+ # Resources
+ 
+>>>>>>> 024e5c438c0212242f11b57a75c63945c43504cf
 <details>
     <summary><b>Terraform Example Configuration</b></summary> 
 

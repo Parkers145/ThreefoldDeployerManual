@@ -4,7 +4,10 @@ up to date as of 01/03/2023
 
 # The Main.TF 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 024e5c438c0212242f11b57a75c63945c43504cf
 This is a configuration file written in Terraform, which is a tool for building, changing, and versioning infrastructure safely and efficiently. The file describes resources that will be created in the Grid platform by ThreeFold Tech.
 
 The file is made up of 
