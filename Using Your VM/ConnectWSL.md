@@ -1,54 +1,3 @@
-# <Center> Acessing your Ubuntu VM Deployed on the Threefold Grid </Center>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once you have deployed your Ubuntu vm its time to put it to work, when your workload deploys successfully you will be presented with a status read out that reports the Ip addresses that your workload has deployed with,
-
- If you have deployed with only a planetary network address you will need to install the [Planetary Network Connector](https://github.com/threefoldtech/planetary_network) and have it connected prior to connecting to your workload. Connecting to any workload using the planetary network has the added benefit of connecting you over an encrypted ipv6 tunnel. if you need that. 
- 
-# Windows 
-
-On windows you have to very simple options for connecting to your workload, Putty and WSL. 
-
-# Connecting to Grid VMs from Widows Using Putty 
-
-https://youtu.be/NEXuWCggFB8
-
-
-if you’re running Windows, you might want to use Putty to connect to your Grid VMs. This is possible, but you will need to make sure the ssh key you created your playground profile with is save in the right format. Here’s a quick step by step:
-
-
-<details>
-	<summary><b>Format your SSH Key For Putty Using PuttyGen</b></summary>
-
-First run PuttyGen. Even if you already have a key you want to use, this is the best way to get the public key in the proper format. If you don’t already have a key, choose RSA and hit generate. When you’re done, hit Save private key and write the .ppk file to disk. We’ll use this file in the next step to connect.
-
-If you already had a key or want to return to this step later, hit the Load button and select the ppk file. At the top of the PuttyGen window, you’ll see a field with the public key:
-
-![image](https://user-images.githubusercontent.com/44621168/214651082-2b45b153-2a9b-4026-a627-1dacee5fcb77.png)
-
-Copy the public key from this window, making sure you get everything between ssh-rsa and the key comment rsa-key... in this case. Paste that into the ssh public key field in the playground or Terraform file for your deployment. In case of the playground, also save your profile after doing this.
-
-*Copying and pasting the public key from your ppk file will not work. There are line breaks in the file that get interpreted as extra information when they get passed to the VM. You might have success removing the line breaks manually, but copying the public key from this gui window is the simplest and most reliable way to make this work.*
-</details>
-
-Once you have your SSH key Sorted, You will be ready to
-
-<details>
-	<summary><b>Connect with Putty</b></summary>
-
-After you’ve added the key to your playground profile or Terraform file, create your deployment. There’s no way to change the SSH key in an existing deployment, you must delete and redeploy. Copy the IP address once the deployment is successful and then open Putty.
-
-In Putty’s config screen, navigate to Connection > SSH > Auth:
-
-![image](https://user-images.githubusercontent.com/44621168/214651140-7dd0999b-44cb-40fd-9c00-034aa550d8af.png)
-
-Hit Browse… and select your ppk file. Then go to Session at the top of the left nav bar and enter your VMs IP address in the Host Name (or IP address) field. Then hit the Open button at the bottom of the window to start your session. When you are prompted for a user name, enter root and you should then get access to a terminal with no password prompt.
-
-If you’re prompted for a password, something went wrong and you won’t be able to log in. Go back and check the steps above, then feel free to post questions or problems in this thread.
-  </details>
-</details>
-
-
-
 # Connecting to A Grid VM From Windows Using WSL
 
 https://www.youtube.com/watch?v=uiRYEaIviGI
@@ -60,7 +9,7 @@ The windows subsystem for Linux also supports SSH connections to grid deployed w
 - Make sure you have Windows 10 version 2004 or higher installed. You can check your version by going to Settings > System > About.
 - Open the Windows PowerShell as an administrator and run the command 
 ```
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart. 
 
 # This will enable the WSL feature on your Windows machine.
 ```
@@ -183,8 +132,3 @@ ssh root@[300:d969:30ff:c0a0:e4d4:88ba:ecdd:2b70]
 </details>
 
 
-
-  
-# Connecting to A Deployed VM From Linux 
-  
-  Linux is natively compatible with the grid and can ssh workloads from the terminal with no additional software when using public ipv4/ipv6. If you workload has been deployed using only a planetary network address, you will need to install the [Planetary Network Connecter](https://github.com/threefoldtech/planetary_network) and have it connected prior to connecting to your deployed workload.

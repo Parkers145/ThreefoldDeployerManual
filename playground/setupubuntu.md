@@ -1,4 +1,4 @@
-# <center> Setting Up an Ubuntu VM On the Threefold Playground </Center>
+# Setting Up an Ubuntu VM On the Threefold Playground </Center>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The [Ubuntu](https://ubuntu.com) images are the most versatile deployments and allow you to take advantage of the worldwide grid, while being able to utilize exsisting tools and documentation related to the [Ubuntu](https://ubuntu.com) cloud images. This can enable the grid to host any services that are hostable in a linux server, whether that be a simple website, a database or a game server. By default the Full-VM images included in the playground are, 
 	

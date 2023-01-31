@@ -13,7 +13,8 @@ Terraform also includes features such as version control, resource dependencies,
 
 # How do I use it 
 
-# Installing Terraform:
+<details>
+    <summary><b>Installing Terraform:</b></summary>
 
 - Go to the Terraform downloads page (https://www.terraform.io/downloads.html).
 - Select the appropriate installer for your operating system (e.g. Windows, Linux, macOS).
@@ -24,8 +25,10 @@ Terraform also includes features such as version control, resource dependencies,
 	terraform
 	```
 	and press Enter to verify that the installation was successful. You should see the Terraform usage information displayed.
+</details>
 
-# Ubuntu Install Instructions 
+<details>
+    <summary><b>Ubuntu Install </b></summary> 
 
 To install Terraform on Ubuntu using apt, follow these steps:
 
@@ -53,8 +56,10 @@ terraform --version
 You should see the version of Terraform that you installed displayed.
 
 Now you are ready to use Terraform to deploy the main.tf configuration file. Follow the steps in the previous tutorial to deploy the configuration.
+</details>
 
-# Windows Install Instructions 
+<details>
+    <summary><b>Windows Install Instructions</b></summary> 
 
 To install Terraform on Windows, follow these steps:
 
@@ -65,8 +70,10 @@ To install Terraform on Windows, follow these steps:
 - Once the installation is complete, open a command prompt window.
 - Type terraform and press Enter to verify that the installation was successful. You should see the Terraform usage information displayed.
 - Now you are ready to use Terraform to deploy the main.tf configuration file. Follow the steps in the previous tutorial to deploy the configuration.
+</details>
 
-# Setting your Enviroment variables 
+<details>
+    <summary><b>Setting your Enviroment variables</b></summary> 
 
 Next, you would need to create a file called env.tfvars in the /deployments directory, which should contain the values for the variables defined in main.tf. For example:
 
@@ -102,10 +109,10 @@ terraform apply -parallelism=1 -auto-approve -var-file="/deployments/dev.tfvars"
 This command will apply the configuration using the values specified in the dev.tfvars file.
 
 This way, you can use different .tfvars files to save different configurations and easily switch between them by specifying the path to the desired file when running the terraform apply command.
+</details>
 
-
-
-# Deploying the configuration on Linux:
+<details>
+    <summary><b>Deploying A Configuration on Linux:</b></summary>
 
 - Create a new directory where you want to store your Terraform configuration.
 ```
@@ -116,46 +123,47 @@ mkdir /deployments/testdeployment
 - copy the main.tf file and write it to the directory you just created.
 ```
 nano main.tf
-```
-
 # paste the contents of the main tf then press Ctrl+X, and confirm 
-
-
-- If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them
 ```
-# ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
-variable "MNEMONICS" {
-  type        = string
-  description = "The mnemonic phrase used to generate the seed for the node."
-}
+  <details>
+        <summary><b>If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them</b></summary>
 
-variable "NETWORK" {
-  type        = string
-  default     = "main"
-  description = "The network to connect the node to."
-}
+         ```
+         # ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
+         variable "MNEMONICS" {
+         type        = string
+         description = "The mnemonic phrase used to generate the seed for the node."
+          }
 
-variable "SSH_KEY" {
-  type = string
-}
- 
-
-
-
-# CHANGE THESE SECTIONS OF THE main.tf to use the variables 
-
-provider "grid" {
-    mnemonics = "${var.MNEMONICS}"
-    network   = "${var.NETWORK}"  
-}
-and 
- env_vars = { 
-      SSH_KEY = "${var.SSH_KEY}" 
-    } variable "MNEMONICS" {
+         variable "NETWORK" {
+         type        = string
+         default     = "main"
+         description = "The network to connect the node to."
+         }
+    
+         variable "SSH_KEY" {
+         type = string
+         }
+    
 
 
-    } 
-```
+
+          # CHANGE THESE SECTIONS OF THE main.tf to use the variables 
+
+          provider "grid" {
+          mnemonics = "${var.MNEMONICS}"
+          network   = "${var.NETWORK}"  
+           }
+          and 
+          env_vars = { 
+                      SSH_KEY = "${var.SSH_KEY}" 
+          } variable "MNEMONICS" {
+
+
+         } 
+         ```
+   </details>
+
 
 - Open a terminal or command prompt window and navigate to the directory where you placed the main.tf file.
 ```
@@ -175,8 +183,10 @@ terraform apply -parallelism=1 -auto-approve -var-file="/deployments/prod.tfvars
 ```
 
 Wait for the command to complete
+</details>
 
-# Deploying Configuration on Windows 
+<details>
+    <summary><b>Deploying A Configuration on Windows</b></summary> 
 
 To create and use Terraform to deploy a configuration file on Windows, follow these steps:
 
@@ -189,41 +199,46 @@ mkdir C:\deployments\testdeployment
 
 - Add the example main.tf below and save the file as main.tf 
 
-- If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them
-```
-# ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
-variable "MNEMONICS" {
-  type        = string
-  description = "The mnemonic phrase used to generate the seed for the node."
-}
+  <details>
+        <summary><b>If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them</b></summary>
 
-variable "NETWORK" {
-  type        = string
-  default     = "main"
-  description = "The network to connect the node to."
-}
+         ```
+         # ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
+         variable "MNEMONICS" {
+         type        = string
+         description = "The mnemonic phrase used to generate the seed for the node."
+          }
 
-variable "SSH_KEY" {
-  type = string
-}
- 
-
-
-
-# CHANGE THESE SECTIONS OF THE main.tf to use the variables 
-
-provider "grid" {
-    mnemonics = "${var.MNEMONICS}"
-    network   = "${var.NETWORK}"  
-}
-and 
- env_vars = { 
-      SSH_KEY = "${var.SSH_KEY}" 
-    } variable "MNEMONICS" {
+         variable "NETWORK" {
+         type        = string
+         default     = "main"
+         description = "The network to connect the node to."
+         }
+    
+         variable "SSH_KEY" {
+         type = string
+         }
+    
 
 
-    } 
-```
+
+          # CHANGE THESE SECTIONS OF THE main.tf to use the variables 
+
+          provider "grid" {
+          mnemonics = "${var.MNEMONICS}"
+          network   = "${var.NETWORK}"  
+           }
+          and 
+          env_vars = { 
+                      SSH_KEY = "${var.SSH_KEY}" 
+          } variable "MNEMONICS" {
+
+
+         } 
+         ```
+   </details>
+
+
 
 - Open a command prompt window and navigate to the testdeployment directory. For example:
 
@@ -242,9 +257,12 @@ terraform init
 terraform apply -parallelism=1 -auto-approve -var-file="C:\\deployments:\yourfile.tfvars"
 ```
 Wait for the command to complete.
+</details>
 
+# Resources 
 
-# Example Main.tf
+<details>
+    <summary><b>Example Main.tf</b></summary>
 
 ```
 variable "MNEMONICS" {
@@ -349,3 +367,5 @@ output "ygg_ip" {
 value = grid_deployment.d1.vms[0].ygg_ip
 }
 ```
+</details>
+
