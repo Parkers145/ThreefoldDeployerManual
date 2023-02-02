@@ -40,10 +40,10 @@ Note that it is possible to do these steps without connecting the Lobstr wallet 
 Here we go!
 
 
-<details><summary><b> (Click To Expand)
+<details><summary>
 
 ## Download the App and Create an Account
-</b></summary>
+</summary>
 
 Go on [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
 You can download it for Android or iOS.
@@ -89,7 +89,7 @@ Once your email is verified, you can sign in to your Lobstr account:
 </details>
 
 
-<details><summary>(click to expand)
+<details><summary>
 
 ## Connect Your TF Connect App Wallet
 </summary>
@@ -137,7 +137,7 @@ You can now simply click on the **copy** button on the right:
 That's it! You've now connected your TF Connect app wallet to your Lobstr account.
 </details>
 
-<details><summary>(click to expand)
+<details><summary>
 
 ## Buy XLM with Fiat Currency
 </summary>
@@ -200,7 +200,7 @@ On the Trade History page, you can choose to download the csv file version of yo
 That's it! You've bought XLM on Lobstr and Moonpay.
 </details>
 
-<details><summary>(click to expand)
+<details><summary>
 
 ## Swap XLM for TFT
 </summary>
