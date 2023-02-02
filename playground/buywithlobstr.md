@@ -21,10 +21,8 @@ For the current guide, we will show how to buy TFT on the [Lobstr app](https://l
 The process is simple.
 
 
-<details><summary>
-
-## Download the App and Create an Account
-</summary>
+<details>
+	<summary><b>Download the App and Create an Account</b></summary>
 
 Go on [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
 You can download it for Android or iOS.
@@ -70,10 +68,7 @@ Once your email is verified, you can sign in to your Lobstr account:
 </details>
 
 
-<details><summary>
-
-## Connect Your TF Connect App Wallet
-</summary>
+<details><summary><b>Connect Your TF Connect App Wallet</b></summary>
 
 You will then need to either create a new wallet or connect an existing wallet.
 
@@ -118,10 +113,8 @@ You can now simply click on the **copy** button on the right:
 That's it! You've now connected your TF Connect app wallet to your Lobstr account.
 </details>
 
-<details><summary>
-
-## Buy XLM with Fiat Currency
-</summary>
+<details>
+	<summary><b>Buy XLM with Fiat Currency</b></summary>
 
 Now, all we need to do, is buy XLM and then swap it for TFT.
 It will be directly available in your TF Connect App wallet.
@@ -181,10 +174,8 @@ On the Trade History page, you can choose to download the csv file version of yo
 That's it! You've bought XLM on Lobstr and Moonpay.
 </details>
 
-<details><summary>
-
-## Swap XLM for TFT
-</summary>
+<details>
+	<summary><b>Swap XLM for TFT</b></summary>
 
 Now we want to swap the XLM tokens for the Threefold tokens (TFT).
 This is even easier than the previous steps.
