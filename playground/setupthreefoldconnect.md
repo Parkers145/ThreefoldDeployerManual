@@ -3,7 +3,7 @@
 
 <img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_wallet_5.png?raw=true"  width="25%" height="25%">
 
-The easiest way to send your Stellar TFT to your account on the [Dashboard](http://dashboard.grid.tf) or the [Playground](https://play.grid.tf) in later steps is to have a Threefold Connect Stellar Wallet. 
+The easiest way to fund your deployments on the grid is by using a Threefold Connect Wallet.  
 
 It is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
 
