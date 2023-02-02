@@ -1,5 +1,5 @@
 
- Threefold Connect App Wallet 
+# Deploying on The Grid Using the Threefold Connect Wallet 
 
 <img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_wallet_5.png?raw=true"  width="25%" height="25%">
 
