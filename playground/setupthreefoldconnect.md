@@ -156,3 +156,18 @@ In some situations, you will want to access the Stellar and TF Chain secrets. To
 <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_23.png"  width="25%" height="25%">
 
 </details>
+
+<details>
+	<summary><b> Add your Threefold Connect Wallet to The Polkadot-Js Extension</b></summary>
+
+Open the Polkadot-js extension in Google Chrome by clicking on the puzzle icon in the top right corner of the browser and selecting "polkadot-js".
+
+- 1.) In the extension, click on the "+" tab and then select "Import Account From Existing Seed Phrase" 
+- 2.) Select "Allow use on any chain" from the list of supported chains.
+- 3.) Enter your Stellar mnemonic phrase in the field provided.
+- 4.) Click on the "Next" button to import your Stellar account into the Polkadot-js extension.
+- 5.) Once the import is complete, you will see your imported Stellar account listed under the "Accounts" tab.
+- 6.)To use the imported account for interacting with the Polkadot network, make sure to set it as the active account by clicking on the "eye" button next to the account.
+
+Note: Importing an existing Stellar account into the Polkadot-js extension will not affect the account's balance or transaction history on the Stellar network. It will only allow you to use that account to interact with the Polkadot network.
+</details>
