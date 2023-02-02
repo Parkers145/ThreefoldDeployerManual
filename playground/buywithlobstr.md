@@ -29,7 +29,7 @@ The process is simple.
 Go on [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
 You can download it for Android or iOS.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png"  width="20%" height="20%">
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png"  width="10%" height="10%">
 
 We will show here the steps for Android, but it is very similar with iOS.
 Once you've clicked on the Android button, you can click install on the Google Store page:
@@ -42,7 +42,7 @@ Once the app is downloaded, open it:
 
 On the Lobstr app, click on **Create Account**:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png"  width="20%" height="20%">
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png"  width="10%" height="10%">
 
 You will then need to enter your email address:
 
