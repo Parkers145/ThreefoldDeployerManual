@@ -23,14 +23,13 @@ If you have never deployed on the Threefold grid you will have to set a few thin
 
 Open Google Chrome and go to the Chrome Web Store by typing "chrome.google.com/webstore" in the address bar.
 
-- 1.) Search for "polkadot-js" in the search bar and select the extension from the results.
-- 2.) Click on the "Add to Chrome" button to install the extension.
-- 3.) A pop-up window will appear asking for permission to install the extension. Click "Add extension" to continue.
+- 1.) Navigate to https://polkadot.js.org/extension/
+- 2.) Click "Download For Chrome"
+- 3.) Click "Add to Chrome"
 - 4.) Once the installation is complete, you will see a notification in the top right corner of your browser that the extension has been added.
 - 5.) To access the extension, click on the puzzle icon in the top right corner of your browser and select "polkadot-js"
-- 6.) Once the extension is open, you will be prompted to connect to a polkadot-js enabled node. You can either connect to the default provided node or add your own custom node by clicking on the "Advanced settings" button.
-- 7.) Once you are connected, you will be able to interact with the Polkadot network using the extension's built-in features such as viewing account balances and transaction history, and creating and signing transactions.
-    - hold off on creating wallet for now untill youve read the next step. 
+- 6.) Once you are connected, you will be able to interact with the Polkadot network using the extension's built-in features such as viewing account balances and transaction history, and creating and signing transactions.
+- 7.) Hold off on creating wallet for now until you've read the next step. 
 Note: Make sure you have the latest version of Google Chrome installed to use this extension.
 </details>
 
@@ -40,18 +39,17 @@ Note: Make sure you have the latest version of Google Chrome installed to use th
 
 You have Three options for creating this wallet
 	
-  <details>
+ <details>
 	<summary>Use an Existing Stellar Wallet Nmeonic</summary>
 
 Open the Polkadot-js extension in Google Chrome by clicking on the puzzle icon in the top right corner of the browser and selecting "polkadot-js".
 
-- 1.) In the extension, click on the "Accounts" tab and then select "Import Accounts"
-- 2.) Select "Stellar" from the list of supported chains.
+- 1.) In the extension, click on the "+" tab and then select "Import Account From Existing Seed Phrase"
+- 2.) Select "Allow use on any chain" from the list of supported chains.
 - 3.) Enter your Stellar mnemonic phrase in the field provided.
-- 4.) Click on the "Import" button to import your Stellar account into the Polkadot-js extension.
+- 4.) Click on the "Next" button to import your Stellar account into the Polkadot-js extension.
 - 5.) Once the import is complete, you will see your imported Stellar account listed under the "Accounts" tab.
-- 6.) To confirm that the import was successful, you can check the balance of your imported Stellar account by selecting it and then clicking on the "Account Details" button.
-- 7.)To use the imported account for interacting with the Polkadot network, make sure to set it as the active account by clicking on the "Use" button next to the account.
+- 6.)To use the imported account for interacting with the Polkadot network, make sure to set it as the active account by clicking on the "eye" button next to the account.
 
 Note: Importing an existing Stellar account into the Polkadot-js extension will not affect the account's balance or transaction history on the Stellar network. It will only allow you to use that account to interact with the Polkadot network.
   </details>
@@ -61,8 +59,8 @@ Note: Importing an existing Stellar account into the Polkadot-js extension will 
 
 Open the Polkadot-js extension in Google Chrome by clicking on the puzzle icon in the top right corner of the browser and selecting "polkadot-js".
 
-- 1.) In the extension, click on the "Accounts" tab and then select "Add Account"
-- 2.) A new window will appear, select "Create a new seed"
+- 1.) In the extension, click on the "+" tab or and then select "Add Account"
+- 2.) A new window will appear, this window will guide through creating a wallet
 - 3.) Enter a name for your new wallet, this is for your reference only
 - 4.) Click on the "Generate" button to create a new seed phrase.
 - 5.) Carefully write down the seed phrase on a piece of paper and store it in a safe place, as it will be needed to restore access to your wallet if you ever lose your password.
@@ -70,7 +68,7 @@ Open the Polkadot-js extension in Google Chrome by clicking on the puzzle icon i
 - 7.) Once the seed phrase is confirmed, you will be prompted to create a password for the new wallet.
 - 8.) Enter a strong password and click "Save"
 
-The new wallet will appear in the "Accounts" tab, and you will be able to use it to interact with the Polkadot network, this is a great option if you already have an exsisting stellar wallet.
+The new wallet will appear in the "Accounts" tab, and you will be able to use it to interact with the Polkadot network, this is a great option if you already have an existing stellar wallet.
 
 Note: It is important to keep your seed phrase and password safe and secure, as anyone with access to them will be able to access and control your funds.
   </details>
