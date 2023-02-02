@@ -51,40 +51,39 @@ You can download it for Android or iOS.
 We will show here the steps for Android, but it is very similar with iOS.
 Once you've clicked on the Android button, you can click install on the Google Store page:
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png"  width="20%" height="20%">
 
 Once the app is downloaded, open it:
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png"  width="20%" height="20%">
 
 On the Lobstr app, click on **Create Account**:
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png"  width="20%" height="20%">
 
 You will then need to enter your email address:
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png"  width="20%" height="20%">
 
 Then, choose a safe password for your account:
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png"  width="20%" height="20%">
 
 Once this is done, you will need to verify your email.
 
 Click on **Verify Email** and then go check your email inbox.
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png"  width="20%" height="20%">
 
 Simply click on **Verify Email** on the email you've received.
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png"  width="20%" height="20%">
 
 Once your email is verified, you can sign in to your Lobstr account:
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png"  width="20%" height="20%">
 
-![image](https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png)
-
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png"  width="20%" height="20%">
 ***
 
 ## Connect Your TF Connect App Wallet
