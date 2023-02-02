@@ -391,10 +391,12 @@ Note that it is possible to do these steps without connecting the Lobstr wallet 
 
 Click the gear in the top right corner of your [playground](https://play.grid.tf) and enter your password to login into your profile 
 
-![Enterpass](enterpass.png)
+<img src="https://github.com/Parkers145/ThreefoldDeployerManual/blob/main/playground/images/click%20gear.png?raw=true"  width="50%" height="50%">
+<img src="https://github.com/Parkers145/ThreefoldDeployerManual/blob/main/playground/images/enterpass.png?raw=true"  width="50%" height="50%">
+
 
 You will scan this QR in the Wallet section of your Threefold Connect App
-![Playgroundqr](playgroundqr.png)
+<img src="https://github.com/Parkers145/ThreefoldDeployerManual/blob/main/playground/images/playgroundqr.png?raw=true"  width="50%" height="50%">
 
 In threefold Connect Navigate to your wallet 
 
@@ -408,20 +410,23 @@ Once you have authenticated you will click the send tokens button and then the s
 <details>
 	<summary>Adding Funds to Deploy With Terraform</summary>
 	
+
 Navigate to the [Dashboard](https://dashboard.grid.tf)
 
-![Dashboard](dashboard.png)
+<img src="https://github.com/Parkers145/ThreefoldDeployerManual/blob/main/playground/images/dashboard.png?raw=true"  width="50%" height="50%">
 
 Select the account you wish to deploy with, then click swap 
 
-![Swap](swap.png)
+<img src="https://github.com/Parkers145/ThreefoldDeployerManual/blob/main/playground/images/swap.png?raw=true"  width="50%" height="50%">
 
 then click deposit 
 
-![Deposit](deposit.png)
-![Qrdash](qrdash.png)
+
+<img src="https://github.com/Parkers145/ThreefoldDeployerManual/blob/main/playground/images/deposit.png?raw=true"  width="50%" height="50%">
+<img src="https://github.com/Parkers145/ThreefoldDeployerManual/blob/main/playground/images/qrdash.png?raw=true"  width="50%" height="50%">
 
 You will scan the QR code displayed on your dashboard from your Threefold Connect App after going to the wallet section 
+
 <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_13.png"  width="15%" height="15%">
 
 </details>
