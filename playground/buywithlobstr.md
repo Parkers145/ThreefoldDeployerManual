@@ -76,7 +76,7 @@ Since we are working on the Threefold ecosystem, it is very easy and practical t
 
 Using the TF Connect wallet is very useful and quick. When you buy XLM and swap XLM tokens for TFTs, they will be directly available on your TF Connect app wallet.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png"  width="15%" height="15%">
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
 
 To connect your TF Connect app wallet, you will need to find your Stellar address and chain secret key.
 This is very simple to do.
