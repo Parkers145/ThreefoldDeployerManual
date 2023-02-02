@@ -265,7 +265,7 @@ That's it! You've bought XLM on Lobstr and Moonpay.
 </details>
 
 <details>
-<summary>Transfer XLM from an Exchange of your choice</summary>
+<summary><b>Transfer XLM from an Exchange of your choice</b></summary>
 
 - Log in to your account on the centralized exchange where you purchased XLM
 - Locate the option to withdraw or transfer XLM from the exchange to an external wallet
