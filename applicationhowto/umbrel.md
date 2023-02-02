@@ -264,6 +264,7 @@ On the Trade History page, you can choose to download the csv file version of yo
 That's it! You've bought XLM on Lobstr and Moonpay.
 </details>
 
+
 <details>
 <summary><b>Transfer XLM from an Exchange of your choice</b></summary>
 
