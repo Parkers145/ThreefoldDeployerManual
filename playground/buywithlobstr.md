@@ -46,7 +46,7 @@ Here we go!
 Go on [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
 You can download it for Android or iOS.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png"  width="60%" height="50%">
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png"  width="20%" height="20%">
 
 We will show here the steps for Android, but it is very similar with iOS.
 Once you've clicked on the Android button, you can click install on the Google Store page:
