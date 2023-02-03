@@ -587,18 +587,15 @@ That's it! You have successfully installed WSL 2 and Ubuntu 22.04 LTS on your Wi
   <details>
       <summary><b>Windows -  Install Terraform</b></summary> 
 
-Once we have Installed WSL we are going to install Terraform in WSL
-
-To install Terraform in WSL using apt, follow these steps:
+To install Terraform on Ubuntu using apt, follow these steps:
 
 Add the HashiCorp package signing key to your system's keyring by running the following command:
 ```
-curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 ```
-
 Add the HashiCorp APT repository to your system's package manager by running the following command:
 ```
-sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 ```
 Update your system's package list by running the following command:
 ```
@@ -648,12 +645,11 @@ To install Terraform on Ubuntu using apt, follow these steps:
 
 Add the HashiCorp package signing key to your system's keyring by running the following command:
 ```
-curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 ```
-
 Add the HashiCorp APT repository to your system's package manager by running the following command:
 ```
-sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 ```
 Update your system's package list by running the following command:
 ```
