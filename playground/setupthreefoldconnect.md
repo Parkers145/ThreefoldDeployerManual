@@ -1,9 +1,9 @@
 
-# Deploying on The Grid Using the Threefold Connect Wallet 
+# Setting Up Your Wallets and Accounts to Deploy on The Grid
 
 <img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_wallet_5.png?raw=true"  width="25%" height="25%">
 
-The easiest way to fund your deployments on the grid is by using a Threefold Connect Wallet.  
+The easiest way to fund your deployments on the grid is by using a Threefold Connect Wallet. It is possible to fund your deployments with any stellar wallet. For those with an established Stellar wallet with a balance of TFT, start at "Sending your Stellar TFT to TFChain to be Used for Deployment"
 
 It is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
 
@@ -392,43 +392,53 @@ It is simple. The main steps are:
 
 	If you don't have the Polkadot extension installed on your browser, you will be able to click on the download link directly on the Threefold Dashboard page:
 
-	![image | 100x100 | thumbnail](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_1.png?raw=true)
+	
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_1.png?raw=true"  width="50%" height="50%">
 
 	This link will lead you to the Polkadot extension download page: https://polkadot.js.org/extension/
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_2.png?raw=true)
+	
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_2.png?raw=true"  width="50%" height="50%">
 
 	Then, simply click on "Add to Chrome".
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_3.png?raw=true)
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_3.png?raw=true"  width="50%" height="50%">
 
 	Then, confirm by clicking on "Add extension".
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true)
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true"  width="50%" height="50%">
 
 	You can now access the extension by clicking on the browser's extension button on the top right of the screen, and by then clicking on *polkadot{.js} extension*:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true)
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true"  width="50%" height="50%">
 
 	Make sure to carefully read the Polkadot message then click on **Understood, let me continue**:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_6.png?raw=true)
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_6.png?raw=true"  width="40%" height="40%">
 
 	Then click on the **plus** symbol to create a new account:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_7.png?raw=true)
+	
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_7.png?raw=true"  width="40%" height="40%">
 
 	For this next step, you should be very careful. Your seed phrase is your only access to your account. Make sure to keep a copy somewhere safe and offline.
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_8.png?raw=true)
+	
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_8.png?raw=true"  width="40%" height="40%">
 
 	After, choose a name for your account and a password:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_9.png?raw=true)
+	
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_9.png?raw=true"  width="40%" height="40%">
 
 	Your account is now created. You can see it when you open the Polkadot extension on your browser:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_10.png?raw=true)
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_10.png?raw=true"  width="40%" height="40%">
 
 </details>
 
