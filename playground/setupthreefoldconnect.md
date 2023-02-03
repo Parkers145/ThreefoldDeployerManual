@@ -158,9 +158,9 @@ In the next step, we will create a Threefold Connect Wallet. You'll see, it's ve
 	</details>
 
 <details>
-	<summary><b>Buy TFT with Your Threefold Connect Wallet and LOBSTR</b></summary>
+	<summary><b>Buying TFT on the Stellar Decentralized Exchanges with LOBSTR</b></summary>
 
-<h1>Threefold Guide: How to Buy TFT on Lobstr</h1>
+<h1>How to: Buy TFT With LOBSTR</h1>
 
 
 The Threefold token (TFT) is the utility token of the The Threefold Grid, a decentralized and open-source project offering network, compute and storage capacity.
@@ -392,51 +392,41 @@ It is simple. The main steps are:
 
 	If you don't have the Polkadot extension installed on your browser, you will be able to click on the download link directly on the Threefold Dashboard page:
 
-	
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_1.png?raw=true"  width="50%" height="50%">
 
 	This link will lead you to the Polkadot extension download page: https://polkadot.js.org/extension/
-
 	
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_2.png?raw=true"  width="50%" height="50%">
 
 	Then, simply click on "Add to Chrome".
 
-
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_3.png?raw=true"  width="50%" height="50%">
 
 	Then, confirm by clicking on "Add extension".
-
 
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true"  width="50%" height="50%">
 
 	You can now access the extension by clicking on the browser's extension button on the top right of the screen, and by then clicking on *polkadot{.js} extension*:
 
-
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true"  width="50%" height="50%">
 
 	Make sure to carefully read the Polkadot message then click on **Understood, let me continue**:
-
 
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_6.png?raw=true"  width="40%" height="40%">
 
 	Then click on the **plus** symbol to create a new account:
 
-	
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_7.png?raw=true"  width="40%" height="40%">
 
 	For this next step, you should be very careful. Your seed phrase is your only access to your account. Make sure to keep a copy somewhere safe and offline.
 
-	
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_8.png?raw=true"  width="40%" height="40%">
 
 	After, choose a name for your account and a password:
-
 	
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_9.png?raw=true"  width="40%" height="40%">
 
 	Your account is now created. You can see it when you open the Polkadot extension on your browser:
-
 
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_10.png?raw=true"  width="40%" height="40%">
 
@@ -446,27 +436,27 @@ It is simple. The main steps are:
 
 	Now, when you go on the [Threefold Dashboard](https://dashboard.grid.tf/), you can click on the **Connect** button on the top right corner:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_11.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_11.png?raw=true"  width="40%" height="40%">
 
 	You will then need to grant the Threefold Dashboard access to your Polkadot account.
 
 	Accept the terms and then write your password to confirm:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_12.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_12.png?raw=true"  width="40%" height="40%">
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true"  width="40%" height="40%">
 
 	Then, simply click on your account name to access the Threefold Dashboard:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_14.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_14.png?raw=true"  width="40%" height="40%">
 
 	Once you open your account, you will want to create a Twin ID. Make sure it is written **::1** in the box and click **Create**. 
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_15.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_15.png?raw=true"  width="40%" height="40%">
 
 	You will also be asked to confirm the transaction.
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true"  width="40%" height="40%">
 
 	That's it! You've successfully created an account on the TFChain thanks to the Polkadot extension. You can now access the Threefold Dashboard.
 
@@ -485,32 +475,31 @@ It is simple. The main steps are:
 
 	Make sure the chain **stellar** is selected. Then click **Deposit**, as we want to deposit TFT from the Stellar Chain to the TFChain.
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_16.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_16.png?raw=true"  width="40%" height="40%">
 
 	Next, you will want to scan the QR code shown on the screen. Scan the QR code with your Threefold Connect app.
 
 	> Note that you can also manually enter your Stellar Chain address as well as the Twin ID.
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_17.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_17.png?raw=true"  width="40%" height="40%">
 
 	Now open up your Threefold Connect app and follow those steps:
 
 	Click on the **Home** menu:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_18.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_18.png?raw=true"  width="40%" height="40%">
 
 	Click on **Wallet**:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_19.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_19.png?raw=true"  width="40%" height="40%">
 
 	Then, click on **Send Coins**:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_20.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_20.png?raw=true"  width="40%" height="40%">
 
 	On the next page, select the **Stellar** chain, then click on **SCAN QR**:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_21.png?raw=true)
-
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_21.png?raw=true"  width="40%" height="40%">
 
 	This will automatically write the correct address and twin ID.
 
@@ -520,17 +509,17 @@ It is simple. The main steps are:
 	>
 	> The transfer fees are of 1 TFT per transfer.
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_22.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_22.png?raw=true"  width="40%" height="40%">
 
 	You will then simply need to confirm the transaction. It is a good opportunity to make sure everything is OK.
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_23.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_23.png?raw=true"  width="40%" height="40%">
 
 	You should then receive your TFT on your Dashboard account within a few minutes.
 
 	You can see your TFT balanced on the top of the screen. Here's an example of what it could look like:
 
-	![image](https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_24.png?raw=true)
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_24.png?raw=true"  width="40%" height="40%">
 
 	> Note: You might need to refresh (reload) the webpage to see the new TFT added to the account.
 
