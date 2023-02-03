@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\applicationhowto",
-    "\\playground"
+    "\\playground",
+    "\\terraform"
   ],
-  "SelectedNode": "\\playground\\setupthreefoldconnect.md",
+  "SelectedNode": "\\terraform\\7stepswindows.md",
   "PreviewInSolutionExplorer": false
 }

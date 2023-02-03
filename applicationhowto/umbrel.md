@@ -13,74 +13,12 @@ For this tutorial we will be using
 - Umbrel  
 - Putty / SSH client of your choice. 
 
-# Steps to Setup Your Grid Deployment Accounts
 
-If you have never deployed on the Threefold grid you will have to set a few things up
-
-<details>
-&nbsp;
-	<summary><b>Install the Polkadot-Js Exstension</b></summary>
-
-Open Google Chrome and go to the Chrome Web Store by typing "chrome.google.com/webstore" in the address bar.
-
-- 1.) Navigate to https://polkadot.js.org/extension/
-- 2.) Click "Download For Chrome"
-- 3.) Click "Add to Chrome"
-- 4.) Once the installation is complete, you will see a notification in the top right corner of your browser that the extension has been added.
-- 5.) To access the extension, click on the puzzle icon in the top right corner of your browser and select "polkadot-js"
-- 6.) Once you are connected, you will be able to interact with the Polkadot network using the extension's built-in features such as viewing account balances and transaction history, and creating and signing transactions.
-- 7.) Hold off on creating wallet for now until you've read the next step. 
-Note: Make sure you have the latest version of Google Chrome installed to use this extension.
-</details>
-
-<details>
-&nbsp;
-	<summary><b>Create Your Wallet</b></summary>
-
-You have Three options for creating this wallet
-	
- <details>
-	<summary>Use an Existing Stellar Wallet Nmeonic</summary>
-
-Open the Polkadot-js extension in Google Chrome by clicking on the puzzle icon in the top right corner of the browser and selecting "polkadot-js".
-
-- 1.) In the extension, click on the "+" tab and then select "Import Account From Existing Seed Phrase"
-- 2.) Select "Allow use on any chain" from the list of supported chains.
-- 3.) Enter your Stellar mnemonic phrase in the field provided.
-- 4.) Click on the "Next" button to import your Stellar account into the Polkadot-js extension.
-- 5.) Once the import is complete, you will see your imported Stellar account listed under the "Accounts" tab.
-- 6.)To use the imported account for interacting with the Polkadot network, make sure to set it as the active account by clicking on the "eye" button next to the account.
-
-Note: Importing an existing Stellar account into the Polkadot-js extension will not affect the account's balance or transaction history on the Stellar network. It will only allow you to use that account to interact with the Polkadot network.
-  </details>
-
-  <details>
-	<summary>Create A New Polkadot Wallet In The Exstension</summary>
-
-Open the Polkadot-js extension in Google Chrome by clicking on the puzzle icon in the top right corner of the browser and selecting "polkadot-js".
-
-- 1.) In the extension, click on the "+" tab or and then select "Add Account"
-- 2.) A new window will appear, this window will guide through creating a wallet
-- 3.) Enter a name for your new wallet, this is for your reference only
-- 4.) Click on the "Generate" button to create a new seed phrase.
-- 5.) Carefully write down the seed phrase on a piece of paper and store it in a safe place, as it will be needed to restore access to your wallet if you ever lose your password.
-- 6.) Confirm your seed phrase by typing it in the field provided and clicking the "Confirm" button.
-- 7.) Once the seed phrase is confirmed, you will be prompted to create a password for the new wallet.
-- 8.) Enter a strong password and click "Save"
-
-The new wallet will appear in the "Accounts" tab, and you will be able to use it to interact with the Polkadot network, this is a great option if you already have an existing stellar wallet.
-
-Note: It is important to keep your seed phrase and password safe and secure, as anyone with access to them will be able to access and control your funds.
-  </details>
-
-  <details>
-	<summary>Create a New Stellar Wallet With Threefold Connect</summary>
-
- Threefold Connect App Wallet 
+# Setting Up Your Wallets and Accounts to Deploy on The Grid
 
 <img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_wallet_5.png?raw=true"  width="25%" height="25%">
 
-The easiest way to send your Stellar TFT to your account on the [Dashboard](http://dashboard.grid.tf) or the [Playground](https://play.grid.tf) in later steps is to have a Threefold Connect Stellar Wallet. 
+The easiest way to fund your deployments on the grid is by using a Threefold Connect Wallet. It is possible to fund your deployments with any stellar wallet. For those with an established Stellar wallet with a balance of TFT, start at "Sending your Stellar TFT to TFChain to be Used for Deployment"
 
 It is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
 
@@ -149,114 +87,95 @@ In the next step, we will create a Threefold Connect Wallet. You'll see, it's ve
 </details>
 
 
-<details>
-	<summary><b>Verify your identity (KYC) by email</b></summary>
+- <details>
+    <summary><b>Verify your identity (KYC) by email</b></summary>
 
-Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. 
+	Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. 
 
-To verify your email, go on your email account and open the email sent by *info@openkyc.live* with the subject *Verify your email address*. 
+	To verify your email, go on your email account and open the email sent by *info@openkyc.live* with the subject *Verify your email address*. 
 
-In this email, click on the link *Verify my email address*. This will lead you to a *login.threefold.me* link. The process should be automatic. Once this is done, you will receive a confirmation on screen, as well as on your phone.
+	In this email, click on the link *Verify my email address*. This will lead you to a *login.threefold.me* link. The process should be automatic. Once this is done, you will receive a confirmation on screen, as well as on your phone.
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_39.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_39.png"  width="25%" height="25%">
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_40.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_40.png"  width="25%" height="25%">
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_41.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_41.png"  width="25%" height="25%">
 
-If for some reason, you did not receive the verification email, simply click on *Verify* and another email will be sent.
+	If for some reason, you did not receive the verification email, simply click on *Verify* and another email will be sent.
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_42.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_42.png"  width="25%" height="25%">
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_43.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_43.png"  width="25%" height="25%">
 
-# Change email associated with TF account
+	# Change email associated with TF account
 
-If you want to change your email, simply click on the *pencil* next to your email and write another email. You will need to redo the KYC verification process.
+	If you want to change your email, simply click on the *pencil* next to your email and write another email. You will need to redo the KYC verification process.
 
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_44.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_44.png"  width="25%" height="25%">
 
-</details>
+	</details>
 
-<details>
+- <details>
 	<summary><b>Create a Wallet</b></summary>
 
-To create a wallet, click on the Threefold Connect App menu. This is what you see. Choose *Wallet*.
+	To create a wallet, click on the Threefold Connect App menu. This is what you see. Choose *Wallet*.
 
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_13.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_13.png"  width="25%" height="25%">
 
-Once you are in the section *Wallet*, click on *Create Initial Wallet*. If it doesn't work the first time, retry some more. If you have trouble creating a wallet, make sure your connection is reliable. You can try a couple of minutes later if it still doesn't work. With a reliable connection, there shouldn't be any problem. Contact TF Support if problems persist.
+	Once you are in the section *Wallet*, click on *Create Initial Wallet*. If it doesn't work the first time, retry some more. If you have trouble creating a wallet, make sure your connection is reliable. You can try a couple of minutes later if it still doesn't work. With a reliable connection, there shouldn't be any problem. Contact TF Support if problems persist.
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_14.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_14.png"  width="25%" height="25%">
 
-This is what you see when the TF Grid is initializing your wallet.
+	This is what you see when the TF Grid is initializing your wallet.
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_15.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_15.png"  width="25%" height="25%">
 
-Once your wallet is initialized, you will see *No blanace found for this wallet*. You can click on this button to enter the wallet.
-
-
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_16.png"  width="25%" height="25%">
-
-Once inside your wallet, this is what you see.
+	Once your wallet is initialized, you will see *No blanace found for this wallet*. You can click on this button to enter the wallet.
 
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_17.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_16.png"  width="25%" height="25%">
 
-We will now see where the Stellar and the TF Chain Addresses and Secrets are to be found. We will also changing the wallet name. To do so, click on the *circled i* at the bottom right of the screen.
-
-
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_18.png"  width="25%" height="25%">
-
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_19.png"  width="25%" height="25%">
-
-You can choose the name you want for your wallet. Here we use TFWalletExample. Note that you can also use alphanumeric characters.
+	Once inside your wallet, this is what you see.
 
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_20.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_17.png"  width="25%" height="25%">
 
-At the top of the section *Wallet*, we can see that the name has changed.
-
-
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_21.png"  width="25%" height="25%">
-
-Now, if you want to copy your Stellar Address, simply click on the button presented with the green circle. To access the TF Chain address, click on the button presented with the red circle. When your phone has copied the address, the TF App will give show a confirmation message as shown below.
+	We will now see where the Stellar and the TF Chain Addresses and Secrets are to be found. We will also changing the wallet name. To do so, click on the *circled i* at the bottom right of the screen.
 
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_22.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_18.png"  width="25%" height="25%">
 
-In some situations, you will want to access the Stellar and TF Chain secrets. To do so, simply click on the "eye" button of the desired chain, and then copy the secret.
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_19.png"  width="25%" height="25%">
+
+	You can choose the name you want for your wallet. Here we use TFWalletExample. Note that you can also use alphanumeric characters.
 
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_23.png"  width="25%" height="25%">
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_20.png"  width="25%" height="25%">
 
-</details>
+	At the top of the section *Wallet*, we can see that the name has changed.
 
-<details>
-	<summary><b> Add your Threefold Connect Wallet to The Polkadot-Js Extension</b></summary>
 
-Open the Polkadot-js extension in Google Chrome by clicking on the puzzle icon in the top right corner of the browser and selecting "polkadot-js".
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_21.png"  width="25%" height="25%">
 
-- 1.) In the extension, click on the "+" tab and then select "Import Account From Existing Seed Phrase" 
-- 2.) Select "Allow use on any chain" from the list of supported chains.
-- 3.) Enter your Stellar mnemonic phrase in the field provided.
-- 4.) Click on the "Next" button to import your Stellar account into the Polkadot-js extension.
-- 5.) Once the import is complete, you will see your imported Stellar account listed under the "Accounts" tab.
-- 6.)To use the imported account for interacting with the Polkadot network, make sure to set it as the active account by clicking on the "eye" button next to the account.
+	Now, if you want to copy your Stellar Address, simply click on the button presented with the green circle. To access the TF Chain address, click on the button presented with the red circle. When your phone has copied the address, the TF App will give show a confirmation message as shown below.
 
-Note: Importing an existing Stellar account into the Polkadot-js extension will not affect the account's balance or transaction history on the Stellar network. It will only allow you to use that account to interact with the Polkadot network.
-</details>
-  </details>
 
-</details>
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_22.png"  width="25%" height="25%">
+
+	In some situations, you will want to access the Stellar and TF Chain secrets. To do so, simply click on the "eye" button of the desired chain, and then copy the secret.
+
+
+	<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_23.png"  width="25%" height="25%">
+
+	</details>
 
 <details>
-&nbsp;
-	<summary><b>Acquire TFT</b></summary>
+	<summary><b>Buying TFT on the Stellar Decentralized Exchanges with LOBSTR</b></summary>
 
-<h1>Threefold Guide: How to Buy TFT on Lobstr</h1>
+<h1>How to: Buy TFT With LOBSTR</h1>
 
 
 The Threefold token (TFT) is the utility token of the The Threefold Grid, a decentralized and open-source project offering network, compute and storage capacity.
@@ -278,226 +197,353 @@ There are many ways to buy TFT:
 For the current guide, we will show how to buy TFT on the [Lobstr app](https://lobstr.co/).
 The process is simple.
 
+</details>
 
-<details>
+- <details>
 	<summary><b>Download the App and Create an Account</b></summary>
 
-Go on [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
-You can download it for Android or iOS.
+	Go on [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
+	You can download it for Android or iOS.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png?raw=true"  width="15%" height="15%">
 
-We will show here the steps for Android, but it is very similar with iOS.
-Once you've clicked on the Android button, you can click install on the Google Store page:
+	We will show here the steps for Android, but it is very similar with iOS.
+	Once you've clicked on the Android button, you can click install on the Google Store page:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png?raw=true"  width="15%" height="15%">
 
-Once the app is downloaded, open it:
+	Once the app is downloaded, open it:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png?raw=true"  width="15%" height="15%">
 
-On the Lobstr app, click on **Create Account**:
+	On the Lobstr app, click on **Create Account**:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png?raw=true"  width="15%" height="15%">
 
-You will then need to enter your email address:
+	You will then need to enter your email address:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png?raw=true"  width="15%" height="15%">
 
-Then, choose a safe password for your account:
+	Then, choose a safe password for your account:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png?raw=true"  width="15%" height="15%">
 
-Once this is done, you will need to verify your email.
+	Once this is done, you will need to verify your email.
 
-Click on **Verify Email** and then go check your email inbox.
+	Click on **Verify Email** and then go check your email inbox.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png?raw=true"  width="15%" height="15%">
 
-Simply click on **Verify Email** on the email you've received.
+	Simply click on **Verify Email** on the email you've received.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png?raw=true"  width="15%" height="15%">
 
-Once your email is verified, you can sign in to your Lobstr account:
+	Once your email is verified, you can sign in to your Lobstr account:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png?raw=true"  width="15%" height="15%">
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
 </details>
 
 
-<details>
-    <summary><b>Connect Your TF Connect App Wallet</b></summary>
+- <details><summary><b>Connect Your TF Connect App Wallet</b></summary>
 
-You will then need to either create a new wallet or connect an existing wallet.
+	You will then need to either create a new wallet or connect an existing wallet.
 
-Since we are working on the Threefold ecosystem, it is very easy and practical to simply connect your Threefold Connect app wallet. You can also create a new wallet.
+	Since we are working on the Threefold ecosystem, it is very easy and practical to simply connect your Threefold Connect app wallet. You can also create a new wallet.
 
-Using the TF Connect wallet is very useful and quick. When you buy XLM and swap XLM tokens for TFTs, they will be directly available on your TF Connect app wallet.
+	Using the TF Connect wallet is very useful and quick. When you buy XLM and swap XLM tokens for TFTs, they will be directly available on your TF Connect app wallet.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
 
-To connect your TF Connect app wallet, you will need to find your Stellar address and chain secret key.
-This is very simple to do.
+	To connect your TF Connect app wallet, you will need to find your Stellar address and chain secret key.
+	This is very simple to do.
 
-Click on **I have a public or secret key**.
+	Click on **I have a public or secret key**.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_12.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_12.png?raw=true"  width="15%" height="15%">
 
-As you can see on this next picture, you need the Stellar address and secret key to properly connect your TF Connect app wallet to Lobstr:
+	As you can see on this next picture, you need the Stellar address and secret key to properly connect your TF Connect app wallet to Lobstr:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_18.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_18.png?raw=true"  width="15%" height="15%">
 
-To find your Stellar address and secret key, go on the TF Connect app and select the **Wallet** section:
+	To find your Stellar address and secret key, go on the TF Connect app and select the **Wallet** section:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_13.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_13.png?raw=true"  width="15%" height="15%">
 
-At the top of the section, click on the **copy** button to copy your Stellar Address:
+	At the top of the section, click on the **copy** button to copy your Stellar Address:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_17.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_17.png?raw=true"  width="15%" height="15%">
 
-Now, we will find the Stellar secret key.
-At the botton of the section, click on the encircled **i** button:
+	Now, we will find the Stellar secret key.
+	At the botton of the section, click on the encircled **i** button:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_14.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_14.png?raw=true"  width="15%" height="15%">
 
-Then, click on the **eye** button to reveal your secret key:
+	Then, click on the **eye** button to reveal your secret key:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_15.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_15.png?raw=true"  width="15%" height="15%">
 
-You can now simply click on the **copy** button on the right:
+	You can now simply click on the **copy** button on the right:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_16.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_16.png?raw=true"  width="15%" height="15%">
 
-That's it! You've now connected your TF Connect app wallet to your Lobstr account.
+	That's it! You've now connected your TF Connect app wallet to your Lobstr account.
 </details>
 
-<details>
+- <details>
 	<summary><b>Buy XLM with Fiat Currency</b></summary>
 
-Now, all we need to do, is buy XLM and then swap it for TFT.
-It will be directly available in your TF Connect App wallet.
+	Now, all we need to do, is buy XLM and then swap it for TFT.
+	It will be directly available in your TF Connect App wallet.
 
-On the Lobstr app, click on the top right menu button:
+	On the Lobstr app, click on the top right menu button:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_19.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_19.png?raw=true"  width="15%" height="15%">
 
-Then, click on **Buy Crypto**:
+	Then, click on **Buy Crypto**:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_20.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_20.png?raw=true"  width="15%" height="15%">
 
-By default, the crypto selected is XLM. This is alright for us as we will quickly swap the XLM for TFT.
+	By default, the crypto selected is XLM. This is alright for us as we will quickly swap the XLM for TFT.
 
-On the Buy Crypto page, you can choose the type of Fiat currency you want.
-By default it is in USD. To select some othe fiat currency, you can click on **ALL** and see the available fiat currencies:
-)
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_21.png?raw=true"  width="15%" height="15%">
+	On the Buy Crypto page, you can choose the type of Fiat currency you want.
+	By default it is in USD. To select some othe fiat currency, you can click on **ALL** and see the available fiat currencies:
+	)
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_21.png?raw=true"  width="15%" height="15%">
 
-You can search or select the current you want for the transfer:
+	You can search or select the current you want for the transfer:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_22.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_22.png?raw=true"  width="15%" height="15%">
 
-You will then need to decide how much XLM you want to buy. Note that there can be a minimum amount.
-Once you chose the desired amount, click on **Continue**.
+	You will then need to decide how much XLM you want to buy. Note that there can be a minimum amount.
+	Once you chose the desired amount, click on **Continue**.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_23.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_23.png?raw=true"  width="15%" height="15%">
 
-Lobstr will then ask you to proceed to a payment method. In this case, it is Moonpay.
-Note that in some cases, your credit card won't accept Moonpay payments. You will simply need to confirm with them that you agree with transacting with Moonpay. This can be done by phone. Check with your bank and credit card company if this applies.
+	Lobstr will then ask you to proceed to a payment method. In this case, it is Moonpay.
+	Note that in some cases, your credit card won't accept Moonpay payments. You will simply need to confirm with them that you agree with transacting with Moonpay. This can be done by phone. Check with your bank and credit card company if this applies.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_24.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_24.png?raw=true"  width="15%" height="15%">
 
-Once you've set up your Moonpay payment method, you will need to process and confirm the transaction:
+	Once you've set up your Moonpay payment method, you will need to process and confirm the transaction:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_25.png?raw=true"  width="15%" height="15%">
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_26.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_25.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_26.png?raw=true"  width="15%" height="15%">
 
-You will then see a processing window.
-This process is usually fast. Within a few minutes, you should receive your XLM.
+	You will then see a processing window.
+	This process is usually fast. Within a few minutes, you should receive your XLM.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_27.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_27.png?raw=true"  width="15%" height="15%">
 
-Once you've received your XLM, you will receive a notification:
+	Once you've received your XLM, you will receive a notification:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_28.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_28.png?raw=true"  width="15%" height="15%">
 
-When your transaction is complete, you will see this message:
+	When your transaction is complete, you will see this message:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_29.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_29.png?raw=true"  width="15%" height="15%">
 
-On the Trade History page, you can choose to download the csv file version of your transaction:
+	On the Trade History page, you can choose to download the csv file version of your transaction:
 
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_30.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_30.png?raw=true"  width="15%" height="15%">
 
-That's it! You've bought XLM on Lobstr and Moonpay.
+	That's it! You've bought XLM on Lobstr and Moonpay.
 </details>
 
-
-<details>
-<summary><b>Transfer XLM from an Exchange of your choice</b></summary>
-
-- Log in to your account on the centralized exchange where you purchased XLM
-- Locate the option to withdraw or transfer XLM from the exchange to an external wallet
-- Enter the public address of your Lobstr wallet as the destination address for the transfer.
-- Be sure to double-check the destination address to ensure it is correct, as sending XLM to the wrong address may result in loss of funds
-- Input the amount of XLM you wish to transfer and initiate the transaction
-- Wait for the transaction to be confirmed on the blockchain, it may take a few minutes to several hours depending on the blockchain's congestion.
-- Once the transaction is confirmed, you will see the XLM credited to your Lobstr wallet.
-
-Note: Make sure you have enough XLM in your exchange account to cover the network fee for the transfer, and also check for the exchange's withdrawal limits and fees.
-  </details>
-
-<details>
+- <details>
 	<summary><b>Swap XLM for TFT</b></summary>
 
-Now we want to swap the XLM tokens for the Threefold tokens (TFT).
-This is even easier than the previous steps.
+	Now we want to swap the XLM tokens for the Threefold tokens (TFT).
+	This is even easier than the previous steps.
 
-Go to the Lobstr Home menu and select **Swap**:
+	Go to the Lobstr Home menu and select **Swap**:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_31.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_31.png?raw=true"  width="15%" height="15%">
 
-On the **Swap** page, write "tft" and select the Threefold token:
+	On the **Swap** page, write "tft" and select the Threefold token:
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_32.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_32.png?raw=true"  width="15%" height="15%">
 
-Select the amount of XLM you want to swap. It is recommended to keep at least 1 XLM in your wallet for transaction fees.
+	Select the amount of XLM you want to swap. It is recommended to keep at least 1 XLM in your wallet for transaction fees.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_33.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_33.png?raw=true"  width="15%" height="15%">
 
-Within a few seconds, you will receive a confirmation that your swap is completed:
-Note that the TFT is directly sent on your TF Connect app wallet.
+	Within a few seconds, you will receive a confirmation that your swap is completed:
+	Note that the TFT is directly sent on your TF Connect app wallet.
 
-<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_34.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_34.png?raw=true"  width="15%" height="15%">
 
-That's it. You've swapped XLM for TFT.
+	That's it. You've swapped XLM for TFT.
 
-You can now use your TFT to deploy workloads on the Threefold Grid.
+	You can now use your TFT to deploy workloads on the Threefold Grid.
 
 </details>
 
-Note that it is possible to do these steps without connecting the Lobstr wallet to the TF Connect App wallet. But doing this has a clear advantage: when we buy and swap on Lobstr, the TFT is directly accessible on the TF Connect app wallet.
-</details>
+Note that it is possible to do these steps without connecting the Lobstr wallet to the TF Connect App wallet. But doing this has a clear advantage: when we buy and swap on Lobstr, the TFT is directly accessible on the TF Connect app wallet. Ensure you always maintain a balance of 1 XLM in your Wallet, If you do not your wallet will stop functioning.
+
 
 <details>
-&nbsp;
-	<summary><b>Create Your Twin</b></summary>
+	<summary><b>Sending Your Stellar TFT to TFChain to be used for Deployment</b></Summary>
 
-you will visit the [Threefold Dashboard](https://Dashboard.grid.tf) Here you will 
-- Agree to the Grids Terms and Conditions 
-- Create your Digital Twin, this is your identity on the grid and represents you as deployer. 
-- Once you have Accepted the Terms and Agreements and created your twin you can proceed to create your profile on the Playground
+<h1> How To: Funding Your Account For a Threefold Grid Deployment Deployment</h1>
+
+
+For this section, we will create an account on the TFChain and transfer TFT from Stellar chain to TFChain. We will then be able to use the TFT and deploy workloads on the Threefold Grid.
+
+It is simple. The main steps are:
+
+* Download the Polkadot extension
+* Create an account
+* Send TFT from Stellar Chain to TFChain
+
 </details>
 
-<details>
-&nbsp;
-    <summary><b>Fund your Twin</b></summary>
 
-go to "swap" on the [Dashboard](https://dashboard.grid.tf) and retrieve the Wallet address and memo for depositing to your twin from any stellar wallet address. 
+- <details><summary><b>Install Polkadot-js Extension</b></summary>
 
-**be sure you use the address and memo for twin deposits**
+	Go to the Threefold Dashboard: https://dashboard.grid.tf/
+
+	If you don't have the Polkadot extension installed on your browser, you will be able to click on the download link directly on the Threefold Dashboard page:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_1.png?raw=true"  width="50%" height="50%">
+
+	This link will lead you to the Polkadot extension download page: https://polkadot.js.org/extension/
+	
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_2.png?raw=true"  width="50%" height="50%">
+
+	Then, simply click on "Add to Chrome".
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_3.png?raw=true"  width="50%" height="50%">
+
+	Then, confirm by clicking on "Add extension".
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true"  width="50%" height="50%">
+
+	You can now access the extension by clicking on the browser's extension button on the top right of the screen, and by then clicking on *polkadot{.js} extension*:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true"  width="50%" height="50%">
+
+	Make sure to carefully read the Polkadot message then click on **Understood, let me continue**:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_6.png?raw=true"  width="40%" height="40%">
+
+	Then click on the **plus** symbol to create a new account:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_7.png?raw=true"  width="40%" height="40%">
+
+	For this next step, you should be very careful. Your seed phrase is your only access to your account. Make sure to keep a copy somewhere safe and offline.
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_8.png?raw=true"  width="40%" height="40%">
+
+	After, choose a name for your account and a password:
+	
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_9.png?raw=true"  width="40%" height="40%">
+
+	Your account is now created. You can see it when you open the Polkadot extension on your browser:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_10.png?raw=true"  width="40%" height="40%">
+
 </details>
+
+- <details><summary><b>Create Your Deployment Account</b></summary>
+
+	Now, when you go on the [Threefold Dashboard](https://dashboard.grid.tf/), you can click on the **Connect** button on the top right corner:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_11.png?raw=true"  width="40%" height="40%">
+
+	You will then need to grant the Threefold Dashboard access to your Polkadot account.
+
+	Accept the terms and then write your password to confirm:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_12.png?raw=true"  width="40%" height="40%">
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true"  width="40%" height="40%">
+
+	Then, simply click on your account name to access the Threefold Dashboard:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_14.png?raw=true"  width="40%" height="40%">
+
+	Once you open your account, you will want to create a Twin ID. Make sure it is written **::1** in the box and click **Create**. 
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_15.png?raw=true"  width="40%" height="40%">
+
+	You will also be asked to confirm the transaction.
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true"  width="40%" height="40%">
+
+	That's it! You've successfully created an account on the TFChain thanks to the Polkadot extension. You can now access the Threefold Dashboard.
+
+	On to the next section! Where we will transfer (or swap) TFT from the Stellar Chain on your Threefold Connect app wallet to the TFChain on the Threefold Dashboard.
+
+	You'll see, this is so easy thanks to the Threefold Dashboard configuration.
+
+</details>
+
+
+
+- <details>
+	<summary><b>Transfer TFT from Stellar Chain to TF Chain</b></summary>
+
+	On the [Threefold Dashboard](https://dashboard.grid.tf/), click on the **Portal**, then click on **Swap**.
+
+	Make sure the chain **stellar** is selected. Then click **Deposit**, as we want to deposit TFT from the Stellar Chain to the TFChain.
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_16.png?raw=true"  width="40%" height="40%">
+
+	Next, you will want to scan the QR code shown on the screen. Scan the QR code with your Threefold Connect app.
+
+	> Note that you can also manually enter your Stellar Chain address as well as the Twin ID.
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_17.png?raw=true"  width="40%" height="40%">
+
+	Now open up your Threefold Connect app and follow those steps:
+
+	Click on the **Home** menu:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_18.png?raw=true"  width="40%" height="40%">
+
+	Click on **Wallet**:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_19.png?raw=true"  width="40%" height="40%">
+
+	Then, click on **Send Coins**:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_20.png?raw=true"  width="40%" height="40%">
+
+	On the next page, select the **Stellar** chain, then click on **SCAN QR**:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_21.png?raw=true"  width="40%" height="40%">
+
+	This will automatically write the correct address and twin ID.
+
+	You can now write the amount of TFT you wish to send, and then click **SEND**
+
+	> We recommend to try with a small amount of TFT first to make sure everything is OK.
+	>
+	> The transfer fees are of 1 TFT per transfer.
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_22.png?raw=true"  width="40%" height="40%">
+
+	You will then simply need to confirm the transaction. It is a good opportunity to make sure everything is OK.
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_23.png?raw=true"  width="40%" height="40%">
+
+	You should then receive your TFT on your Dashboard account within a few minutes.
+
+	You can see your TFT balanced on the top of the screen. Here's an example of what it could look like:
+
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_24.png?raw=true"  width="40%" height="40%">
+
+	> Note: You might need to refresh (reload) the webpage to see the new TFT added to the account.
+
+	That's it! You've swapped TFT from Stellar Chain to TFChain.
+</details>
+
+
+
+
 
 
 
@@ -508,7 +554,7 @@ There are a few things you will need installed on your local machine,
 <details>
     <summary><b> Windows Local Machine Preparations </b></summary>
 &nbsp;
-  <details>
+   <details>
       <summary><b>Windows - Install WSL 2 and Ubuntu 22.04 in Windows</b></summary>
 
 - Make sure you have Windows 10 version 2004 or higher installed. You can check your version by going to Settings > System > About.
@@ -516,9 +562,17 @@ There are a few things you will need installed on your local machine,
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
-# This will enable the WSL feature on your Windows machine.
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+dism.exe /online /enable-feature  /featurename:Microsoft-Hyper-V /all /norestart
+
+# This will enable the Hyper-V, WSL and the Virtual Machine Platform features on your Windows machine.
 ```
-- Restart your computer to complete the installation of the WSL feature.
+- Download and install the [Linux Kernel Update Package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+- Set default version to WSL 2 in Powershell
+```
+wsl --set-default-version 2
+```
 - Open the Microsoft Store and search for "Ubuntu 22.04 LTS" and select the version provided by Canonical Group Limited, this will download and install the Ubuntu distro on your machine.
 - Open the Ubuntu app from your Start menu, this will open the Ubuntu terminal and will take a few minutes to complete the setup.
 - Once the setup is complete, you will be prompted to create a new user and password.
@@ -961,123 +1015,6 @@ Hit Browse… and select your ppk file. Then go to Session at the top of the left 
 
 If you’re prompted for a password, something went wrong and you won’t be able to log in. Go back and check the steps above, then feel free to post questions or problems in this thread.
   </details>
-</details>
-
-
-
-
-<details>
-    <summary>SSH VM From Windows Using WSL</summary>
-
-https://www.youtube.com/watch?v=uiRYEaIviGI
-
-The windows subsystem for Linux also supports SSH connections to grid deployed workloads, there is a little more setup involved than Putty. 
-
-<details>
-    <summary><b>Generate SSH key and Import to WSL</b></summary>
-
-  <details>
-    <summary>Generate and import key files Using SSH-KEYGEN and SSH-COPY-ID</summary>
-
-- Open the Windows Command Prompt or PowerShell and run the command ssh-keygen. This will generate a new SSH key pair on your Windows machine.
-- Run the command ssh-copy-id <username>@<wsl-ip-address> to copy your public key to the WSL instance. Replace <username> with your username on the WSL instance and <wsl-ip-address> with the IP address of the WSL instance.
-- Open the WSL instance and navigate to the ~/.ssh directory. You should see a file called authorized_keys, which contains the public key that you just copied over.
-- Open the file ~/.ssh/config and add the following:
-  </details>
-
-  <details>
-      <summary>Generate and import Key Files Manually (Video Method)</summary>
-       
-1.) Open the Windows Command Prompt or PowerShell and run the command ssh-keygen. This will generate a new SSH key pair on your Windows machine.
-
-```
-ssh-keygen
-```
-
-2.) Open your Installed WSL and switch to the root accound 
-
-```
-su root
-```
-
-3.) Vavigate to the directory your ssh key files are saved in typically /mnt/c/users/youruser/.ssh
-
-```
-cd /mnt/c/users/parkers/.ssh
-```
-
-4.) Create a directory for your SSH KEYS 
-
-```
-mkdir /home/parker/.ssh
-
-# (/home/user/.ssh) if you want to use the key without being root 
-
-# (/root/.ssh) if yo want the keys to only be accesible by the wsl root account. 
-
-```
-
-5.) Copy your key files to the appropriate directory, typically /home/youruser/.ssh
-
-```
-cp /mnt/c/users/parkers/.ssh/id_rsa.pub /home/youruser/.ssh/id_rsa.pub
-cp /mnt/c/users/parkers/.ssh/id_rsa /home/youruser/.ssh/id_rsa
-```
-
-6.) Properly own the key files in WSL 
-
-```
-chown parker:parker /home/youruser/.ssh/id_rsa.pub
-chown parker:parker /home/youruser/.ssh/id_rsa
-```
-
-7.) Protect your keys 
-
-```
-# Set the .ssh directory and public key to 644 
-
-chmod 644 /home/user/.ssh
-chmod 644 /home/user/.ssh/id_rsa.pub
-
-
-# Set your Private Key so that only you can read it by making it 600
-
-chmod 600 /home/user/.ssh/id_rsa.pub
-```
-  </details>
-</details>
-
-<details>
-    <summary>Connect to your VM using WSL</summary>
-
-Once you generated your keys and imported them into WSL you will be ready to connect to your VM
-
-  <details>
-    <summary>Connect using a public IPV4/IPV6</summary>
-
-to connect you will type SSH follow by root@yourvmsipv4 or root@[yourvmsipv6]
-
-```
-ssh root@162.205.204.230
-ssh root@[2a02:16a8:dc:501:74d4:eeff:fe1b:64c5]
-```
-
-  </details>
-
-  <details>
-    <summary>Connect to your VM using the Planetary Network</summary>
-
-Windows subsystem for linux is not compatible with any current version on the planetary network connector you will need to do some extra setup to use the planetary network with WSL 
-
-- You can find Documentation on how to connect install yggdrasil and connect to the planetary network in WSL 2 here https://forum.threefold.io/t/howto-connect-to-planetary-network-on-wsl2/3511
-- Once you are connected to the network you will connect to the planetary address like any other ipv6 address with ssh root@[planetarynetworkaddress]
-```
-ssh root@[300:d969:30ff:c0a0:e4d4:88ba:ecdd:2b70]
-```
-**Tip** if your having trouble telling which ip is your planetary address, they always start with 200 or 300 IE. <b>300</b>:d969:30ff:c0a0:e4d4:88ba:ecdd:2b70
-
-  </details>
-</details>
 </details>
 
 <details>
