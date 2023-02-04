@@ -587,7 +587,9 @@ That's it! You have successfully installed WSL 2 and Ubuntu 22.04 LTS on your Wi
   <details>
       <summary><b>Windows -  Install Terraform</b></summary> 
 
-To install Terraform on Ubuntu using apt, follow these steps:
+We Will Be installing Terraform In WSL, 
+
+To install Terraform on WSL using apt, follow these steps:
 
 Add the HashiCorp package signing key to your system's keyring by running the following command:
 ```
