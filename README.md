@@ -1,6 +1,6 @@
 # The Threefold Deployer's Manual
 
-<img src="https://github.com/Parkers145/info_manual3/blob/development/wiki/img/manual_home_.png?raw=true"  width="90%" height="90%">
+<img src="https://github.com/Parkers145/info_manual3/blob/development/wiki/img/manual_home_.png?raw=true">
 
 ## How to use the Playground to Deploy Resources on The Threefold Grid 
 - [Set-up](/playground/setupthreefoldconnect.md) Your Playground 
