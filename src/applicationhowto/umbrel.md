@@ -749,7 +749,7 @@ nano /deployments/umbrel/main.tf
   <details>
     <summary> The "Example" Umbrel Main.tf </summary>
 
-```
+```hcl
 
 variable "MNEMONICS" {
   type        = string
@@ -879,12 +879,13 @@ If you're running Umbrel OS on Bitcoin mainnet (default), the storage disk shoul
 
 In order to prepare the Umbrel Deployment directory once we have inserted the main.tf, we will switch to the directory 
 
-```
+```console
 cd /deployments/umbrel
 ```
 
 we will then tell Terraform to initialized the directory 
-```
+
+```console
 terraform init
 ```
   </details>
@@ -893,7 +894,7 @@ terraform init
     <summary> Apply Your Main.tf </summary>
 
 
-```
+```console
 terraform apply -parallelism=1 -auto-approve -var-file="/deployments/production.tfvars"
 ```
 
@@ -919,17 +920,19 @@ Now we will need to connect to our deployed workload, for this tutorial we will 
 
 
 This information is printed in the console after you run the "terraform apply" command, If you have lost the window navigate to your umbrel deployment directory 
-```
+
+```console
 cd /deployments/umbrel
 ```
 then run the "terraform output" command 
-```
+
+```console
 terraform output
 ```
 
 you will see a block of data that looks like this 
 
-```
+```console
 [Interface]
 Address = 100.64.0.2
 PrivateKey = "private key"
@@ -1020,7 +1023,7 @@ If you’re prompted for a password, something went wrong and you won’t be able to
 
 Linux is natively compatible with the grid and can ssh workloads from the terminal with no additional software, once your are connected to the wiregaurd network just open a terminal and run 
 
-```
+```console
 ssh root@your.vms.wiregaurd.ip
 ```
 
@@ -1036,12 +1039,14 @@ Next, we will install Umbrel on the deployment we just created
     <summary><b>Update and Upgrade Your VM</b></summary> 
 
 After Connecting to your VM via SSH, run these commands in your terminal for Ubuntu 22.04 
-```
+
+```console
 apt update && apt upgrade -y 
 ```
 
 If you encouter an error about a grub update on a pink screen, simply press yes and proceed, this is a incompatability between that update and the hypervisor firmware, it will not affect peformance, but this error can be avoided by running this command prior to updating 
-```
+
+```console
 apt-mark hold grub-efi-amd64-signed
 ```
 
@@ -1070,7 +1075,7 @@ Command Success
 &nbsp;
     <summary><b>Restart Your VM</b></summary> 
 
-```
+```console
 reboot -f
 ```
 
@@ -1096,15 +1101,17 @@ Command Success
     <summary><b> Create A New User </b></summary>
 
 We will want to create a new user and make that user a sudoer (admin) to create the New User use 
-```
+
+```console
 adduser yourusername
 ```
 
 to make that user a sudoer (admin) you will use 
 
-```
+```console
 usermod -aG sudo yourusername
 ```
+
 </details>
 
 <details>
@@ -1113,7 +1120,7 @@ usermod -aG sudo yourusername
 
 We will to install/run umbrel as the new user that we just created in order to switch to that user to execute the commands we will use 
 
-```
+```console
 su yourusername
 ```
 
@@ -1125,7 +1132,7 @@ su yourusername
 
 Umbrel Includes single command install functionality, If you've made it to this point breathe a sigh of relief once command to go, run 
 
-```
+```console
 curl -L https://umbrel.sh | bash
 ```
 

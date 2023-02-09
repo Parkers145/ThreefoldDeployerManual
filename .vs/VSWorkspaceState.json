@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\applicationhowto",
+    "\\src\\flist",
+    "\\src\\playground",
+    "\\src\\terraform",
+    "\\src\\usingyourvm"
   ],
-  "SelectedNode": "\\C:\\Users\\ParkerS\\Source\\Repos\\ThreefoldDeployerManual",
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }
