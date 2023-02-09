@@ -1,9 +1,9 @@
 [Threefold Deployer Manual](README.md)
 
 # How to use the Playground to Create Deployments 
-- [Set-up](/playground/setupthreefoldconnect.md) Your Playground 
-- [Deploy](/playground/deploy.md) Your Workload 
-- And if you run into any problems you can get [Support](/playground/support.md)
+- [Set-up Your Playground](/playground/setupthreefoldconnect.md)
+- [Deploy Your First Workload](/playground/deploy.md)
+- [Get Support](/playground/support.md)
 
 # How To Use Your Deployments
 - [Setting up an Ubuntu VM](/playground/setupubuntu.md)
