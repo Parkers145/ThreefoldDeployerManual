@@ -1,9 +1,17 @@
+# The Threefold Deployer's Manual
 
+<img src="https://github.com/Parkers145/info_manual3/blob/development/wiki/img/manual_home_.png?raw=true"  width="90%" height="90%">
 
 ## How to use the Playground to Deploy Resources on The Threefold Grid 
 - [Set-up](/playground/setupthreefoldconnect.md) Your Playground 
 - [Deploy](/playground/deploy.md) Your Workload 
 - And if you run into any problems you can get [Support](/playground/support.md)
+
+## How To Use Your Deployments on The Threefold Grid
+- [Setting up an Ubuntu VM on the Threefold Playground](/playground/setupubuntu.md)
+- [Accessing Your Ubuntu VM Deployed on the Threefold Grid](/playground/accessubuntu.md)
+- [Customizing your Ubuntu Full VM Image on the Threefold Grid](/flist/createfullvmflist.md)
+- [Your Threefold Cloud Ubuntu VM's Network Interfaces](/playground/ubuntunet.md)
 
 ## How to use Terraform to Deploy Resources on The Threefold Grid 
 
@@ -14,11 +22,6 @@
 - [Detailed Single Full VM Main.tf Explanation](/terraform/singlevmmaintf.md)
 - [Detailed Multi Full VM Main.tf Explanation](/terraform/multivmmaintf.md)
 
-## How To Use Your Deployments on The Threefold Grid
-- [Setting up an Ubuntu VM on the Threefold Playground](/playground/setupubuntu.md)
-- [Accessing Your Ubuntu VM Deployed on the Threefold Grid](/playground/accessubuntu.md)
-- [Customizing your Ubuntu Full VM Image on the Threefold Grid](/flist/createfullvmflist.md)
-- [Your Threefold Cloud Ubuntu VM's Network Interfaces](/playground/ubuntunet.md)
 
 ## How to Install Specific Applications in a Ubuntu VM on The Threefold Grid 
 - [Deploy Mastadon on the Ubuntu 20.04 Image](/applicationhowto/manualmastodon.md)

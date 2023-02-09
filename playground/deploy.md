@@ -1,4 +1,7 @@
 # <center> Deploying on The Threefold Playground </center>
+
+<img src="https://github.com/Parkers145/info_manual3/raw/development/wiki/getstarted/img/endlessscalable.png">
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With a Fully Setup Profile you now have access to deploy any of the VPS solutions available on the playground on one of thousands of nodes located across the world. The flagship deployment solution is the industry standard [Ubuntu](https://ubuntu.com) VPS Full VM. This solution provides you the ultimate flexibility to deploy your solutions on the grid’s hardware. with the recent addition of Full-VMs you can now truly say that if you can do it in Linux, you can do it on the grid. you can deploy your VPS when you need it, where you need it, and you can delete it at any time with no lasting commitment providing the ultimate environment for deployment testing and prototyping of cloud solutions. Take a look at your deployment options here and once you have chosen, head over to the [Playground](https://play.grid.tf)
 
 <details>
@@ -45,7 +48,18 @@ The Playground is also host to several use case specific deployments that furthe
 
 
 
+### [Algorand](https://algorand.com)
+___
 
+Algorand removes the technical barriers that for years undermined mainstream blockchain adoption: decentralization, scale, and security. Now you can build on a stable platform you trust.
+
+
+ <details><summary>Deploying With Algorand</summary>
+
+ ___
+
+ ___
+ </details>
 
 ### [Kubernetes](https://kubernetes.io/)
 ___
@@ -54,57 +68,139 @@ ___
  
  <details><summary>Deploying A Kubernetes Cluster</summary>
 
+ ___
+
+ ___
+ </details>
+
 ### [Caprover](https://caprover.com/)
 ___
 
 An extremely easy to use app/database deployment & web server manager for your NodeJS, Python, PHP, ASP.NET, Ruby, MySQL, MongoDB, Postgres, WordPress (and etc...) applications!
 
+ <details><summary>Deploying With Caprover</summary>
+
+ ___
+
+ ___
+ </details>
+
 ### [Peertube](https://joinpeertube.org/)
 ___
 
 The free and decentralized alternative to video platforms, providing you over 600,000 videos published by 150,000 users and viewed over 70 million times
+ 
+ <details><summary>Deploying With Peertube</summary>
+
+ ___
+
+ ___
+ </details>
 
 ### [Funkwhale](https://funkwhale.audio/)
 ___
 
 A community-driven project that lets you listen and share music and audio within a decentralized, open network.
 
+ <details><summary>Deploying With Funkwhale</summary>
+
+ ___
+
+ ___
+ </details>
+
 ### [Mattermost](https://mattermost.com/)
 ___
 
 An open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams
+
+ <details><summary>Deploying With Mattermost</summary>
+
+ ___
+
+ ___
+ </details>
 
 ### [Discourse](https://www.discourse.org/)
 ___
 
 The 100% open source discussion platform built for the next decade of the Internet. Use it as a mailing list, discussion forum, long-form chat room, and more!
 
+ <details><summary>Deploying With Discourse</summary>
+
+ ___
+
+ ___
+ </details>
+
 ### [Taiga](https://www.taiga.io/)
 ___
 
 The free and open-source project management tool For cross-functional agile teams to work effectively A featured-rich software that offers a very simple start through its intuitive user interface.
+
+ <details><summary>Deploying With Taiga</summary>
+
+ ___
+
+ ___
+ </details>
 
 ### [Owncloud](https://owncloud.com/)
 ___
 
 Control your data – always, anytime and anywhere. Deploy ownCloud on-premises, in a data center of your choice or in a hybrid setup. Regulations and certifications? Say no more. We keep your back! With multi-factor authentication, encryption and our elaborate file lifecycle management. Looking for 100% data ownership? Deploy with owncloud on Threefold 
 
+ <details><summary>Deploying With OwnCloud</summary>
+
+ ___
+
+ ___
+ </details>
+
 ### [Presearch](https://presearch.io/)
 ___
 
 Search privately, receive better results and get rewarded with the Presearch decentralized search engine, powered by blockchain technology.
+
+ <details><summary>Deploying With Presearch</summary>
+
+ ___
+
+ ___
+ </details>
 
 ### [SubSquid](https://subsquid.io/)
 ___
 
 An on-chain data processing solution that enables Web3 builders to gain access to on-chain data on their own terms.
 
+ <details><summary>Deploying With Subsquid</summary>
+
+ ___
+
+ ___
+ </details>
+
 ### [CasperLabs](https://casperlabs.io/)
 ___
 
 A team of builders, entrepreneurs, academics, and leaders who believe strongly in the potential of a blockchain-enabled world. We’ve come together to steward the development of the Casper Network, a blockchain protocol built from the ground up to remain true to core Web3 principles and adapt to the needs of our evolving world. Come join us and help build the future.
 
+ <details><summary>Deploying With Casper Labs</summary>
+
+ ___
+
+ ___
+ </details>
+
 ### [Node Pilot](https://nodepilot.tech/)
 ___
 A simple Linux executable, making your deployment options endless. No command-line experience is required. Whether on VMs or bare-metal, anyone can run crypto nodes with Node Pilot. Entry-level friendly. Self-host or Cloud VPS.
+
+ <details><summary>Deploying With Node Pilot</summary>
+
+ ___
+
+ ___
+ </details>
 

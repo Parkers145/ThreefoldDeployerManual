@@ -1,5 +1,8 @@
 # <center> Getting Support For Your Playground Deployment </center>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This Explanation is supported by multiple video tutorials you can find a master directory of the videos related to Threefold in the [Gallery](https://forum.threefold.io/t/threefold-video-gallery/3091)
+
+<img src="https://github.com/Parkers145/info_manual3/blob/development/wiki/faq/img/tf_grid_3nodes.png?raw=true">
+
+This Guide is supported by multiple video tutorials you can find a master directory of the videos related to Threefold in the [Gallery](https://forum.threefold.io/t/threefold-video-gallery/3091)
   
 Some Specifics videos for those getting started
   
@@ -19,5 +22,5 @@ Some Specifics videos for those getting started
 
 For live support there is a chat function at [Threefold.Io](https://threefold.io)
 You can get help from the community on the [Forums](https://forum.threefold.io)
-Or you join our [Grid Testers Telegram](https://t.me/threefoldtesting), [Main Telegram](https://t.me/threefold), or [Farmers Chat](https://t.me/threefoldfarmers), 
+or you join our [Grid Testers Telegram](https://t.me/threefoldtesting), [Main Telegram](https://t.me/threefold), or [Farmers Chat](https://t.me/threefoldfarmers), 
 Remember this is a enviroment working to develop new technologies, if you find a bug we welcome all feedback please send bug reports to our [Test_Feedback Repo](https://github.com/threefoldtech/test_feedback)
