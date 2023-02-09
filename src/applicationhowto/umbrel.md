@@ -421,7 +421,7 @@ It is simple. The main steps are:
 
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true"  width="50%" height="50%">
 
-	You can now access the extension by clicking on the browser's extension button on the top right of the screen, and by then clicking on *polkadot{.js} extension*:
+	You can now access the extension by clicking on the browser's extension button on the top right of the screen, and by then clicking on *polkadot.js extension*:
 
 	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true"  width="50%" height="50%">
 
@@ -749,7 +749,7 @@ nano /deployments/umbrel/main.tf
   <details>
     <summary> The "Example" Umbrel Main.tf </summary>
 
-```hcl
+```console
 
 variable "MNEMONICS" {
   type        = string
