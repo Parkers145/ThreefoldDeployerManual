@@ -8,10 +8,10 @@
 - And if you run into any problems you can get [Support](/playground/support.md)
 
 ## How To Use Your Deployments on The Threefold Grid
-- [Setting up an Ubuntu VM on the Threefold Playground](/playground/setupubuntu.md)
-- [Accessing Your Ubuntu VM Deployed on the Threefold Grid](/playground/accessubuntu.md)
-- [Customizing your Ubuntu Full VM Image on the Threefold Grid](/flist/createfullvmflist.md)
-- [Your Threefold Cloud Ubuntu VM's Network Interfaces](/playground/ubuntunet.md)
+- [Setting up an Ubuntu VM](/playground/setupubuntu.md)
+- [Accessing Your Ubuntu VM](/playground/accessubuntu.md)
+- [Customizing your Ubuntu Full VM Image ](/flist/createfullvmflist.md)
+- [Your Cloud Ubuntu VM's Network Interfaces](/playground/ubuntunet.md)
 
 ## How to use Terraform to Deploy Resources on The Threefold Grid 
 
@@ -24,10 +24,10 @@
 
 
 ## How to Install Specific Applications in a Ubuntu VM on The Threefold Grid 
-- [Deploy Mastadon on the Ubuntu 20.04 Image](/applicationhowto/manualmastodon.md)
-- [Deploy Peertube on the Ubuntu 20.04 Image](/applicationhowto/manualpeertube.md)
-- [Deploy Funkwhale on the Ubuntu 20.04 Image](/applicationhowto/manualfunkwhale.md)
-- [Host Smtp Services on the Ubuntu 20.04 Image](/applicationhowto/manualiredmail.md)
+- [Deploy Mastadon in a Full VM](/applicationhowto/manualmastodon.md)
+- [Deploy Peertube in a Full VM](/applicationhowto/manualpeertube.md)
+- [Deploy Funkwhale in a Full VM](/applicationhowto/manualfunkwhale.md)
+- [Host Smtp Services in a Full VM](/applicationhowto/manualiredmail.md)
 - [Linux Desktop VM with Chrome RDP](/applicationhowto/desktopchromerdp.md)
 - [Deploying Umbrel On The Threefold Grid](/applicationhowto/umbrel.md)
 
