@@ -3,8 +3,8 @@
 
 **The End Result of This Tutorial**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FVy-nOcyKJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=501s
 
 
 An often requested feature is desktop environments hosted on the Threefold Grid. I have recently found a viable solution solution to this using relatively user friendly tools and this will be a tutorial on how how you can accomplish the same. 
@@ -35,7 +35,7 @@ apt-mark hold grub-efi-amd64-signed
    <details>
             <summary>Jump to Update and Upgrade Your VM Video Section</summary>
 
-https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=199s
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FVy-nOcyKJQ?start=119" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
    </details>
 
@@ -62,8 +62,8 @@ reboot -f
 <details>
         <summary>Jump to Restart Your VM Video Section</summary>
 
-https://www.youtube.com/watch?v=FVy-nOcyKJQ&t=236s
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FVy-nOcyKJQ?start=236" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
    </details>
 
    <details>
