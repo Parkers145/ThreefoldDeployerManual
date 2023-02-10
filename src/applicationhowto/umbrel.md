@@ -444,37 +444,37 @@ If you are working in Linux these steps will be performed in the Terminal, in Wi
 - <details>
     <summary>Deploy Your Main.tf</summary>
 
-  <details>
-    <summary>Initialize The Deployment Directory</summary>
+    ___
+    - <details>
+          <summary>Initialize The Deployment Directory</summary>
     
-    ___
-    In order to prepare the Umbrel Deployment directory once we have inserted the main.tf, we will switch to the directory 
+        ___
+        In order to prepare the Umbrel Deployment directory once we have inserted the main.tf, we will switch to the directory 
 
-    ```console
-    cd /deployments/umbrel
-    ```
+        ```console
+        cd /deployments/umbrel
+        ```
 
-    we will then tell Terraform to initialized the directory 
+        we will then tell Terraform to initialized the directory 
 
-    ```console
-    terraform init
-    ```
-    ___
-  </details>
-  <details>
-  &nbsp;
-    <summary>Apply Your Main.tf</summary>
+        ```console
+        terraform init
+        ```
+        ___
+       </details>
+    - <details>
+      <summary>Apply Your Main.tf</summary>
 
-    ___
-    ```console
-    terraform apply -parallelism=1 -auto-approve -var-file="/deployments/production.tfvars"
-    ```
+        ___
+        ```console
+        terraform apply -parallelism=1 -auto-approve -var-file="/deployments/production.tfvars"
+        ```
 
-    Note: You can create multiple .tfvars files and use them to save different configurations. For example, you might create a env2.tfvars file with different values for the variables. To use this file, you would pass the path to it as the `-var-file ption when running terraform apply.
+        Note: You can create multiple .tfvars files and use them to save different configurations. For example, you might create a env2.tfvars file with different values for the variables. To use this file, you would pass the path to it as the `-var-file ption when running terraform apply.
 
-    Wait for the terraform apply command to complete. This may take a few minutes. When it's finished, The VM we will be installing umbrel on will be created on the Threefold Grid.
-    ___
- </details>
+        Wait for the terraform apply command to complete. This may take a few minutes. When it's finished, The VM we will be installing umbrel on will be created on the Threefold Grid.
+        ___
+     </details>
 </details>
 
 ___
@@ -538,13 +538,16 @@ Now we will need to connect to our deployed workload, for this tutorial we will 
         <summary>Connect to Wiregaurd Network From Local Machine In linux</summary>
 
         ___
-        - Create a new Text file with the text editor of your choice (notepad works)
+        - Create a new Wiregaurd Configuration at /etc/wiregaurd/wg0.conf
+            ```console
+            nano /etc/wiregaurd/wg0.conf
+            ```
         - Paste the contents we copied in the last step into the file 
-        - Save the file with the .conf extension (wg1.conf) the name of the file will be the name of the connection 
-        - Open the WireGuard application from the Start menu or desktop shortcut
-        - Click on the add tunnel button to create a new connection 
-        - Select the text file you just created an open
-        - Connect to the VPN by clicking on the toggle switch in the WireGuard application.
+        - Press Ctrl+X to save  
+        - Enable the Wiregaurd connection
+            ```console
+            sudo wg-quick up wg0
+            ```
         ___
 
         </details>
