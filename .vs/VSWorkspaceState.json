@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\docs\\applicationhowto",
+    "\\docs\\FontAwesome\\css",
+    "\\docs\\FontAwesome\\fonts",
     "\\src",
     "\\src\\applicationhowto",
     "\\src\\flist",
@@ -8,6 +11,6 @@
     "\\src\\terraform",
     "\\src\\usingyourvm"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\usingyourvm\\connectputty.md",
   "PreviewInSolutionExplorer": false
 }
