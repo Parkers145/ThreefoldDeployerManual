@@ -28,18 +28,7 @@ That's it! You have successfully installed WSL 2 and Ubuntu 22.04 LTS on your Wi
 <details>
     <summary><b>Generate SSH key and Import to WSL</b></summary>
 
-  <details>
-    <summary>Generate and import key files Using SSH-KEYGEN and SSH-COPY-ID</summary>
-
-- Open the Windows Command Prompt or PowerShell and run the command ssh-keygen. This will generate a new SSH key pair on your Windows machine.
-- Run the command ssh-copy-id <username>@<wsl-ip-address> to copy your public key to the WSL instance. Replace <username> with your username on the WSL instance and <wsl-ip-address> with the IP address of the WSL instance.
-- Open the WSL instance and navigate to the ~/.ssh directory. You should see a file called authorized_keys, which contains the public key that you just copied over.
-- Open the file ~/.ssh/config and add the following:
-  </details>
-
-  <details>
-      <summary>Generate and import Key Files Manually (Video Method)</summary>
-       
+    
 1.) Open the Windows Command Prompt or PowerShell and run the command ssh-keygen. This will generate a new SSH key pair on your Windows machine.
 
 ```
@@ -96,7 +85,7 @@ chmod 644 /home/user/.ssh/id_rsa.pub
 
 chmod 600 /home/user/.ssh/id_rsa.pub
 ```
-  </details>
+  
 </details>
 
 <details>
@@ -107,7 +96,7 @@ Once you generated your keys and imported them into WSL you will be ready to con
   <details>
     <summary>Connect using a public IPV4/IPV6</summary>
 
-to connect you will type SSH follow by root@yourvmsipv4 or root@[yourvmsipv6]
+to connect you will type SSH followed by root@yourvmsipv4 or root@[yourvmsipv6]
 
 ```
 ssh root@162.205.204.230
