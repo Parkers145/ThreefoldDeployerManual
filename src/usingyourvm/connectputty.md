@@ -1,6 +1,6 @@
 # Connecting to Grid VMs from Widows Using Putty 
 
-https://youtu.be/NEXuWCggFB8
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NEXuWCggFB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 if you’re running Windows, you might want to use Putty to connect to your Grid VMs. This is possible, but you will need to make sure the ssh key you created your playground profile with is save in the right format. Here’s a quick step by step:
