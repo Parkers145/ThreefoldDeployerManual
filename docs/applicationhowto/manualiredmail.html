@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Host Smtp Services in A Full VM</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Threefold Deployer Manual</a></li><li class="chapter-item expanded affix "><li class="part-title">How to use the Playground to Create Deployments</li><li class="chapter-item expanded "><a href="../playground/setupthreefoldconnect.html"><strong aria-hidden="true">1.</strong> Set-up Your Playground</a></li><li class="chapter-item expanded "><a href="../playground/deploy.html"><strong aria-hidden="true">2.</strong> Deploy Your First Workload</a></li><li class="chapter-item expanded "><a href="../playground/support.html"><strong aria-hidden="true">3.</strong> Get Support</a></li><li class="chapter-item expanded affix "><li class="part-title">How To Use Your Deployments</li><li class="chapter-item expanded "><a href="../playground/setupubuntu.html"><strong aria-hidden="true">4.</strong> Setting up an Ubuntu VM</a></li><li class="chapter-item expanded "><a href="../playground/accessubuntu.html"><strong aria-hidden="true">5.</strong> Accessing Your Ubuntu VM</a></li><li class="chapter-item expanded "><a href="../flist/createfullvmflist.html"><strong aria-hidden="true">6.</strong> Create a Custom Ubuntu Full VM Image</a></li><li class="chapter-item expanded "><a href="../playground/ubuntunet.html"><strong aria-hidden="true">7.</strong> Your Cloud Ubuntu VM's Network Interfaces</a></li><li class="chapter-item expanded affix "><li class="part-title">How to use Terraform to Create Deployments</li><li class="chapter-item expanded "><a href="../terraform/setuptfcterraform.html"><strong aria-hidden="true">8.</strong> Setup Your Wallets and Accounts for Use With Terraform</a></li><li class="chapter-item expanded "><a href="../terraform/gettingstarted.html"><strong aria-hidden="true">9.</strong> Installing and Deploying With Terraform(detailed overview)</a></li><li class="chapter-item expanded "><a href="../terraform/7stepslinux.html"><strong aria-hidden="true">10.</strong> How To Deploy A Terraform Example Configuration on the Threefold Grid from Linux in 7 steps (quickstart)</a></li><li class="chapter-item expanded "><a href="../terraform/7stepswindows.html"><strong aria-hidden="true">11.</strong> Deploying an Example Configuration with Terraform on Windows Using Putty In 7 Steps (quickstart)</a></li><li class="chapter-item expanded "><a href="../terraform/singlevmmaintf.html"><strong aria-hidden="true">12.</strong> Detailed Single Full VM Main.tf Explanation</a></li><li class="chapter-item expanded "><a href="../terraform/multivmmaintf.html"><strong aria-hidden="true">13.</strong> Detailed Multi Full VM Main.tf Explanation</a></li><li class="chapter-item expanded affix "><li class="part-title">How to Install Specific Applications in a Ubuntu VM on The Threefold Grid</li><li class="chapter-item expanded "><a href="../applicationhowto/manualmastodon.html"><strong aria-hidden="true">14.</strong> Deploy Mastadon in A Full VM</a></li><li class="chapter-item expanded "><a href="../applicationhowto/manualpeertube.html"><strong aria-hidden="true">15.</strong> Deploy Peertube in A Full VM</a></li><li class="chapter-item expanded "><a href="../applicationhowto/manualfunkwhale.html"><strong aria-hidden="true">16.</strong> Deploy Funkwhale in A Full VM</a></li><li class="chapter-item expanded "><a href="../applicationhowto/manualiredmail.html" class="active"><strong aria-hidden="true">17.</strong> Host Smtp Services in A Full VM</a></li><li class="chapter-item expanded "><a href="../applicationhowto/desktopchromerdp.html"><strong aria-hidden="true">18.</strong> Linux Desktop VM with Chrome RDP</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="setting-up-smtp-services-on-the-threefold-grid"><a class="header" href="#setting-up-smtp-services-on-the-threefold-grid">Setting up SMTP Services on the Threefold Grid</a></h1>
+<p>       There are two options for deploying SMTP on the on the grid a full smtp server or a smtp relay server both of these will be deployed using the Ubuntu 20.04 image deployable on the <a href="https://Play.grid.tf">Playground</a> . I have prepared documentation on doing this. read all of this post before you deploy any resources, you've been warned its not fun deleting half your deployments that were done before you read a requirement.</p>
+<p>you can checkout my example deployment at <a href="https://mail.threefoldcloud.com">Mail.ThreeFoldCloud.com</a> </p>
+<p>For this you will want to deploy the 20.04 image with appropriate resources for the size of the server you intend to host,</p>
+<ul>
+<li>
+<p>you can find a break down of what cpu and ram needs are expected for a full smtp server <a href="https://docs.iredmail.org/iredmail-easy.getting.start.html#:%7E:text=iRedMail%20requires%20at%20least%204,to%20support%20500%20ActiveSync%20clients.">here</a>
+you can find a break down of what cpu and ram needs are expected for a smtp relay server <a href="https://askubuntu.com/questions/279408/mail-server-system-requirements">here</a></p>
+</li>
+<li>
+<p>This should be deployed with both public ipv4 &amp; public ipv6, planetary is optional but usable for encrypted communication to the server.</p>
+</li>
+</ul>
+<p>you need to configure the DNS records for your mail server deployment before you install your mail client on the server and follow the tutorial as they have to be properly configured to acquire your ssl certs. you will need A, AAAA, NS, and C Name records for your site. I use Go daddy for my records they should be configured the same way a threefold gateway address is configured, i cover that in this <a href="https://www.youtube.com/watch?v=axvKipK7MQM&amp;ab_channel=DrewSmith">video</a>, </p>
+<p>how they relate to the deployments</p>
+<ul>
+<li>
+<p>A: Public ipv4</p>
+</li>
+<li>
+<p>AAAA: Public ipv6 </p>
+</li>
+<li>
+<p>ns: _acme-Chanllenge.mail.threefoldcloud.com -&gt; mail.threefoldcloud.com </p>
+</li>
+<li>
+<p>C_name: *.mail.threefoldcloud.com -&gt; mail.threefoldcloud.com </p>
+</li>
+<li>
+<p>mx: Mail.threefoldcloud.com </p>
+</li>
+<li>
+<p>TXT: &quot;v=spf1 ip4:185.206.122.163 ip6:2a10:b600:1:0:94a1:d5ff:fe9d:3632 include:threefoldcloud.com -all &quot; where you have replaced the ips and domains with your ips and domains. these will be the Ip addresses from your deployment hosting iredmail.</p>
+</li>
+</ul>
+<p>.
+Once you have your have your Ubuntu 20.04 booted you will want to run</p>
+<pre><code>       apt update -y 
+
+	   apt upgrade -y 
+</code></pre>
+<p>There is currently an incompatible ubuntu update, that may or may not be resolved by the time you do this, if you experience a warning about a failed grub installation tell it not to retry, and to continue without installing grub and the issue will not return in further updates. this is documented <a href="https://github.com/threefoldtech/test_feedback/issues/319">here</a>, this issue is resolved by not skipping the step of running update &amp; upgrade and handling the warning at the beginning of each deployment. it will break the install scripts in the tutorials if you do not update and upgrade first.</p>
+<p>once you have a fully updated vm, restart your vm with</p>
+<pre><code>         shutdown -r now 
+</code></pre>
+<ul>
+<li>
+<p>you can host a smtp relay server on the grid by following this <a href="https://www.linuxbabe.com/mail-server/postfix-smtp-relay-ubuntu-sendinblue">tutorial</a> </p>
+</li>
+<li>
+<p>you can host a full fledged smtp server on the grid by  following this <a href="https://www.linuxbabe.com/mail-server/ubuntu-20-04-iredmail-server-installation">tutorial</a>, due to some isps blocking port 25, and the needed reliability I suggest running your smtp server on a reliable gateway farm like those of the Foundation, Greenedge and Dany Sing. these can often be identified by their gateway domain addresses on the <a href="https://dashboard.grid.tf/explorer/nodes">Threefold Grid Explorer</a> </p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../applicationhowto/manualfunkwhale.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../applicationhowto/desktopchromerdp.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../applicationhowto/manualfunkwhale.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../applicationhowto/desktopchromerdp.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
