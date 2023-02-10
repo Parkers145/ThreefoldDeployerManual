@@ -1,0 +1,2859 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Threefold Deployer Manual</a></li><li class="chapter-item expanded affix "><li class="part-title">How to use the Playground to Create Deployments</li><li class="chapter-item expanded "><a href="playground/setupthreefoldconnect.html"><strong aria-hidden="true">1.</strong> Set-up Your Playground</a></li><li class="chapter-item expanded "><a href="playground/deploy.html"><strong aria-hidden="true">2.</strong> Deploy Your First Workload</a></li><li class="chapter-item expanded "><a href="playground/support.html"><strong aria-hidden="true">3.</strong> Get Support</a></li><li class="chapter-item expanded affix "><li class="part-title">How To Use Your Deployments</li><li class="chapter-item expanded "><a href="playground/setupubuntu.html"><strong aria-hidden="true">4.</strong> Setting up an Ubuntu VM</a></li><li class="chapter-item expanded "><a href="playground/accessubuntu.html"><strong aria-hidden="true">5.</strong> Accessing Your Ubuntu VM</a></li><li class="chapter-item expanded "><a href="flist/createfullvmflist.html"><strong aria-hidden="true">6.</strong> Create a Custom Ubuntu Full VM Image</a></li><li class="chapter-item expanded "><a href="playground/ubuntunet.html"><strong aria-hidden="true">7.</strong> Your Cloud Ubuntu VM's Network Interfaces</a></li><li class="chapter-item expanded affix "><li class="part-title">How to use Terraform to Create Deployments</li><li class="chapter-item expanded "><a href="terraform/setuptfcterraform.html"><strong aria-hidden="true">8.</strong> Setup Your Wallets and Accounts for Use With Terraform</a></li><li class="chapter-item expanded "><a href="terraform/gettingstarted.html"><strong aria-hidden="true">9.</strong> Installing and Deploying With Terraform(detailed overview)</a></li><li class="chapter-item expanded "><a href="terraform/7stepslinux.html"><strong aria-hidden="true">10.</strong> How To Deploy A Terraform Example Configuration on the Threefold Grid from Linux in 7 steps (quickstart)</a></li><li class="chapter-item expanded "><a href="terraform/7stepswindows.html"><strong aria-hidden="true">11.</strong> Deploying an Example Configuration with Terraform on Windows Using Putty In 7 Steps (quickstart)</a></li><li class="chapter-item expanded "><a href="terraform/singlevmmaintf.html"><strong aria-hidden="true">12.</strong> Detailed Single Full VM Main.tf Explanation</a></li><li class="chapter-item expanded "><a href="terraform/multivmmaintf.html"><strong aria-hidden="true">13.</strong> Detailed Multi Full VM Main.tf Explanation</a></li><li class="chapter-item expanded affix "><li class="part-title">How to Install Specific Applications in a Ubuntu VM on The Threefold Grid</li><li class="chapter-item expanded "><a href="applicationhowto/manualmastodon.html"><strong aria-hidden="true">14.</strong> Deploy Mastadon in A Full VM</a></li><li class="chapter-item expanded "><a href="applicationhowto/manualpeertube.html"><strong aria-hidden="true">15.</strong> Deploy Peertube in A Full VM</a></li><li class="chapter-item expanded "><a href="applicationhowto/manualfunkwhale.html"><strong aria-hidden="true">16.</strong> Deploy Funkwhale in A Full VM</a></li><li class="chapter-item expanded "><a href="applicationhowto/manualiredmail.html"><strong aria-hidden="true">17.</strong> Host Smtp Services in A Full VM</a></li><li class="chapter-item expanded "><a href="applicationhowto/desktopchromerdp.html"><strong aria-hidden="true">18.</strong> Linux Desktop VM with Chrome RDP</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="the-threefold-deployers-manual"><a class="header" href="#the-threefold-deployers-manual">The Threefold Deployer's Manual</a></h1>
+<img src="https://github.com/Parkers145/info_manual3/blob/development/wiki/img/manual_home_.png?raw=true">
+<h2 id="how-to-use-the-playground-to-deploy-resources-on-the-threefold-grid"><a class="header" href="#how-to-use-the-playground-to-deploy-resources-on-the-threefold-grid">How to use the Playground to Deploy Resources on The Threefold Grid</a></h2>
+<ul>
+<li><a href="playground/setupthreefoldconnect.html">Set-up</a> Your Playground </li>
+<li><a href="playground/deploy.html">Deploy</a> Your Workload </li>
+<li>And if you run into any problems you can get <a href="/playground/support.html">Support</a></li>
+</ul>
+<h2 id="how-to-use-your-deployments-on-the-threefold-grid"><a class="header" href="#how-to-use-your-deployments-on-the-threefold-grid">How To Use Your Deployments on The Threefold Grid</a></h2>
+<ul>
+<li><a href="playground/setupubuntu.html">Setting up an Ubuntu VM</a></li>
+<li><a href="playground/accessubuntu.html">Accessing Your Ubuntu VM</a></li>
+<li><a href="flist/createfullvmflist.html">Customizing your Ubuntu Full VM Image </a></li>
+<li><a href="playground/ubuntunet.html">Your Cloud Ubuntu VM's Network Interfaces</a></li>
+</ul>
+<h2 id="how-to-use-terraform-to-deploy-resources-on-the-threefold-grid"><a class="header" href="#how-to-use-terraform-to-deploy-resources-on-the-threefold-grid">How to use Terraform to Deploy Resources on The Threefold Grid</a></h2>
+<ul>
+<li><a href="terraform/setuptfcterraform.html">Setup Your Wallets and Accounts for Use With Terraform</a></li>
+<li><a href="terraform/gettingstarted.html">Installing and Deploying With Terraform(detailed overview)</a></li>
+<li><a href="terraform/7stepslinux.html">How To Deploy A Terraform Example Configuration on the Threefold Grid from Linux in 7 steps (quickstart)</a></li>
+<li><a href="terraform/7stepswindows.html">Deploying an Example Configuration with Terraform on Windows Using Putty In 7 Steps (quickstart)</a></li>
+<li><a href="terraform/singlevmmaintf.html">Detailed Single Full VM Main.tf Explanation</a></li>
+<li><a href="terraform/multivmmaintf.html">Detailed Multi Full VM Main.tf Explanation</a></li>
+</ul>
+<h2 id="how-to-install-specific-applications-in-a-ubuntu-vm-on-the-threefold-grid"><a class="header" href="#how-to-install-specific-applications-in-a-ubuntu-vm-on-the-threefold-grid">How to Install Specific Applications in a Ubuntu VM on The Threefold Grid</a></h2>
+<ul>
+<li><a href="applicationhowto/manualmastodon.html">Deploy Mastadon in a Full VM</a></li>
+<li><a href="applicationhowto/manualpeertube.html">Deploy Peertube in a Full VM</a></li>
+<li><a href="applicationhowto/manualfunkwhale.html">Deploy Funkwhale in a Full VM</a></li>
+<li><a href="applicationhowto/manualiredmail.html">Host Smtp Services in a Full VM</a></li>
+<li><a href="applicationhowto/desktopchromerdp.html">Linux Desktop VM with Chrome RDP</a></li>
+<li><a href="applicationhowto/umbrel.html">Deploying Umbrel On The Threefold Grid</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="setting-up-your-wallets-and-accounts-to-deploy-on-the-grid"><a class="header" href="#setting-up-your-wallets-and-accounts-to-deploy-on-the-grid">Setting Up Your Wallets and Accounts to Deploy on The Grid</a></h1>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_wallet_5.png?raw=true"  width="25%" height="25%">
+<p>The easiest way to fund your deployments on the grid is by using a Threefold Connect Wallet. It is possible to fund your deployments with any stellar wallet. For those with an established Stellar wallet with a balance of TFT, start at &quot;Sending your Stellar TFT to TFChain to be Used for Deployment&quot;</p>
+<p>It is available for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&amp;hl=en&amp;gl=US">Android</a> and <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">iOS</a>.</p>
+<ul>
+<li>Note that for Android phones, you need at minimum Android Nougat, the 8.0 software version.</li>
+<li>Note that for iOS phones, you need at minimum iOS 14.5. It will be soon available to iOS 13.</li>
+</ul>
+<details>
+	<summary><b>Threefold Connect Installation</b></summary>
+<p>Either use the links above, or search for the Threefold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_1.png"  width="25%" height="25%">
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_2.png"  width="25%" height="25%">
+<p>When you try to open the App, if you get an error message such as : &quot;Error in initialization in Flagsmith...&quot;, you might need to upgrade your phone to a newer software version (8.0 for Android and 13 for iOS).</p>
+<p>Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect App. You will also be asked to read and accept Threefold's Terms and conditions.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_3.png"  width="25%" height="25%">
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_4.png"  width="25%" height="25%">
+<p>You will then be asked to either <em>SIGN UP</em> or <em>RECOVER ACCOUNT</em>. For now, we will show how to sign up. Later in the guide, we will show you how to recover an account.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_5.png"  width="25%" height="25%">
+<p>You will then be asked to choose a <em>Threefold Connect Id</em>. This ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_6.png"  width="25%" height="25%">
+<p>Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from Threefold to use properly the TF Connect App Wallet.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_7.png"  width="25%" height="25%">
+<p>Then, the next step is crucial! Make sure no one is around looking at your screen. You will be shown your seed phrase. Keep this in a secure and offline place. You will need the 3bot ID and the seed phrase to recover your account. This seed phrase is of utmost important. Do not lose it nor give it to anyone.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_8.png"  width="25%" height="25%">
+<p>Once you've hit Next, you will be asked to write down 3 random words of your seed phrase. This is a necessary step to ensure you have taken the time to write down your seed phrase.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_9.png?raw=true"  width="25%" height="25%">
+<p>Then, you'll be asked to confirm your TF 3bot name and the associated email.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_10.png?raw=true"  width="25%" height="25%">
+<p>Finally, you will be asked to choose a 4-digit pin. This will be needed to use the Threefold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_11.png?raw=true"  width="25%" height="25%">
+<p>That's it! You've created your Threefold Connect account. You can press the hamburger menu on the top left to explore the Threefold Connect App.</p>
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_12.png?raw=true"  width="25%" height="25%">
+<p>In the next step, we will create a Threefold Connect Wallet. You'll see, it's very simple!</p>
+</details>
+<ul>
+<li><details>
+  <summary><b>Verify your identity (KYC) by email</b></summary>
+<p>Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. </p>
+<p>To verify your email, go on your email account and open the email sent by <em>info@openkyc.live</em> with the subject <em>Verify your email address</em>. </p>
+<p>In this email, click on the link <em>Verify my email address</em>. This will lead you to a <em>login.threefold.me</em> link. The process should be automatic. Once this is done, you will receive a confirmation on screen, as well as on your phone.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_39.png"  width="25%" height="25%">
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_40.png"  width="25%" height="25%">
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_41.png"  width="25%" height="25%">
+<p>If for some reason, you did not receive the verification email, simply click on <em>Verify</em> and another email will be sent.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_42.png"  width="25%" height="25%">
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_43.png"  width="25%" height="25%">
+<h1 id="change-email-associated-with-tf-account"><a class="header" href="#change-email-associated-with-tf-account">Change email associated with TF account</a></h1>
+<p>If you want to change your email, simply click on the <em>pencil</em> next to your email and write another email. You will need to redo the KYC verification process.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_44.png"  width="25%" height="25%">
+  </details>
+</li>
+<li><details>
+  <summary><b>Create a Wallet</b></summary>
+<p>To create a wallet, click on the Threefold Connect App menu. This is what you see. Choose <em>Wallet</em>.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_13.png"  width="25%" height="25%">
+<p>Once you are in the section <em>Wallet</em>, click on <em>Create Initial Wallet</em>. If it doesn't work the first time, retry some more. If you have trouble creating a wallet, make sure your connection is reliable. You can try a couple of minutes later if it still doesn't work. With a reliable connection, there shouldn't be any problem. Contact TF Support if problems persist.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_14.png"  width="25%" height="25%">
+<p>This is what you see when the TF Grid is initializing your wallet.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_15.png"  width="25%" height="25%">
+<p>Once your wallet is initialized, you will see <em>No blanace found for this wallet</em>. You can click on this button to enter the wallet.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_16.png"  width="25%" height="25%">
+<p>Once inside your wallet, this is what you see.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_17.png"  width="25%" height="25%">
+<p>We will now see where the Stellar and the TF Chain Addresses and Secrets are to be found. We will also changing the wallet name. To do so, click on the <em>circled i</em> at the bottom right of the screen.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_18.png"  width="25%" height="25%">
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_19.png"  width="25%" height="25%">
+<p>You can choose the name you want for your wallet. Here we use TFWalletExample. Note that you can also use alphanumeric characters.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_20.png"  width="25%" height="25%">
+<p>At the top of the section <em>Wallet</em>, we can see that the name has changed.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_21.png"  width="25%" height="25%">
+<p>Now, if you want to copy your Stellar Address, simply click on the button presented with the green circle. To access the TF Chain address, click on the button presented with the red circle. When your phone has copied the address, the TF App will give show a confirmation message as shown below.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_22.png"  width="25%" height="25%">
+<p>In some situations, you will want to access the Stellar and TF Chain secrets. To do so, simply click on the &quot;eye&quot; button of the desired chain, and then copy the secret.</p>
+  <img src="https://github.com/threefoldfoundation/info_threefold_pub/raw/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_23.png"  width="25%" height="25%">
+  </details>
+</li>
+</ul>
+<details>
+	<summary><b>Buying TFT on the Stellar Decentralized Exchanges with LOBSTR</b></summary>
+<h1 id="how-to-buy-tft-with-lobstr"><a class="header" href="#how-to-buy-tft-with-lobstr">How to: Buy TFT With LOBSTR</a></h1>
+<p>The Threefold token (TFT) is the utility token of the The Threefold Grid, a decentralized and open-source project offering network, compute and storage capacity.</p>
+<p>Threefold Tokens (TFT) are created (minted) by the ThreeFold Blockchain (TFChain) only when new Internet capacity is added to the ThreeFold Grid by farmers. For this reason, TFT is a pure utility token as minting is solely the result of farming on the Threefold Grid.</p>
+<ul>
+<li>
+<p>To <strong>farm</strong> TFT, read the <a href="https://forum.threefold.io/t/threefold-farming-guide-part-1/2989">complete farming guide</a>.</p>
+</li>
+<li>
+<p>To <strong>buy</strong> TFT, follow this guide.</p>
+</li>
+</ul>
+<p>There are many ways to buy TFT:</p>
+<ul>
+<li>
+<p>You can buy TFT on <a href="https://lobstr.co/">Lobstr</a></p>
+</li>
+<li>
+<p>You can buy TFT at <a href="https://gettft.com/gettft/">GetTFT.com</a></p>
+</li>
+<li>
+<p>You can buy TFT on <a href="https://pancakeswap.finance/swap?inputCurrency=BNB&amp;outputCurrency=0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf">Pancake Swap</a></p>
+</li>
+</ul>
+<p>For the current guide, we will show how to buy TFT on the <a href="https://lobstr.co/">Lobstr app</a>.
+The process is simple.</p>
+</details>
+<ul>
+<li><details>
+  <summary><b>Download the App and Create an Account</b></summary>
+<p>Go on <a href="https://www.lobstr.co">www.lobstr.co</a> and download the Lobstr app.
+You can download it for Android or iOS.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png?raw=true"  width="15%" height="15%">
+<p>We will show here the steps for Android, but it is very similar with iOS.
+Once you've clicked on the Android button, you can click install on the Google Store page:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png?raw=true"  width="15%" height="15%">
+<p>Once the app is downloaded, open it:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png?raw=true"  width="15%" height="15%">
+<p>On the Lobstr app, click on <strong>Create Account</strong>:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png?raw=true"  width="15%" height="15%">
+<p>You will then need to enter your email address:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png?raw=true"  width="15%" height="15%">
+<p>Then, choose a safe password for your account:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png?raw=true"  width="15%" height="15%">
+<p>Once this is done, you will need to verify your email.</p>
+<p>Click on <strong>Verify Email</strong> and then go check your email inbox.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png?raw=true"  width="15%" height="15%">
+<p>Simply click on <strong>Verify Email</strong> on the email you've received.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png?raw=true"  width="15%" height="15%">
+<p>Once your email is verified, you can sign in to your Lobstr account:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png?raw=true"  width="15%" height="15%">
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
+</li>
+</ul>
+</details>
+<ul>
+<li><details><summary><b>Connect Your TF Connect App Wallet</b></summary>
+<p>You will then need to either create a new wallet or connect an existing wallet.</p>
+<p>Since we are working on the Threefold ecosystem, it is very easy and practical to simply connect your Threefold Connect app wallet. You can also create a new wallet.</p>
+<p>Using the TF Connect wallet is very useful and quick. When you buy XLM and swap XLM tokens for TFTs, they will be directly available on your TF Connect app wallet.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
+<p>To connect your TF Connect app wallet, you will need to find your Stellar address and chain secret key.
+This is very simple to do.</p>
+<p>Click on <strong>I have a public or secret key</strong>.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_12.png?raw=true"  width="15%" height="15%">
+<p>As you can see on this next picture, you need the Stellar address and secret key to properly connect your TF Connect app wallet to Lobstr:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_18.png?raw=true"  width="15%" height="15%">
+<p>To find your Stellar address and secret key, go on the TF Connect app and select the <strong>Wallet</strong> section:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_13.png?raw=true"  width="15%" height="15%">
+<p>At the top of the section, click on the <strong>copy</strong> button to copy your Stellar Address:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_17.png?raw=true"  width="15%" height="15%">
+<p>Now, we will find the Stellar secret key.
+At the botton of the section, click on the encircled <strong>i</strong> button:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_14.png?raw=true"  width="15%" height="15%">
+<p>Then, click on the <strong>eye</strong> button to reveal your secret key:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_15.png?raw=true"  width="15%" height="15%">
+<p>You can now simply click on the <strong>copy</strong> button on the right:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_16.png?raw=true"  width="15%" height="15%">
+<p>That's it! You've now connected your TF Connect app wallet to your Lobstr account.</p>
+</li>
+</ul>
+</details>
+<ul>
+<li><details>
+  <summary><b>Buy XLM with Fiat Currency</b></summary>
+<p>Now, all we need to do, is buy XLM and then swap it for TFT.
+It will be directly available in your TF Connect App wallet.</p>
+<p>On the Lobstr app, click on the top right menu button:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_19.png?raw=true"  width="15%" height="15%">
+<p>Then, click on <strong>Buy Crypto</strong>:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_20.png?raw=true"  width="15%" height="15%">
+<p>By default, the crypto selected is XLM. This is alright for us as we will quickly swap the XLM for TFT.</p>
+<p>On the Buy Crypto page, you can choose the type of Fiat currency you want.
+By default it is in USD. To select some othe fiat currency, you can click on <strong>ALL</strong> and see the available fiat currencies:
+)
+<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_21.png?raw=true"  width="15%" height="15%"></p>
+<p>You can search or select the current you want for the transfer:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_22.png?raw=true"  width="15%" height="15%">
+<p>You will then need to decide how much XLM you want to buy. Note that there can be a minimum amount.
+Once you chose the desired amount, click on <strong>Continue</strong>.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_23.png?raw=true"  width="15%" height="15%">
+<p>Lobstr will then ask you to proceed to a payment method. In this case, it is Moonpay.
+Note that in some cases, your credit card won't accept Moonpay payments. You will simply need to confirm with them that you agree with transacting with Moonpay. This can be done by phone. Check with your bank and credit card company if this applies.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_24.png?raw=true"  width="15%" height="15%">
+<p>Once you've set up your Moonpay payment method, you will need to process and confirm the transaction:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_25.png?raw=true"  width="15%" height="15%">
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_26.png?raw=true"  width="15%" height="15%">
+<p>You will then see a processing window.
+This process is usually fast. Within a few minutes, you should receive your XLM.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_27.png?raw=true"  width="15%" height="15%">
+<p>Once you've received your XLM, you will receive a notification:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_28.png?raw=true"  width="15%" height="15%">
+<p>When your transaction is complete, you will see this message:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_29.png?raw=true"  width="15%" height="15%">
+<p>On the Trade History page, you can choose to download the csv file version of your transaction:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_30.png?raw=true"  width="15%" height="15%">
+<p>That's it! You've bought XLM on Lobstr and Moonpay.</p>
+</li>
+</ul>
+</details>
+<ul>
+<li><details>
+  <summary><b>Swap XLM for TFT</b></summary>
+<p>Now we want to swap the XLM tokens for the Threefold tokens (TFT).
+This is even easier than the previous steps.</p>
+<p>Go to the Lobstr Home menu and select <strong>Swap</strong>:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_31.png?raw=true"  width="15%" height="15%">
+<p>On the <strong>Swap</strong> page, write &quot;tft&quot; and select the Threefold token:</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_32.png?raw=true"  width="15%" height="15%">
+<p>Select the amount of XLM you want to swap. It is recommended to keep at least 1 XLM in your wallet for transaction fees.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_33.png?raw=true"  width="15%" height="15%">
+<p>Within a few seconds, you will receive a confirmation that your swap is completed:
+Note that the TFT is directly sent on your TF Connect app wallet.</p>
+  <img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_34.png?raw=true"  width="15%" height="15%">
+<p>That's it. You've swapped XLM for TFT.</p>
+<p>You can now use your TFT to deploy workloads on the Threefold Grid.</p>
+</li>
+</ul>
+</details>
+<p>Note that it is possible to do these steps without connecting the Lobstr wallet to the TF Connect App wallet. But doing this has a clear advantage: when we buy and swap on Lobstr, the TFT is directly accessible on the TF Connect app wallet. Ensure you always maintain a balance of 1 XLM in your Wallet, If you do not your wallet will stop functioning.</p>
+<details>
+	<summary><b>Sending Your Stellar TFT to TFChain to be used for Deployment</b></Summary>
+<h1 id="how-to-funding-your-account-for-a-threefold-grid-deployment-deployment"><a class="header" href="#how-to-funding-your-account-for-a-threefold-grid-deployment-deployment"> How To: Funding Your Account For a Threefold Grid Deployment Deployment</a></h1>
+<p>For this section, we will create an account on the TFChain and transfer TFT from Stellar chain to TFChain. We will then be able to use the TFT and deploy workloads on the Threefold Grid.</p>
+<p>It is simple. The main steps are:</p>
+<ul>
+<li>Download the Polkadot extension</li>
+<li>Create an account</li>
+<li>Send TFT from Stellar Chain to TFChain</li>
+</ul>
+</details>
+<ul>
+<li><details><summary><b>Install Polkadot-js Extension</b></summary>
+<p>Go to the Threefold Dashboard: https://dashboard.grid.tf/</p>
+<p>If you don't have the Polkadot extension installed on your browser, you will be able to click on the download link directly on the Threefold Dashboard page:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_1.png?raw=true"  width="50%" height="50%">
+<p>This link will lead you to the Polkadot extension download page: https://polkadot.js.org/extension/</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_2.png?raw=true"  width="50%" height="50%">
+<p>Then, simply click on &quot;Add to Chrome&quot;.</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_3.png?raw=true"  width="50%" height="50%">
+<p>Then, confirm by clicking on &quot;Add extension&quot;.</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true"  width="50%" height="50%">
+<p>You can now access the extension by clicking on the browser's extension button on the top right of the screen, and by then clicking on <em>polkadot{.js} extension</em>:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true"  width="50%" height="50%">
+<p>Make sure to carefully read the Polkadot message then click on <strong>Understood, let me continue</strong>:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_6.png?raw=true"  width="40%" height="40%">
+<p>Then click on the <strong>plus</strong> symbol to create a new account:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_7.png?raw=true"  width="40%" height="40%">
+<p>For this next step, you should be very careful. Your seed phrase is your only access to your account. Make sure to keep a copy somewhere safe and offline.</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_8.png?raw=true"  width="40%" height="40%">
+<p>After, choose a name for your account and a password:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_9.png?raw=true"  width="40%" height="40%">
+<p>Your account is now created. You can see it when you open the Polkadot extension on your browser:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_10.png?raw=true"  width="40%" height="40%">
+</li>
+</ul>
+</details>
+<ul>
+<li><details><summary><b>Create Your Deployment Account</b></summary>
+<p>Now, when you go on the <a href="https://dashboard.grid.tf/">Threefold Dashboard</a>, you can click on the <strong>Connect</strong> button on the top right corner:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_11.png?raw=true"  width="40%" height="40%">
+<p>You will then need to grant the Threefold Dashboard access to your Polkadot account.</p>
+<p>Accept the terms and then write your password to confirm:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_12.png?raw=true"  width="40%" height="40%">
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true"  width="40%" height="40%">
+<p>Then, simply click on your account name to access the Threefold Dashboard:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_14.png?raw=true"  width="40%" height="40%">
+<p>Once you open your account, you will want to create a Twin ID. Make sure it is written <strong>::1</strong> in the box and click <strong>Create</strong>. </p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_15.png?raw=true"  width="40%" height="40%">
+<p>You will also be asked to confirm the transaction.</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true"  width="40%" height="40%">
+<p>That's it! You've successfully created an account on the TFChain thanks to the Polkadot extension. You can now access the Threefold Dashboard.</p>
+<p>On to the next section! Where we will transfer (or swap) TFT from the Stellar Chain on your Threefold Connect app wallet to the TFChain on the Threefold Dashboard.</p>
+<p>You'll see, this is so easy thanks to the Threefold Dashboard configuration.</p>
+</li>
+</ul>
+</details>
+<ul>
+<li><details>
+  <summary><b>Transfer TFT from Stellar Chain to TF Chain</b></summary>
+<p>On the <a href="https://dashboard.grid.tf/">Threefold Dashboard</a>, click on the <strong>Portal</strong>, then click on <strong>Swap</strong>.</p>
+<p>Make sure the chain <strong>stellar</strong> is selected. Then click <strong>Deposit</strong>, as we want to deposit TFT from the Stellar Chain to the TFChain.</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_16.png?raw=true"  width="40%" height="40%">
+<p>Next, you will want to scan the QR code shown on the screen. Scan the QR code with your Threefold Connect app.</p>
+<blockquote>
+<p>Note that you can also manually enter your Stellar Chain address as well as the Twin ID.</p>
+</blockquote>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_17.png?raw=true"  width="40%" height="40%">
+<p>Now open up your Threefold Connect app and follow those steps:</p>
+<p>Click on the <strong>Home</strong> menu:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_18.png?raw=true"  width="40%" height="40%">
+<p>Click on <strong>Wallet</strong>:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_19.png?raw=true"  width="40%" height="40%">
+<p>Then, click on <strong>Send Coins</strong>:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_20.png?raw=true"  width="40%" height="40%">
+<p>On the next page, select the <strong>Stellar</strong> chain, then click on <strong>SCAN QR</strong>:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_21.png?raw=true"  width="40%" height="40%">
+<p>This will automatically write the correct address and twin ID.</p>
+<p>You can now write the amount of TFT you wish to send, and then click <strong>SEND</strong></p>
+<blockquote>
+<p>We recommend to try with a small amount of TFT first to make sure everything is OK.</p>
+<p>The transfer fees are of 1 TFT per transfer.</p>
+</blockquote>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_22.png?raw=true"  width="40%" height="40%">
+<p>You will then simply need to confirm the transaction. It is a good opportunity to make sure everything is OK.</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_23.png?raw=true"  width="40%" height="40%">
+<p>You should then receive your TFT on your Dashboard account within a few minutes.</p>
+<p>You can see your TFT balanced on the top of the screen. Here's an example of what it could look like:</p>
+  <img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_24.png?raw=true"  width="40%" height="40%">
+<blockquote>
+<p>Note: You might need to refresh (reload) the webpage to see the new TFT added to the account.</p>
+</blockquote>
+<p>That's it! You've swapped TFT from Stellar Chain to TFChain.</p>
+</li>
+</ul>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="deploying-on-the-threefold-playground"><a class="header" href="#deploying-on-the-threefold-playground"><center> Deploying on The Threefold Playground </center></a></h1>
+<img src="https://github.com/Parkers145/info_manual3/raw/development/wiki/getstarted/img/endlessscalable.png">
+<p>      With a Fully Setup Profile you now have access to deploy any of the VPS solutions available on the playground on one of thousands of nodes located across the world. The flagship deployment solution is the industry standard <a href="https://ubuntu.com">Ubuntu</a> VPS Full VM. This solution provides you the ultimate flexibility to deploy your solutions on the grid’s hardware. with the recent addition of Full-VMs you can now truly say that if you can do it in Linux, you can do it on the grid. you can deploy your VPS when you need it, where you need it, and you can delete it at any time with no lasting commitment providing the ultimate environment for deployment testing and prototyping of cloud solutions. Take a look at your deployment options here and once you have chosen, head over to the <a href="https://play.grid.tf">Playground</a></p>
+<details>
+    <summary><b>How To Deploy An Ubuntu VM</b></summary>
+<h1 id="setting-up-an-ubuntu-vm-on-the-threefold-playground"><a class="header" href="#setting-up-an-ubuntu-vm-on-the-threefold-playground">Setting Up an Ubuntu VM On the Threefold Playground </Center></a></h1>
+<p>       The <a href="https://ubuntu.com">Ubuntu</a> images are the most versatile deployments and allow you to take advantage of the worldwide grid, while being able to utilize exsisting tools and documentation related to the <a href="https://ubuntu.com">Ubuntu</a> cloud images. This can enable the grid to host any services that are hostable in a linux server, whether that be a simple website, a database or a game server. By default the Full-VM images included in the playground are, </p>
+<ul>
+<li><a href="https://releases.ubuntu.com/18.04/">Ubuntu 18.04</a></li>
+<li><a href="https://releases.ubuntu.com/20.04/">Ubuntu 20.04</a></li>
+<li><a href="https://releases.ubuntu.com/22.04/">Ubuntu 22.04</a></li>
+</ul>
+<p>these images can be deployed with no additional configuration require to have a functional VPS, In order to deploy these images you will need to have your playground deployment profile setup there are steps documenting that process in the <a href="playground/setup">Setting up You Playground</a> section. </p>
+<p>with a setup Deployment profile you will select Full VM in the Sidebar this will bring you to the configuration window for your VPS. There are to tabs available here and I will address them indvidually </p>
+<ul>
+<li><strong>Config:</strong> this section configures the base attributes of your deployment and includes the following sections 
+<ul>
+<li><em>Name:</em> this will be your deployment host name. </li>
+<li><em>VM Image:</em> Here you can select one of the default images, or provide a custom flist link to choose the image deployed. </li>
+<li><em>CPU (vcores):</em> This is where you choose the number of threads that will be exposed to your deployment from the host node</li>
+<li><em>Memory:</em> This configures the amount of memory that will be available to your workload from the host node. </li>
+<li><em>Disk Size:</em> This sets the size of the root disk for your deployment. </li>
+<li><em>Public IPv4:</em> This slider enables your load deploying with a Public IPv4 address exposed to the general internet </li>
+<li><em>Public IPv6:</em> This slider enables your load deploying with a Public IPv6 address exposed to the general internet </li>
+<li><em>Planetary Network</em> This slider deploys your workload with a Planetary Network IP as an alternative soluton to accessing over public ipv4/ipv6. In order to connect to workloads using only planetary I.P you will need to install the <a href="https://github.com/threefoldtech/planetary_network">Threefold Network Connector</a> for Desktops, Or the Threefold Connect App available for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&amp;hl=en_US&amp;gl=US">Android</a> and <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">IOS</a>, for mobile clients. </li>
+<li><em>Node Selection:</em> This is where you will choose the node that your workload deploys on your can either utilize the capacity filter or manually select a node. you can use the <a href="https://dashboard.grid.tf/explorer/nodes">Threefold Grid Explorer</a> or a community IOS application called <a href="https://apps.apple.com/ca/app/3node-info/id1639700546">3node-Info</a> to locate nodes near you. </li>
+</ul>
+</li>
+<li><strong>Disks:</strong> This sections allows you to add additional ssd storage to your workload, you will click the blue addition symbol in the top right corner of the disks tab and be presented with two fields
+<ul>
+<li><em>name:</em> This is the name of the disk on the grid</li>
+<li><em>size:</em> This is the size of the disk in GB, it noteworthy to mention no single disk can exceed the sized of the hosts node individual drives, if you have trouble adding large disks this may be the problem. try a smaller size, drives can be combined with LVM in the ubuntu image after deployment. </li>
+</ul>
+</li>
+</ul>
+<p>      Once you have set all of your configuration parameters you only have to click deploy and wait, if you are downloading a large base image to the node, sometimes this will time out after 5 minutes, if this happens wait a short while and attempt you deployment again the image continues to download and is cached even if the deployment fails allowing you to redeploy once it is stored locally. </p>
+</details>
+<ul>
+<li>
+<p>Customized Full VM Linux images can be created for the grid using the process here <a href="https://forum.threefold.io/t/manipulating-cloud-images-for-the-grid/3380">Manipulating Cloud Images for the Grid</a></p>
+</li>
+<li>
+<p>Docker Hub images can be converted on the <a href="https://Hub.Grid.tf">Threefold Hub</a></p>
+</li>
+</ul>
+<p><strong>Deployable Applets</strong></p>
+<p>The Playground is also host to several use case specific deployments that further automate the deployment process of end-user solutions on the Threefold Grid. Many of these solutions are designed to allow everyday users to contribute to other projects that share the vision of a decentralized world. The Threefold grid is designed to support decentralization, not compete with other forms, and is intended to provide a solid hosting support infrastructure to both crypto-currencies and otherwise decentralization focused projects. Currently the grids deployment solutions include. </p>
+<h3 id="algorand"><a class="header" href="#algorand"><a href="https://algorand.com">Algorand</a></a></h3>
+<hr />
+<p>Algorand removes the technical barriers that for years undermined mainstream blockchain adoption: decentralization, scale, and security. Now you can build on a stable platform you trust.</p>
+<details><summary>Deploying With Algorand</summary>
+<hr />
+<hr />
+</details>
+<h3 id="kubernetes"><a class="header" href="#kubernetes"><a href="https://kubernetes.io/">Kubernetes</a></a></h3>
+<hr />
+<p>A portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.</p>
+<details><summary>Deploying A Kubernetes Cluster</summary>
+<hr />
+<hr />
+</details>
+<h3 id="caprover"><a class="header" href="#caprover"><a href="https://caprover.com/">Caprover</a></a></h3>
+<hr />
+<p>An extremely easy to use app/database deployment &amp; web server manager for your NodeJS, Python, PHP, ASP.NET, Ruby, MySQL, MongoDB, Postgres, WordPress (and etc...) applications!</p>
+<details><summary>Deploying With Caprover</summary>
+<hr />
+<hr />
+</details>
+<h3 id="peertube"><a class="header" href="#peertube"><a href="https://joinpeertube.org/">Peertube</a></a></h3>
+<hr />
+<p>The free and decentralized alternative to video platforms, providing you over 600,000 videos published by 150,000 users and viewed over 70 million times</p>
+<details><summary>Deploying With Peertube</summary>
+<hr />
+<hr />
+</details>
+<h3 id="funkwhale"><a class="header" href="#funkwhale"><a href="https://funkwhale.audio/">Funkwhale</a></a></h3>
+<hr />
+<p>A community-driven project that lets you listen and share music and audio within a decentralized, open network.</p>
+<details><summary>Deploying With Funkwhale</summary>
+<hr />
+<hr />
+</details>
+<h3 id="mattermost"><a class="header" href="#mattermost"><a href="https://mattermost.com/">Mattermost</a></a></h3>
+<hr />
+<p>An open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams</p>
+<details><summary>Deploying With Mattermost</summary>
+<hr />
+<hr />
+</details>
+<h3 id="discourse"><a class="header" href="#discourse"><a href="https://www.discourse.org/">Discourse</a></a></h3>
+<hr />
+<p>The 100% open source discussion platform built for the next decade of the Internet. Use it as a mailing list, discussion forum, long-form chat room, and more!</p>
+<details><summary>Deploying With Discourse</summary>
+<hr />
+<hr />
+</details>
+<h3 id="taiga"><a class="header" href="#taiga"><a href="https://www.taiga.io/">Taiga</a></a></h3>
+<hr />
+<p>The free and open-source project management tool For cross-functional agile teams to work effectively A featured-rich software that offers a very simple start through its intuitive user interface.</p>
+<details><summary>Deploying With Taiga</summary>
+<hr />
+<hr />
+</details>
+<h3 id="owncloud"><a class="header" href="#owncloud"><a href="https://owncloud.com/">Owncloud</a></a></h3>
+<hr />
+<p>Control your data – always, anytime and anywhere. Deploy ownCloud on-premises, in a data center of your choice or in a hybrid setup. Regulations and certifications? Say no more. We keep your back! With multi-factor authentication, encryption and our elaborate file lifecycle management. Looking for 100% data ownership? Deploy with owncloud on Threefold </p>
+<details><summary>Deploying With OwnCloud</summary>
+<hr />
+<hr />
+</details>
+<h3 id="presearch"><a class="header" href="#presearch"><a href="https://presearch.io/">Presearch</a></a></h3>
+<hr />
+<p>Search privately, receive better results and get rewarded with the Presearch decentralized search engine, powered by blockchain technology.</p>
+<details><summary>Deploying With Presearch</summary>
+<hr />
+<hr />
+</details>
+<h3 id="subsquid"><a class="header" href="#subsquid"><a href="https://subsquid.io/">SubSquid</a></a></h3>
+<hr />
+<p>An on-chain data processing solution that enables Web3 builders to gain access to on-chain data on their own terms.</p>
+<details><summary>Deploying With Subsquid</summary>
+<hr />
+<hr />
+</details>
+<h3 id="casperlabs"><a class="header" href="#casperlabs"><a href="https://casperlabs.io/">CasperLabs</a></a></h3>
+<hr />
+<p>A team of builders, entrepreneurs, academics, and leaders who believe strongly in the potential of a blockchain-enabled world. We’ve come together to steward the development of the Casper Network, a blockchain protocol built from the ground up to remain true to core Web3 principles and adapt to the needs of our evolving world. Come join us and help build the future.</p>
+<details><summary>Deploying With Casper Labs</summary>
+<hr />
+<hr />
+</details>
+<h3 id="node-pilot"><a class="header" href="#node-pilot"><a href="https://nodepilot.tech/">Node Pilot</a></a></h3>
+<hr />
+<p>A simple Linux executable, making your deployment options endless. No command-line experience is required. Whether on VMs or bare-metal, anyone can run crypto nodes with Node Pilot. Entry-level friendly. Self-host or Cloud VPS.</p>
+<details><summary>Deploying With Node Pilot</summary>
+<hr />
+<hr />
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="getting-support-for-your-playground-deployment"><a class="header" href="#getting-support-for-your-playground-deployment"><center> Getting Support For Your Playground Deployment </center></a></h1>
+<img src="https://github.com/Parkers145/info_manual3/blob/development/wiki/faq/img/tf_grid_3nodes.png?raw=true">
+<p>This Guide is supported by multiple video tutorials you can find a master directory of the videos related to Threefold in the <a href="https://forum.threefold.io/t/threefold-video-gallery/3091">Gallery</a></p>
+<p>Some Specifics videos for those getting started</p>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=_tNK_1DeTPQ">Setting up a Twin to Farm or Deploy on Threefold</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=YZ10AKc-crY">Managing your Threefold TFT Balance the Easy Way</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=UfwALtDB3yU">Using the Lobster Interface with your Threefold Connect Wallet</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=uiRYEaIviGI">SSH your Threefold Deployment from Windows with WSL</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=NEXuWCggFB8">SSH your Threefold Deployment from Windows with Putty</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=3OILB_2082k">The Threefold Hub Home of Custom Images for the Threefold Grid</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=KYhk8wMjeic">Fund your Deployment Twin from a non Threefold Connect wallet</a></p>
+</li>
+</ul>
+<p>For live support there is a chat function at <a href="https://threefold.io">Threefold.Io</a>
+You can get help from the community on the <a href="https://forum.threefold.io">Forums</a>
+or you join our <a href="https://t.me/threefoldtesting">Grid Testers Telegram</a>, <a href="https://t.me/threefold">Main Telegram</a>, or <a href="https://t.me/threefoldfarmers">Farmers Chat</a>, 
+Remember this is a enviroment working to develop new technologies, if you find a bug we welcome all feedback please send bug reports to our <a href="https://github.com/threefoldtech/test_feedback">Test_Feedback Repo</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="setting-up-an-ubuntu-vm-on-the-threefold-playground-1"><a class="header" href="#setting-up-an-ubuntu-vm-on-the-threefold-playground-1">Setting Up an Ubuntu VM On the Threefold Playground </Center></a></h1>
+<p>       The <a href="https://ubuntu.com">Ubuntu</a> images are the most versatile deployments and allow you to take advantage of the worldwide grid, while being able to utilize exsisting tools and documentation related to the <a href="https://ubuntu.com">Ubuntu</a> cloud images. This can enable the grid to host any services that are hostable in a linux server, whether that be a simple website, a database or a game server. By default the Full-VM images included in the playground are, </p>
+<ul>
+<li><a href="https://releases.ubuntu.com/18.04/">Ubuntu 18.04</a></li>
+<li><a href="https://releases.ubuntu.com/20.04/">Ubuntu 20.04</a></li>
+<li><a href="https://releases.ubuntu.com/22.04/">Ubuntu 22.04</a></li>
+</ul>
+<p>these images can be deployed with no additional configuration require to have a functional VPS, In order to deploy these images you will need to have your playground deployment profile setup there are steps documenting that process in the <a href="playground/setup">Setting up You Playground</a> section. </p>
+<p>with a setup Deployment profile you will select Full VM in the Sidebar this will bring you to the configuration window for your VPS. There are to tabs available here and I will address them indvidually </p>
+<ul>
+<li><strong>Config:</strong> this section configures the base attributes of your deployment and includes the following sections 
+<ul>
+<li><em>Name:</em> this will be your deployment host name. </li>
+<li><em>VM Image:</em> Here you can select one of the default images, or provide a custom flist link to choose the image deployed. </li>
+<li><em>CPU (vcores):</em> This is where you choose the number of threads that will be exposed to your deployment from the host node</li>
+<li><em>Memory:</em> This configures the amount of memory that will be available to your workload from the host node. </li>
+<li><em>Disk Size:</em> This sets the size of the root disk for your deployment. </li>
+<li><em>Public IPv4:</em> This slider enables your load deploying with a Public IPv4 address exposed to the general internet </li>
+<li><em>Public IPv6:</em> This slider enables your load deploying with a Public IPv6 address exposed to the general internet </li>
+<li><em>Planetary Network</em> This slider deploys your workload with a Planetary Network IP as an alternative soluton to accessing over public ipv4/ipv6. In order to connect to workloads using only planetary I.P you will need to install the <a href="https://github.com/threefoldtech/planetary_network">Threefold Network Connector</a> for Desktops, Or the Threefold Connect App available for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&amp;hl=en_US&amp;gl=US">Android</a> and <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">IOS</a>, for mobile clients. </li>
+<li><em>Node Selection:</em> This is where you will choose the node that your workload deploys on your can either utilize the capacity filter or manually select a node. you can use the <a href="https://dashboard.grid.tf/explorer/nodes">Threefold Grid Explorer</a> or a community IOS application called <a href="https://apps.apple.com/ca/app/3node-info/id1639700546">3node-Info</a> to locate nodes near you. </li>
+</ul>
+</li>
+<li><strong>Disks:</strong> This sections allows you to add additional ssd storage to your workload, you will click the blue addition symbol in the top right corner of the disks tab and be presented with two fields
+<ul>
+<li><em>name:</em> This is the name of the disk on the grid</li>
+<li><em>size:</em> This is the size of the disk in GB, it noteworthy to mention no single disk can exceed the sized of the hosts node individual drives, if you have trouble adding large disks this may be the problem. try a smaller size, drives can be combined with LVM in the ubuntu image after deployment. </li>
+</ul>
+</li>
+</ul>
+<p>      Once you have set all of your configuration parameters you only have to click deploy and wait, if you are downloading a large base image to the node, sometimes this will time out after 5 minutes, if this happens wait a short while and attempt you deployment again the image continues to download and is cached even if the deployment fails allowing you to redeploy once it is stored locally. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="acessing-your-ubuntu-vm-deployed-on-the-threefold-grid"><a class="header" href="#acessing-your-ubuntu-vm-deployed-on-the-threefold-grid"><Center> Acessing your Ubuntu VM Deployed on the Threefold Grid </Center></a></h1>
+<p>      Once you have deployed your Ubuntu vm its time to put it to work, when your workload deploys successfully you will be presented with a status read out that reports the Ip addresses that your workload has deployed with,</p>
+<p>If you have deployed with only a planetary network address you will need to install the <a href="https://github.com/threefoldtech/planetary_network">Planetary Network Connector</a> and have it connected prior to connecting to your workload. Connecting to any workload using the planetary network has the added benefit of connecting you over an encrypted ipv6 tunnel. if you need that. </p>
+<h1 id="windows"><a class="header" href="#windows">Windows</a></h1>
+<p>On windows you have to very simple options for connecting to your workload, Putty and WSL. </p>
+<h1 id="connecting-to-grid-vms-from-widows-using-putty"><a class="header" href="#connecting-to-grid-vms-from-widows-using-putty">Connecting to Grid VMs from Widows Using Putty</a></h1>
+<p>https://youtu.be/NEXuWCggFB8</p>
+<p>if you’re running Windows, you might want to use Putty to connect to your Grid VMs. This is possible, but you will need to make sure the ssh key you created your playground profile with is save in the right format. Here’s a quick step by step:</p>
+<details>
+	<summary><b>Format your SSH Key For Putty Using PuttyGen</b></summary>
+<p>First run PuttyGen. Even if you already have a key you want to use, this is the best way to get the public key in the proper format. If you don’t already have a key, choose RSA and hit generate. When you’re done, hit Save private key and write the .ppk file to disk. We’ll use this file in the next step to connect.</p>
+<p>If you already had a key or want to return to this step later, hit the Load button and select the ppk file. At the top of the PuttyGen window, you’ll see a field with the public key:</p>
+<p><img src="https://user-images.githubusercontent.com/44621168/214651082-2b45b153-2a9b-4026-a627-1dacee5fcb77.png" alt="image" /></p>
+<p>Copy the public key from this window, making sure you get everything between ssh-rsa and the key comment rsa-key... in this case. Paste that into the ssh public key field in the playground or Terraform file for your deployment. In case of the playground, also save your profile after doing this.</p>
+<p><em>Copying and pasting the public key from your ppk file will not work. There are line breaks in the file that get interpreted as extra information when they get passed to the VM. You might have success removing the line breaks manually, but copying the public key from this gui window is the simplest and most reliable way to make this work.</em></p>
+</details>
+<p>Once you have your SSH key Sorted, You will be ready to</p>
+<details>
+	<summary><b>Connect with Putty</b></summary>
+<p>After you’ve added the key to your playground profile or Terraform file, create your deployment. There’s no way to change the SSH key in an existing deployment, you must delete and redeploy. Copy the IP address once the deployment is successful and then open Putty.</p>
+<p>In Putty’s config screen, navigate to Connection &gt; SSH &gt; Auth:</p>
+<p><img src="https://user-images.githubusercontent.com/44621168/214651140-7dd0999b-44cb-40fd-9c00-034aa550d8af.png" alt="image" /></p>
+<p>Hit Browse… and select your ppk file. Then go to Session at the top of the left nav bar and enter your VMs IP address in the Host Name (or IP address) field. Then hit the Open button at the bottom of the window to start your session. When you are prompted for a user name, enter root and you should then get access to a terminal with no password prompt.</p>
+<p>If you’re prompted for a password, something went wrong and you won’t be able to log in. Go back and check the steps above, then feel free to post questions or problems in this thread.</p>
+</details>
+</details>
+<h1 id="connecting-to-a-grid-vm-from-windows-using-wsl"><a class="header" href="#connecting-to-a-grid-vm-from-windows-using-wsl">Connecting to A Grid VM From Windows Using WSL</a></h1>
+<p>https://www.youtube.com/watch?v=uiRYEaIviGI</p>
+<p>The windows subsystem for Linux also supports SSH connections to grid deployed workloads, there is a little more setup involved than Putty. </p>
+<details>
+    <summary><b>Install WSL 2 and Ubuntu 22.04 in windows</b></summary>
+<ul>
+<li>Make sure you have Windows 10 version 2004 or higher installed. You can check your version by going to Settings &gt; System &gt; About.</li>
+<li>Open the Windows PowerShell as an administrator and run the command </li>
+</ul>
+<pre><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+# This will enable the WSL feature on your Windows machine.
+</code></pre>
+<ul>
+<li>Restart your computer to complete the installation of the WSL feature.</li>
+<li>Open the Microsoft Store and search for &quot;Ubuntu 22.04 LTS&quot; and select the version provided by Canonical Group Limited, this will download and install the Ubuntu distro on your machine.</li>
+<li>Open the Ubuntu app from your Start menu, this will open the Ubuntu terminal and will take a few minutes to complete the setup.</li>
+<li>Once the setup is complete, you will be prompted to create a new user and password.</li>
+<li>Run sudo apt update and sudo apt upgrade to update and upgrade all the packages on your system.</li>
+<li>Once done, you can now use Ubuntu 22.04 LTS on Windows through the WSL 2.</li>
+</ul>
+<p>Please note that WSL 2 requires virtualization support, so make sure that virtualization is enabled in your system's BIOS settings.</p>
+<p>That's it! You have successfully installed WSL 2 and Ubuntu 22.04 LTS on your Windows machine. Now you can use Ubuntu commands and install any package you like using apt command.</p>
+</details>
+<details>
+    <summary><b>Generate SSH key and Import to WSL</b></summary>
+<details>
+    <summary>Generate and import key files Using SSH-KEYGEN and SSH-COPY-ID</summary>
+<ul>
+<li>
+<p>Open the Windows Command Prompt or PowerShell and run the command ssh-keygen. This will generate a new SSH key pair on your Windows machine.</p>
+</li>
+<li>
+<p>Run the command ssh-copy-id <username>@<wsl-ip-address> to copy your public key to the WSL instance. Replace <username> with your username on the WSL instance and <wsl-ip-address> with the IP address of the WSL instance.</p>
+</li>
+<li>
+<p>Open the WSL instance and navigate to the ~/.ssh directory. You should see a file called authorized_keys, which contains the public key that you just copied over.</p>
+</li>
+<li>
+<p>Open the file ~/.ssh/config and add the following:</p>
+</details>
+<details>
+    <summary>Generate and import Key Files Manually (Video Method)</summary>
+</li>
+</ul>
+<p>1.) Open the Windows Command Prompt or PowerShell and run the command ssh-keygen. This will generate a new SSH key pair on your Windows machine.</p>
+<pre><code>ssh-keygen
+</code></pre>
+<p>2.) Open your Installed WSL and switch to the root accound </p>
+<pre><code>su root
+</code></pre>
+<p>3.) Vavigate to the directory your ssh key files are saved in typically /mnt/c/users/youruser/.ssh</p>
+<pre><code>cd /mnt/c/users/parkers/.ssh
+</code></pre>
+<p>4.) Create a directory for your SSH KEYS </p>
+<pre><code>mkdir /home/parker/.ssh
+
+# (/home/user/.ssh) if you want to use the key without being root 
+
+# (/root/.ssh) if yo want the keys to only be accesible by the wsl root account. 
+
+</code></pre>
+<p>5.) Copy your key files to the appropriate directory, typically /home/youruser/.ssh</p>
+<pre><code>cp /mnt/c/users/parkers/.ssh/id_rsa.pub /home/youruser/.ssh/id_rsa.pub
+cp /mnt/c/users/parkers/.ssh/id_rsa /home/youruser/.ssh/id_rsa
+</code></pre>
+<p>6.) Properly own the key files in WSL </p>
+<pre><code>chown parker:parker /home/youruser/.ssh/id_rsa.pub
+chown parker:parker /home/youruser/.ssh/id_rsa
+</code></pre>
+<p>7.) Protect your keys </p>
+<pre><code># Set the .ssh directory and public key to 644 
+
+chmod 644 /home/user/.ssh
+chmod 644 /home/user/.ssh/id_rsa.pub
+
+
+# Set your Private Key so that only you can read it by making it 600
+
+chmod 600 /home/user/.ssh/id_rsa.pub
+</code></pre>
+</details>
+</details>
+<details>
+    <summary><b>Connect to your VM using WSL</b></summary>
+<p>Once you generated your keys and imported them into WSL you will be ready to connect to your VM</p>
+<details>
+    <summary>Connect using a public IPV4/IPV6</summary>
+<p>to connect you will type SSH follow by root@yourvmsipv4 or root@[yourvmsipv6]</p>
+<pre><code>ssh root@162.205.204.230
+ssh root@[2a02:16a8:dc:501:74d4:eeff:fe1b:64c5]
+</code></pre>
+</details>
+<details>
+    <summary>Connect to your VM using the Planetary Network</summary>
+<p>Windows subsystem for linux is not compatible with any current version on the planetary network connector you will need to do some extra setup to use the planetary network with WSL </p>
+<ul>
+<li>You can find Documentation on how to connect install yggdrasil and connect to the planetary network in WSL 2 here https://forum.threefold.io/t/howto-connect-to-planetary-network-on-wsl2/3511</li>
+<li>Once you are connected to the network you will connect to the planetary address like any other ipv6 address with ssh root@[planetarynetworkaddress]</li>
+</ul>
+<pre><code>ssh root@[300:d969:30ff:c0a0:e4d4:88ba:ecdd:2b70]
+</code></pre>
+<p><strong>Tip</strong> if your having trouble telling which ip is your planetary address, they always start with 200 or 300 IE. <b>300</b>:d969:30ff:c0a0:e4d4:88ba:ecdd:2b70</p>
+</details>
+</details>
+<h1 id="connecting-to-a-deployed-vm-from-linux"><a class="header" href="#connecting-to-a-deployed-vm-from-linux">Connecting to A Deployed VM From Linux</a></h1>
+<p>Linux is natively compatible with the grid and can ssh workloads from the terminal with no additional software when using public ipv4/ipv6. If you workload has been deployed using only a planetary network address, you will need to install the <a href="https://github.com/threefoldtech/planetary_network">Planetary Network Connecter</a> and have it connected prior to connecting to your deployed workload.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="creating-a-customized-ubuntu-cloud-image-flist"><a class="header" href="#creating-a-customized-ubuntu-cloud-image-flist">Creating a Customized Ubuntu Cloud Image Flist</a></h1>
+<p>       This tutorial will guide you through the process of creating a custom Ubuntu Full VM Flist using Linux. A Flist image is a pre-configured virtual machine that can be easily deployed on the Grid. By creating a custom image, you can add your own software and settings to the image, making it easier to set up and configure new instances on the cloud.</p>
+<p>Before we begin, there are a few things you will need:</p>
+<ul>
+<li>A hypervisor (such as KVM or Virtualbox)</li>
+<li>Two tools called virt-customize and qemu-img, which you will need to install on your computer.
+<pre><code>apt install libguestfs-tools qemu-utils
+</code></pre>
+</li>
+<li>Some basic knowledge of Linux</li>
+</ul>
+<details>
+	<summary><b>Step 1: Download the Cloud Image You Want To Use</b></summary>
+<p>To start, you will need to download a cloud image of your choice. In this example, we will use Ubuntu 20.04. You can download the image by visiting this <a href="https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img">link:</a></p>
+<p>or with </p>
+<pre><code>wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
+</code></pre>
+</details>
+<details>
+	<summary><b>Step 2: Resize the partition of the image</b></summary>
+<p>The standard Ubuntu cloud image is 2.1GB in size. If you need more space for the software you will add later, you can use a tool called &quot;qemu-img&quot; to resize the partition of the image. To do this, open the command prompt and type the following command: </p>
+<pre><code>qemu-img resize focal-server-cloudimg-amd64.img +1G
+</code></pre>
+<ul>
+<li>This will add 1GB to the image.</li>
+</ul>
+</details>
+<details>
+	<summary><b>Step 3: Set a root password</b></summary>
+We need to set a root password so we can login to the VM console to set up our image. To do this, open the command prompt and type the following command: 
+<pre><code>virt-customize -a ubuntu-20-04-amd64.img --root-password password:yourpassword
+(replace &quot;yourpassword&quot; with the password of your choice)
+</code></pre>
+</details>
+<details>
+	<summary><b>Step 4: Expand the file system on the cloud image</b></summary>
+ Expanding the file system of an Ubuntu cloud image after using the qemu-img resize command can be done using the GParted partition editor tool. GParted is a graphical tool that allows you to view and modify the partitions on your disk.
+<ul>
+<li>
+<p><strong>1.) Mount the image:</strong></p>
+<p>You will need to mount the image to the qemu hypervisor. You can do this by running the command </p>
+<pre><code>qemu-nbd -c /dev/nbdX your_image.img
+(replace X with the next available nbd device number and your_image.img with the actual name of your image file)
+```	
+&lt;details&gt;
+	&lt;summary&gt;letter &quot;X&quot; is a placeholder for the next available nbd device number. To know what to use for &quot;X&quot;, Click Here &lt;/summary&gt;
+	
+</code></pre>
+<p>ls /dev/nbd*</p>
+<pre><code>This command will list all of the nbd devices that are currently available on your system. If you don't have any nbd devices connected, you can use &quot;X&quot; as 0. If you already have some nbd devices connected, you can use the next available number. For example, if you have /dev/nbd0 and /dev/nbd1 connected, you can use &quot;X&quot; as 2.
+
+Also, you could use a command such as 
+	
+</code></pre>
+<p>ls /dev/nbd* | grep -o '[0-9]' | tail -1</p>
+<pre><code>to get the next available nbd device number. This command will list all nbd devices, pick only the numbers, and get the last one, so it will give you the next 		available one.
+&lt;/details&gt;
+
+</code></pre>
+</li>
+<li>
+<p><strong>2.) Start GParted:</strong></p>
+<p>Once you have mounted the image, open a terminal and run the command </p>
+<pre><code>sudo gparted /dev/nbdX&quot; 
+(replace X with the nbd device number used in the previous step) to start GParted.
+</code></pre>
+</li>
+<li>
+<p><strong>3.) Select the cloud image:</strong></p>
+<p>In GParted, select the cloud image(the ext4 partition) from the device list, and right-click on it and choose ‘Resize/Move’.
+<img src="https://user-images.githubusercontent.com/44621168/214429547-b1b8583f-4949-4f4e-9c5b-0c73e3b78f38.png" alt="selectthecloudimage" /></p>
+</li>
+<li>
+<p><strong>4.) Expand the partition:</strong></p>
+<p>Move the used ‘partition space bar’ to the right to expand the file system.
+<img src="https://user-images.githubusercontent.com/44621168/214430335-edf566da-8793-40ab-be5e-4caae247c81b.png" alt="movepartcmb" /></p>
+</li>
+<li>
+<p><strong>5.) Apply the changes:</strong></p>
+<p>Then press ‘Resize/Move’, next the green check mark to apply the changes, confirm with ‘Apply’
+<img src="https://user-images.githubusercontent.com/44621168/214429522-f19bd0a0-df8b-4aa3-80b7-3d5fc2fbebc3.png" alt="apply all operatiosn" /> </p>
+</li>
+</ul>
+<p>By doing this, you will expand the partition and the file system on the cloud image.</p>
+<ul>
+<li><strong>6.) Unmount the image:</strong>
+You can unmount the image by running the command &quot;
+<pre><code>qemu-nbd -d /dev/nbdX&quot;
+(replace X with the nbd device number used in the previous step)
+</code></pre>
+</li>
+</ul>
+<p>It's worth noting that, depending on the size of the partition and the amount of data on it, this process may take some time, so it's best to be patient.</p>
+</details>
+<details>
+	<summary><b>Step 5: Install your custom software</b></summary>
+<p>To start the temporary VM for customizing the cloud image using the QEMU hypervisor, you will need to use the command line. The process is as follows:</p>
+<ul>
+<li>
+<p><strong>1.) Open the command prompt or terminal on your computer.</strong></p>
+</li>
+<li>
+<p><strong>2.) Navigate to the location of the cloud image you downloaded earlier using the &quot;cd&quot; command.</strong></p>
+</li>
+<li>
+<p><strong>3.) Start and modify your image</strong>
+you can use this command to start the virtual machine.</p>
+<pre><code>qemu-system-x86_64 -enable-kvm -m 2048 -hda your_image.img to start the virtual machine.
+</code></pre>
+<ul>
+<li>-enable-kvm will enable hardware acceleration, -m 2048 will assign 2048MB of memory to the virtual machine, </li>
+<li>-hda your_image.img will specify the path to the cloud image you want to use.</li>
+</ul>
+<p>Once the virtual machine is running, you can use this command to check if the image is running.</p>
+<pre><code>qemu-monitor-command --hmp 'info block' 
+</code></pre>
+<p>To access the virtual machine console, you can use this  command </p>
+<pre><code>qemu-system-x86_64 -enable-kvm -m 2048 -hda your_image.img -monitor stdio&quot;
+</code></pre>
+</li>
+</ul>
+</details>
+<details>
+  <summary><b>Step 6: Cleanup</b></summary>
+  Once everything has been set up to your liking and before shutting down the vm, it's important to do some cleanup to ensure the image is secure and ready for deployment. The following are the steps you need to take via the VM console:
+<ul>
+<li>
+<p><strong>1.) Default the sshd config:</strong></p>
+<p>The first step is to default the sshd config file to remove any changes that were made to enable root login and password authentication. This is important to ensure that the image is secure when it's deployed on the grid.
+You can do this by running the command:</p>
+<pre><code>cp /etc/ssh/sshd_config_backup /etc/ssh/sshd_config
+</code></pre>
+<p>This command will copy the original sshd config file that was backed up earlier, replacing the current config file with the original.</p>
+</li>
+<li>
+<p><strong>2.) Remove ssh key files:</strong></p>
+<p>It's important to remove the ssh key files that were generated when enabling SSH, as they can be used to access the image remotely. You can remove these files by running the command:</p>
+<pre><code>rm /etc/ssh/ssh_host_*
+</code></pre>
+<p>This command will remove all files that start with &quot;ssh_host_&quot; in the /etc/ssh/ directory.</p>
+</li>
+<li>
+<p><strong>3.) Remove the directory /run/sshd:</strong></p>
+<p>The directory /run/sshd is used by the SSH daemon and it's important to remove it as well. You can remove this directory by running the command:</p>
+<pre><code>rm -r /run/sshd
+</code></pre>
+</li>
+<li>
+<p><strong>4.) Enable all required systemd services:</strong></p>
+<p>This step is important to ensure that your custom software or service will start automatically when the image boots. You can enable a systemd service by running the command:</p>
+<pre><code>systemctl enable your-service
+(replace &quot;your-service&quot; with the service name)
+</code></pre>
+</li>
+<li>
+<p><strong>5.) Check and enable the firewall:</strong></p>
+<p>It's important to check and enable the firewall to ensure the image is secure when it's deployed. You can check the firewall status by running the command:</p>
+<pre><code>ufw status
+</code></pre>
+<p>If the firewall is not enabled, you can enable it by running the command:</p>
+<pre><code>ufw enable
+</code></pre>
+</li>
+<li>
+<p><strong>6.) Change root password:</strong></p>
+<p>It's important to clear the root password to ensure the image is secure when it's deployed. You can clear the root password by running the command:</p>
+<pre><code>passwd -d &quot;your User&quot;
+</code></pre>
+</li>
+<li>
+<p><strong>7.) Clear bash history:</strong></p>
+<p>To ensure that your commands and configurations are not visible to others, it's important to clear the bash history for root and other users. You can clear the bash history for root</p>
+<p>by running the command:</p>
+<pre><code>echo &quot;&quot; &gt; /root/.bash_history
+</code></pre>
+<p>This command will overwrite the .bash_history file with an empty string, effectively clearing it.</p>
+<p>If you have created other users on the VM, you will also need to clear their bash history by running the command:</p>
+<pre><code>echo &quot;&quot; &gt; /home/username/.bash_history
+(replace &quot;username&quot; with the actual username)
+</code></pre>
+<p>It's also a good idea to logout of the VM console, log back in, and use a text editor such as Vim or Nano to edit the .bash_history file and put a space in front of the text editor command (so it’s not stored in the bash history when you logout). This can be done by running the command :</p>
+<pre><code>space + text editor command (ex: vim /root/.bash_history)
+</code></pre>
+<p>Once you have completed all the cleanup steps, you can shut down the VM and use the cloud image for deployment. Keep in mind that the image can be reused multiple times, and it's important to keep the image up-to-date and maintain the security of the image.</p>
+</li>
+</ul>
+</details>
+<details>
+	<summary><b>Step 7: Upload image to the Hub</b></summary>
+<p>Once you have completed customizing the cloud image and have done the necessary cleanup, the next step is to package and upload the image to the Hub. The Hub is a centralized repository where you can store and share your custom images.</p>
+<ul>
+<li>
+<p><strong>1.) Convert the image format:</strong></p>
+<p>You will need to convert the image format from qcow2 to raw using the command </p>
+<pre><code>qemu-img convert -p -f qcow2 -O raw your_image.img image.raw&quot;
+</code></pre>
+<p>This command will convert the image format and save the output as &quot;image.raw&quot;, you must use this name for a full vm. </p>
+</li>
+<li>
+<p><strong>2.) Create a tarball of the image:</strong></p>
+<p>Create a tarball of the image by running the command </p>
+<pre><code>tar -czf name_of_release.tar.gz image.raw
+</code></pre>
+<p>This command will create a compressed archive file &quot;name_of_release.tar.gz&quot; of the image.raw file. you can name your image here this file name is not important.</p>
+</li>
+<li>
+<p><strong>3.) Upload the image to the Hub:</strong></p>
+<p>Once you have the tarball, you can upload it to the Hub by going to https://hub.grid.tf/ and use the upload feature. Once the upload is complete, you will be able to find the uploaded image in your personal repository https://hub.grid.tf/your-username.3bot</p>
+<p>It's worth noting that you should keep the image updated and maintain the security of the image to ensure that it's safe to use.</p>
+<p>Also, depending on the size of the image, the upload may take some time, so it's best to be patient and wait for the upload to complete.</p>
+</li>
+</ul>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="your-threefold-cloud-ubuntu-vms-network-interfaces"><a class="header" href="#your-threefold-cloud-ubuntu-vms-network-interfaces">Your Threefold Cloud Ubuntu VM's Network Interfaces</a></h1>
+<p>      Deploying Ubuntu VM on the Threefold cloud follows a pretty standard procedure for any VPS, but once in your VM interacting with and configuring the network interfaces can be a bit overwhelming luckily with a little explanation of what things are and how you can use them, you will be able to follow all of the documentation for Ubuntu networking available when configuring your Threefold VPS. If you remember from our setup guide your VM has three possible interfaces Z-Net, Public IPV4/IPV6 and Planetary. When deploying on the default ubuntu images the interfaces are typically ordered </p>
+<p>Eth0: Z-net</p>
+<p>Eth1: Public IP</p>
+<p>Eth2: Planetary</p>
+<p>But if your deployments interfaces are not in this order they are each easily identifiable by their attributes </p>
+<ul>
+<li>Eth0: Z-net
+<ul>
+<li>Private Subnet IP Address And has a DNS server set </li>
+</ul>
+</li>
+<li>Eth1: Public IP
+<ul>
+<li>Public Subnet IPv4/IPv6 Address with no DNS server set </li>
+</ul>
+</li>
+<li>Eth2: Planetary
+<ul>
+<li>IPV6 Address with no IPV4 Address</li>
+</ul>
+</li>
+</ul>
+<p>      Each interface of your deployment serves a different purpose and can be used differently. </p>
+<ul>
+<li>
+<p>Z-Net: Functions most similarly to how you would expect the internet connection on your home computer to work, this interface provides the VM with access to the internet for things like OS updates or downloading files, while isolating the VM from the hosts local private network. This network also includes other 3nodes and VMs and can be used to create a link between a deployed workload with a Public IP and one without or two workloads that neither of which have public Ipss regardless of the nodes physical locations. Think of Z-Net as the LAN network of the Grid. you cannot connect non grid devices to z-net. Currently VMs deployed through playground are unable to use the overlay network to contact other playground vms, in order to configure a multi node overlay, the deployment must be accomplished using terraform. </p>
+</li>
+<li>
+<p>Public IPV4/IPV6: Deploying with this interface gives your workload its own traditional Public IPv4 or IPv6 Address and allows your workload to support workloads that will be accessed by the public or function as a router. This interface is a direct connection to the internet provided by the host of your deployments 3 nodes and the Ip belongs entirely to your virtual machine and your are able to use it to do anything your Linux VM is capable of. Public Ip addresses bill on both a reserved basis and on a per GB transferred basis, so it is advisable to transit as much traffic as possible over Z-net or the Planetary Network. You want to think of this interface as a WAN connection for the grid. Your Public Interface I.P. Address will be reachable by all internet users</p>
+</li>
+<li>
+<p>Planetary Network: This is a p2p encrypted mesh network that allows workloads without public Ip addresses to be accessed by devices that are not grid devices and cannot connect to Z-net. There is a detailed explanation of the planetary network available <a href="https://forum.threefold.io/t/how-our-planetary-network-works/1210">Here</a> But the nuts and bolts of it are that you can use it so that you can access workloads without public I.P addresses by installing the <a href="https://github.com/threefoldtech/planetary_network">Threefold Network Connector</a> for Mac, Linux Or Windows Or Threefold connect app available for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&amp;hl=en_US&amp;gl=US">Android</a> and <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">IOS</a>. This interface will be reachable by and can reach all other planetary addresses. You’ll want to think of this as the VPN network used to access the grid from non grid devices.</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="how-to-funding-your-account-for-a-terraform-deployment"><a class="header" href="#how-to-funding-your-account-for-a-terraform-deployment"> How To: Funding Your Account For a Terraform Deployment</a></h1>
+<p>For this section, we will create an account on the TFChain and transfer TFT from Stellar chain to TFChain. We will then be able to use the TFT and deploy workloads on the Threefold Grid.</p>
+<p>It is simple. The main steps are:</p>
+<ul>
+<li>Download the Polkadot extension</li>
+<li>Create an account</li>
+<li>Send TFT from Stellar Chain to TFChain</li>
+</ul>
+<details><summary><b>Install Polkadot-js Extension</b></summary>
+<p>Go to the Threefold Dashboard: https://dashboard.grid.tf/</p>
+<p>If you don't have the Polkadot extension installed on your browser, you will be able to click on the download link directly on the Threefold Dashboard page:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_1.png?raw=true" alt="image | 100x100 | thumbnail" /></p>
+<p>This link will lead you to the Polkadot extension download page: https://polkadot.js.org/extension/</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_2.png?raw=true" alt="image" /></p>
+<p>Then, simply click on &quot;Add to Chrome&quot;.</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_3.png?raw=true" alt="image" /></p>
+<p>Then, confirm by clicking on &quot;Add extension&quot;.</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true" alt="image" /></p>
+<p>You can now access the extension by clicking on the browser's extension button on the top right of the screen, and by then clicking on <em>polkadot{.js} extension</em>:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true" alt="image" /></p>
+<p>Make sure to carefully read the Polkadot message then click on <strong>Understood, let me continue</strong>:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_6.png?raw=true" alt="image" /></p>
+<p>Then click on the <strong>plus</strong> symbol to create a new account:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_7.png?raw=true" alt="image" /></p>
+<p>For this next step, you should be very careful. Your seed phrase is your only access to your account. Make sure to keep a copy somewhere safe and offline.</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_8.png?raw=true" alt="image" /></p>
+<p>After, choose a name for your account and a password:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_9.png?raw=true" alt="image" /></p>
+<p>Your account is now created. You can see it when you open the Polkadot extension on your browser:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_10.png?raw=true" alt="image" /></p>
+</details>
+<details><summary><b>Create Your Deployment Account</b></summary>
+<p>Now, when you go on the <a href="https://dashboard.grid.tf/">Threefold Dashboard</a>, you can click on the <strong>Connect</strong> button on the top right corner:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_11.png?raw=true" alt="image" /></p>
+<p>You will then need to grant the Threefold Dashboard access to your Polkadot account.</p>
+<p>Accept the terms and then write your password to confirm:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_12.png?raw=true" alt="image" /></p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true" alt="image" /></p>
+<p>Then, simply click on your account name to access the Threefold Dashboard:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_14.png?raw=true" alt="image" /></p>
+<p>Once you open your account, you will want to create a Twin ID. Make sure it is written <strong>::1</strong> in the box and click <strong>Create</strong>. </p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_15.png?raw=true" alt="image" /></p>
+<p>You will also be asked to confirm the transaction.</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true" alt="image" /></p>
+<p>That's it! You've successfully created an account on the TFChain thanks to the Polkadot extension. You can now access the Threefold Dashboard.</p>
+<p>On to the next section! Where we will transfer (or swap) TFT from the Stellar Chain on your Threefold Connect app wallet to the TFChain on the Threefold Dashboard.</p>
+<p>You'll see, this is so easy thanks to the Threefold Dashboard configuration.</p>
+</details>
+<details>
+	<summary><b>Transfer TFT from Stellar Chain to TF Chain</b></summary>
+<p>On the <a href="https://dashboard.grid.tf/">Threefold Dashboard</a>, click on the <strong>Portal</strong>, then click on <strong>Swap</strong>.</p>
+<p>Make sure the chain <strong>stellar</strong> is selected. Then click <strong>Deposit</strong>, as we want to deposit TFT from the Stellar Chain to the TFChain.</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_16.png?raw=true" alt="image" /></p>
+<p>Next, you will want to scan the QR code shown on the screen. Scan the QR code with your Threefold Connect app.</p>
+<blockquote>
+<p>Note that you can also manually enter your Stellar Chain address as well as the Twin ID.</p>
+</blockquote>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_17.png?raw=true" alt="image" /></p>
+<p>Now open up your Threefold Connect app and follow those steps:</p>
+<p>Click on the <strong>Home</strong> menu:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_18.png?raw=true" alt="image" /></p>
+<p>Click on <strong>Wallet</strong>:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_19.png?raw=true" alt="image" /></p>
+<p>Then, click on <strong>Send Coins</strong>:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_20.png?raw=true" alt="image" /></p>
+<p>On the next page, select the <strong>Stellar</strong> chain, then click on <strong>SCAN QR</strong>:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_21.png?raw=true" alt="image" /></p>
+<p>This will automatically write the correct address and twin ID.</p>
+<p>You can now write the amount of TFT you wish to send, and then click <strong>SEND</strong></p>
+<blockquote>
+<p>We recommend to try with a small amount of TFT first to make sure everything is OK.</p>
+<p>The transfer fees are of 1 TFT per transfer.</p>
+</blockquote>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_22.png?raw=true" alt="image" /></p>
+<p>You will then simply need to confirm the transaction. It is a good opportunity to make sure everything is OK.</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_23.png?raw=true" alt="image" /></p>
+<p>You should then receive your TFT on your Dashboard account within a few minutes.</p>
+<p>You can see your TFT balanced on the top of the screen. Here's an example of what it could look like:</p>
+<p><img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_24.png?raw=true" alt="image" /></p>
+<blockquote>
+<p>Note: You might need to refresh (reload) the webpage to see the new TFT added to the account.</p>
+</blockquote>
+<p>That's it! You've swapped TFT from Stellar Chain to TFChain.</p>
+</details><div style="break-before: page; page-break-before: always;"></div><h1 id="how-to-get-started-deploying-with-terraform"><a class="header" href="#how-to-get-started-deploying-with-terraform">How To Get Started Deploying With Terraform</a></h1>
+<h1 id="what-is-terraform"><a class="header" href="#what-is-terraform">What Is Terraform</a></h1>
+<p>Terraform is an open-source infrastructure as code software tool created by HashiCorp. It allows users to define and provision infrastructure resources (e.g. virtual machines, network switches, containers) using a high-level configuration language called HashiCorp Configuration Language (HCL).</p>
+<p>With Terraform, users can define the desired infrastructure resources and their dependencies in a configuration file, and use the terraform apply command to provision and manage those resources. Terraform supports a wide range of cloud providers, including AWS, Azure, Google Cloud, and many others, as well as on-premises and other infrastructure.</p>
+<p>One of the main benefits of using Terraform is that it allows users to automate the process of provisioning and managing infrastructure resources. This can save time and reduce the risk of errors compared to manually creating and managing resources through a web console or API.</p>
+<p>Terraform also includes features such as version control, resource dependencies, and the ability to preview and apply changes, which can help users manage their infrastructure more effectively.</p>
+<h1 id="how-do-i-use-it"><a class="header" href="#how-do-i-use-it">How do I use it</a></h1>
+<details>
+    <summary><b>Installing Terraform:</b></summary>
+<ul>
+<li>Go to the Terraform downloads page (https://www.terraform.io/downloads.html).</li>
+<li>Select the appropriate installer for your operating system (e.g. Windows, Linux, macOS).</li>
+<li>Run the installer and follow the prompts to install Terraform.</li>
+<li>Open a terminal or command prompt window.</li>
+<li>Type 
+<pre><code>terraform
+</code></pre>
+and press Enter to verify that the installation was successful. You should see the Terraform usage information displayed.</li>
+</ul>
+</details>
+<details>
+    <summary><b>Ubuntu Install </b></summary> 
+<p>To install Terraform on Ubuntu using apt, follow these steps:</p>
+<p>Add the HashiCorp package signing key to your system's keyring by running the following command:</p>
+<pre><code>curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+</code></pre>
+<p>Add the HashiCorp APT repository to your system's package manager by running the following command:</p>
+<pre><code>sudo apt-add-repository &quot;deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main&quot;
+</code></pre>
+<p>Update your system's package list by running the following command:</p>
+<pre><code>sudo apt update
+</code></pre>
+<p>Install Terraform by running the following command:</p>
+<pre><code>sudo apt install terraform
+</code></pre>
+<p>Verify that the installation was successful by running the following command:</p>
+<pre><code>terraform --version
+</code></pre>
+<p>You should see the version of Terraform that you installed displayed.</p>
+<p>Now you are ready to use Terraform to deploy the main.tf configuration file. Follow the steps in the previous tutorial to deploy the configuration.</p>
+</details>
+<details>
+    <summary><b>Windows Install Instructions</b></summary> 
+<p>To install Terraform on Windows, follow these steps:</p>
+<ul>
+<li>Go to the Terraform downloads page (https://www.terraform.io/downloads.html).</li>
+<li>Select the &quot;Windows 64-bit&quot; package and download it to your system.</li>
+<li>Double-click the downloaded .exe file to start the installation process.</li>
+<li>Follow the prompts to install Terraform.</li>
+<li>Once the installation is complete, open a command prompt window.</li>
+<li>Type terraform and press Enter to verify that the installation was successful. You should see the Terraform usage information displayed.</li>
+<li>Now you are ready to use Terraform to deploy the main.tf configuration file. Follow the steps in the previous tutorial to deploy the configuration.</li>
+</ul>
+</details>
+<details>
+    <summary><b>Setting your Enviroment variables</b></summary> 
+<p>Next, you would need to create a file called env.tfvars in the /deployments directory, which should contain the values for the variables defined in main.tf. For example:</p>
+<pre><code>MNEMONICS = &quot;abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon&quot;
+NETWORK = &quot;main&quot;
+SSH_KEY = &quot; Your SSH KEY here&quot;
+</code></pre>
+<p>You can use multiple .tfvars files to save different configurations in the /deployments directory. To use a specific .tfvars file when running the terraform apply command, you can specify the path to the file using the -var-file flag.</p>
+<p>For example, if you have three .tfvars files in the /deployments directory:</p>
+<p>prod.tfvars
+stage.tfvars
+dev.tfvars
+You can use the following commands to apply the configuration using the different .tfvars files:</p>
+<pre><code>terraform apply -parallelism=1 -auto-approve -var-file=&quot;/deployments/prod.tfvars&quot;
+</code></pre>
+<p>This command will apply the configuration using the values specified in the prod.tfvars file.</p>
+<pre><code>terraform apply -parallelism=1 -auto-approve -var-file=&quot;/deployments/stage.tfvars&quot;
+</code></pre>
+<p>This command will apply the configuration using the values specified in the stage.tfvars file.</p>
+<pre><code>terraform apply -parallelism=1 -auto-approve -var-file=&quot;/deployments/dev.tfvars&quot;
+</code></pre>
+<p>This command will apply the configuration using the values specified in the dev.tfvars file.</p>
+<p>This way, you can use different .tfvars files to save different configurations and easily switch between them by specifying the path to the desired file when running the terraform apply command.</p>
+</details>
+<details>
+    <summary><b>Deploying A Configuration on Linux:</b></summary>
+<ul>
+<li>Create a new directory where you want to store your Terraform configuration.</li>
+</ul>
+<pre><code>mkdir /deployments
+mkdir /deployments/testdeployment
+</code></pre>
+<ul>
+<li>copy the main.tf file and write it to the directory you just created.</li>
+</ul>
+<pre><code>nano main.tf
+# paste the contents of the main tf then press Ctrl+X, and confirm 
+</code></pre>
+<details>
+        <summary><b>If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them</b></summary>
+<pre><code>     ```
+     # ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
+     variable &quot;MNEMONICS&quot; {
+     type        = string
+     description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+      }
+
+     variable &quot;NETWORK&quot; {
+     type        = string
+     default     = &quot;main&quot;
+     description = &quot;The network to connect the node to.&quot;
+     }
+
+     variable &quot;SSH_KEY&quot; {
+     type = string
+     }
+
+
+
+
+      # CHANGE THESE SECTIONS OF THE main.tf to use the variables 
+
+      provider &quot;grid&quot; {
+      mnemonics = &quot;${var.MNEMONICS}&quot;
+      network   = &quot;${var.NETWORK}&quot;  
+       }
+      and 
+      env_vars = { 
+                  SSH_KEY = &quot;${var.SSH_KEY}&quot; 
+      } variable &quot;MNEMONICS&quot; {
+
+
+     } 
+     ```
+</code></pre>
+</details>
+<ul>
+<li>Open a terminal or command prompt window and navigate to the directory where you placed the main.tf file.</li>
+</ul>
+<pre><code>cd /deployments/testdeployment
+</code></pre>
+<ul>
+<li>Run the following command to initialize the directory as a Terraform configuration directory and install the required provider(s):</li>
+</ul>
+<pre><code>terraform init
+</code></pre>
+<ul>
+<li>Run the following command to apply the changes specified in the configuration and create the resources defined in main.tf:</li>
+</ul>
+<pre><code>terraform apply -parallelism=1 -auto-approve -var-file=&quot;/deployments/prod.tfvars&quot;
+</code></pre>
+<p>Wait for the command to complete</p>
+</details>
+<details>
+    <summary><b>Deploying A Configuration on Windows</b></summary> 
+<p>To create and use Terraform to deploy a configuration file on Windows, follow these steps:</p>
+<ul>
+<li>Create a new directory where you want to store your Terraform configuration. For example:</li>
+</ul>
+<pre><code>mkdir C:\deployments
+mkdir C:\deployments\testdeployment
+</code></pre>
+<ul>
+<li>
+<p>Open a text editor and create a new file called main.tf.</p>
+</li>
+<li>
+<p>Add the example main.tf below and save the file as main.tf </p>
+<details>
+      <summary><b>If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them</b></summary>
+<pre><code>   ```
+   # ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
+   variable &quot;MNEMONICS&quot; {
+   type        = string
+   description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+    }
+
+   variable &quot;NETWORK&quot; {
+   type        = string
+   default     = &quot;main&quot;
+   description = &quot;The network to connect the node to.&quot;
+   }
+
+   variable &quot;SSH_KEY&quot; {
+   type = string
+   }
+
+
+
+
+    # CHANGE THESE SECTIONS OF THE main.tf to use the variables 
+
+    provider &quot;grid&quot; {
+    mnemonics = &quot;${var.MNEMONICS}&quot;
+    network   = &quot;${var.NETWORK}&quot;  
+     }
+    and 
+    env_vars = { 
+                SSH_KEY = &quot;${var.SSH_KEY}&quot; 
+    } variable &quot;MNEMONICS&quot; {
+
+
+   } 
+   ```
+</code></pre>
+</details>
+</li>
+<li>
+<p>Open a command prompt window and navigate to the testdeployment directory. For example:</p>
+</li>
+</ul>
+<pre><code>cd C:\deployments\testdeployment
+</code></pre>
+<ul>
+<li>Run the following command to initialize the directory as a Terraform configuration directory and install the required provider(s):</li>
+</ul>
+<pre><code>terraform init
+</code></pre>
+<ul>
+<li>
+<p>Create a file called env.tfvars in the same directory as the main.tf file, and add the values for the variables defined in main.tf.</p>
+</li>
+<li>
+<p>Run the following command to apply the changes specified in the configuration and create the resources defined in main.tf:</p>
+</li>
+</ul>
+<pre><code>terraform apply -parallelism=1 -auto-approve -var-file=&quot;C:\\deployments:\yourfile.tfvars&quot;
+</code></pre>
+<p>Wait for the command to complete.</p>
+</details>
+<h1 id="resources"><a class="header" href="#resources">Resources</a></h1>
+<details>
+    <summary><b>Example Main.tf</b></summary>
+<pre><code>variable &quot;MNEMONICS&quot; {
+  type        = string
+  description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+}
+
+variable &quot;NETWORK&quot; {
+  type        = string
+  default     = &quot;main&quot;
+  description = &quot;The network to connect the node to.&quot;
+}
+
+variable &quot;SSH_KEY&quot; {
+  type = string
+}
+
+
+terraform {
+  required_providers {
+    grid = {
+      source = &quot;threefoldtech/grid&quot;
+    }
+  }
+}
+
+provider &quot;grid&quot; {
+    mnemonics = &quot;${var.MNEMONICS}&quot;
+    network = &quot;${var.NETWORK}&quot;  
+}
+
+resource &quot;grid_network&quot; &quot;net1&quot; {
+    nodes = [311, 312]
+    ip_range = &quot;10.32.0.0/16&quot;
+    name = &quot;internal&quot;
+    description = &quot;Internal subnet&quot;
+    add_wg_access = true
+}
+resource &quot;grid_deployment&quot; &quot;d1&quot; {
+  node = 311
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+    vms {
+    name = &quot;vm1&quot;
+    description =&quot;Test vm 1&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+resource &quot;grid_deployment&quot; &quot;d2&quot; {
+  node = 312
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+    vms {
+    name = &quot;vm2&quot;
+    description =&quot;Test vm 2&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+output &quot;wg_config&quot; {
+value = grid_network.net1.access_wg_config
+}
+output &quot;node1_vm1_ip&quot; {
+value = grid_deployment.d1.vms[0].ip
+}
+output &quot;public_ip&quot; {
+value = grid_deployment.d1.vms[0].computedip
+}
+output &quot;public_ip6&quot; {
+value = grid_deployment.d1.vms[0].computedip6
+}
+output &quot;ygg_ip&quot; {
+value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="how-to-deploy-a-terraform-example-configuration-on-the-threefold-grid-from-linux-in-7-steps"><a class="header" href="#how-to-deploy-a-terraform-example-configuration-on-the-threefold-grid-from-linux-in-7-steps">How To Deploy A Terraform Example Configuration on the Threefold Grid from Linux in 7 steps</a></h1>
+<p>In this tutorial, you will learn how to install Terraform, create a configuration file, and use Terraform to deploy infrastructure on the Threefold Grid. By the end of this tutorial, you will have deployed a network and two virtual machines (VMs) on the Threefold Grid.</p>
+<p><strong>Prerequisites</strong></p>
+<p>Before you begin, you will need the following:</p>
+<p>A computer with the following software installed:</p>
+<ul>
+<li>Terraform</li>
+<li>A Threefold Grid mnemonic phrase. This is used to generate the seed for your node. You can get a mnemonic phrase by creating a Threefold Grid account.</li>
+</ul>
+<details>
+<<<<<<< HEAD
+    <summary><b>Step 1: Create a Configuration Directory</b></summary>
+=======
+ <summary><b>Step 1: Create a Configuration Directory</b></summary>
+>>>>>>> 024e5c438c0212242f11b57a75c63945c43504cf
+Create a new directory where you want to store your Terraform configuration. This directory can be named anything you like. In this tutorial, we will create a deployments directory and a testdeployment subdirectory inside of it.
+<pre><code>mkdir deployments
+mkdir deployments/testdeployment
+</code></pre>
+</details>
+<details>
+    <summary><b>Step 2: Create the main.tf File</b></summary>
+<p>Copy the contents of the provided main.tf file and write it to the testdeployment directory you just created.</p>
+<pre><code>nano main.tf
+# paste the contents of the main tf then press Ctrl+X, and confirm 
+</code></pre>
+<details>
+        <summary><b>If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them</b></summary>
+<pre><code>     ```
+     # ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
+     variable &quot;MNEMONICS&quot; {
+     type        = string
+     description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+      }
+
+     variable &quot;NETWORK&quot; {
+     type        = string
+     default     = &quot;main&quot;
+     description = &quot;The network to connect the node to.&quot;
+     }
+
+     variable &quot;SSH_KEY&quot; {
+     type = string
+     }
+
+
+
+
+      # CHANGE THESE SECTIONS OF THE main.tf to use the variables 
+
+      provider &quot;grid&quot; {
+      mnemonics = &quot;${var.MNEMONICS}&quot;
+      network   = &quot;${var.NETWORK}&quot;  
+       }
+      and 
+      env_vars = { 
+                  SSH_KEY = &quot;${var.SSH_KEY}&quot; 
+      } variable &quot;MNEMONICS&quot; {
+
+
+     } 
+     ```
+</code></pre>
+</details>
+</details>
+<details>
+    <summary><b>Step 3: Initialize the Directory as a Terraform Configuration Directory</b></summary>
+Open a terminal or command prompt window and navigate to the testdeployment directory where you placed the main.tf file.
+<pre><code>cd deployments/testdeployment
+</code></pre>
+<p>Run the following command to initialize the directory as a Terraform configuration directory and install the required provider(s):</p>
+<pre><code>terraform init
+</code></pre>
+</details>
+<details>
+    <summary><b>Step 4: Create the Infrastructure Resources</b></summary>
+To apply the changes specified in the configuration and create the resources defined in main.tf, you will need to provide values for the variables in your configuration. You can do this by creating a .tfvars file and specifying the values you want to use.
+<p>For example, you might create a file called env1.tfvars and include the following contents:</p>
+<pre><code>MNEMONICS = &quot;your mnemonic phrase here&quot;
+NETWORK = &quot;main&quot;
+SSH_KEY = &quot;your ssh key here&quot;
+</code></pre>
+<p>To use this file, pass the -var-file flag to the terraform apply command, followed by the path to the file:</p>
+<pre><code>terraform apply -parallelism=1 -auto-approve -var-file=&quot;/deployments/prod.tfvars&quot;
+</code></pre>
+<p>Note: You can create multiple .tfvars files and use them to save different configurations. For example, you might create a env2.tfvars file with different values for the variables. To use this file, you would pass the path to it as the `-var-file ption when running terraform apply.</p>
+<p>Wait for the terraform apply command to complete. This may take a few minutes. When it's finished, your infrastructure resources will be created on the Threefold Grid.</p>
+</details>
+<details>
+    <summary><b>Step 5: View the Output Values</b></Summary>
+After the resources have been created, you can view the output values by running the following command:
+<pre><code>terraform output
+</code></pre>
+<p>This will display the values of the output variables defined in the main.tf file. In this example, the output values include the WireGuard configuration for the network, and the IP addresses of the VMs.</p>
+</details>
+<details>
+    <summary><b>Step 6: Test Your Deployment</b></summary>
+To test your deployment, you can SSH into the VMs using the IP addresses displayed in the output values. For example:
+<pre><code>ssh ubuntu@&lt;vm_ip_address&gt;
+</code></pre>
+</details>
+<details>
+    <summary><b>Step 7: Clean Up Your Deployment</b></summary>
+When you're finished testing your deployment, you can clean up the resources you created by running the following command:
+<pre><code>terraform destroy -parallelism=1 -auto-approve -var-file=&quot;/deployments/prod.tfvars&quot;
+</code></pre>
+<p>This will delete the infrastructure resources from the Threefold Grid.</p>
+</details>
+<h1 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h1>
+<p>In this tutorial, you learned how to install Terraform, create a configuration file, and use Terraform to deploy infrastructure on the Threefold Grid. You also learned how to use .tfvars files to provide values for the variables in your configuration, and how to view the output values of your deployment and clean up your resources when you're finished.</p>
+<p>I hope this tutorial was helpful! If you have any questions or need further assistance, please don't hesitate to ask. I'm happy to help you get started with Terraform and deploying your infrastructure on the Threefold Grid.</p>
+<h1 id="resources-1"><a class="header" href="#resources-1">Resources</a></h1>
+<details>
+    <summary><b>Terraform Example Configuration</b></summary> 
+<pre><code>variable &quot;MNEMONICS&quot; {
+  type        = string
+  description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+}
+
+variable &quot;NETWORK&quot; {
+  type        = string
+  default     = &quot;main&quot;
+  description = &quot;The network to connect the node to.&quot;
+}
+
+variable &quot;SSH_KEY&quot; {
+  type = string
+}
+
+
+terraform {
+  required_providers {
+    grid = {
+      source = &quot;threefoldtech/grid&quot;
+    }
+  }
+}
+
+provider &quot;grid&quot; {
+    mnemonics = &quot;${var.MNEMONICS}&quot;
+    network = &quot;${var.NETWORK}&quot;  
+}
+
+resource &quot;grid_network&quot; &quot;net1&quot; {
+    nodes = [311, 312]
+    ip_range = &quot;10.32.0.0/16&quot;
+    name = &quot;internal&quot;
+    description = &quot;Internal subnet&quot;
+    add_wg_access = true
+}
+resource &quot;grid_deployment&quot; &quot;d1&quot; {
+  node = 311
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+    vms {
+    name = &quot;vm1&quot;
+    description =&quot;Test vm 1&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+resource &quot;grid_deployment&quot; &quot;d2&quot; {
+  node = 312
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+    vms {
+    name = &quot;vm2&quot;
+    description =&quot;Test vm 2&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+output &quot;wg_config&quot; {
+value = grid_network.net1.access_wg_config
+}
+output &quot;node1_vm1_ip&quot; {
+value = grid_deployment.d1.vms[0].ip
+}
+output &quot;public_ip&quot; {
+value = grid_deployment.d1.vms[0].computedip
+}
+output &quot;public_ip6&quot; {
+value = grid_deployment.d1.vms[0].computedip6
+}
+output &quot;ygg_ip&quot; {
+value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="deploying-an-example-configuration-with-terraform-on-windows-using-putty-in-7-steps"><a class="header" href="#deploying-an-example-configuration-with-terraform-on-windows-using-putty-in-7-steps">Deploying an Example Configuration with Terraform on Windows Using Putty In 7 Steps</a></h1>
+<p>In this tutorial, you will learn how to install Terraform, create a configuration file, and use Terraform to deploy infrastructure on the Threefold Grid from a Windows computer. By the end of this tutorial, you will have deployed a network and two virtual machines (VMs) on the Threefold Grid. </p>
+<p><strong>Prerequisites</strong> </p>
+<p>Before you begin, you will need the following: </p>
+<p>A Windows computer with the following software installed: </p>
+<ul>
+<li>
+<p><a href="https://gitforwindows.org/">Git for Windows</a> </p>
+</li>
+<li>
+<p><a href="https://developer.hashicorp.com/terraform/downloads">Terraform for Windows</a></p>
+</li>
+</ul>
+<p>You will Also Need,</p>
+<ul>
+<li>
+<p>A Threefold Grid mnemonic phrase. This is used to generate the seed for your node. You can get a mnemonic phrase by creating a Threefold Grid account. </p>
+</li>
+<li>
+<p>An SSH key. This will be used to securely connect to the VMs you create. If you don't already have an SSH key, you can generate one using the ssh-keygen command in Git for Windows. </p>
+</li>
+</ul>
+<p>Once you have all of this you can Get started </p>
+<details>
+    <summary><b>Step 1: Create a Configuration Directory</b></summary>
+<p>Create a new directory where you want to store your Terraform configuration. This directory can be named anything you like. In this tutorial, we will create a deployments directory and a testdeployment subdirectory inside of it. </p>
+<p>From the Git for Windows command prompt: </p>
+<pre><code>mkdir deployments 
+mkdir deployments\testdeployment 
+</code></pre>
+</details>
+<details>
+    <summary><b>Step 2: Create the main.tf File</b></summary> 
+<p>Copy the contents of the provided main.tf file and write it to the testdeployment directory you just created. </p>
+<pre><code>notepad main.tf 
+# paste the contents of the main tf then save and close the file 
+</code></pre>
+<details>
+        <summary><b>If the example you are deploying does not use `variable blocks` (i.e. most not created by me)  you will have to add them</b></summary>
+<pre><code>     ```
+     # ADD THE THREE VARIABLES ABOVE THE EXSITING LINES IN THE main.tf your are deploying 
+     variable &quot;MNEMONICS&quot; {
+     type        = string
+     description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+      }
+
+     variable &quot;NETWORK&quot; {
+     type        = string
+     default     = &quot;main&quot;
+     description = &quot;The network to connect the node to.&quot;
+     }
+
+     variable &quot;SSH_KEY&quot; {
+     type = string
+     }
+
+
+
+
+      # CHANGE THESE SECTIONS OF THE main.tf to use the variables 
+
+      provider &quot;grid&quot; {
+      mnemonics = &quot;${var.MNEMONICS}&quot;
+      network   = &quot;${var.NETWORK}&quot;  
+       }
+      and 
+      env_vars = { 
+                  SSH_KEY = &quot;${var.SSH_KEY}&quot; 
+      } variable &quot;MNEMONICS&quot; {
+
+
+     } 
+     ```
+</code></pre>
+</details>
+</details>
+<details>
+    <summary><b>Step 3: Initialize the Directory as a Terraform Configuration Directory</b></summary>
+<p>From the Git for Windows command prompt, navigate to the testdeployment directory where you placed the main.tf file. </p>
+<pre><code>cd deployments\testdeployment 
+</code></pre>
+<p>Run the following command to initialize the directory as a Terraform configuration directory and install the required provider(s): </p>
+<pre><code>terraform init 
+</code></pre>
+</details>
+<details>
+    <summary><b>Step 4: Create the Infrastructure Resources</b></summary>
+<p>To apply the changes specified in the configuration and create the resources defined in main.tf, you will need to provide values for the variables in your configuration. You can do this by creating a .tfvars file and specifying the values you want to use. </p>
+<p>For example, you might create a file called env1.tfvars and include the following contents: </p>
+<pre><code>MNEMONICS = &quot;your mnemonic phrase here&quot; 
+NETWORK = &quot;main&quot;  
+SSH_KEY = &quot;your ssh key here&quot; 
+</code></pre>
+<p>To use this file, pass the -var-file flag to the terraform apply command, followed by the path to the file: </p>
+<pre><code>terraform apply -parallelism=1 -auto-approve -var-file=&quot;deployments\yourfile.tfvar&quot; 
+</code></pre>
+</details>
+<details>
+    <summary><b>Step 5: View the Output Values</b></summary>
+<p>After the resources have been created, you can view the output values by running the following command: </p>
+<pre><code>terraform output 
+</code></pre>
+<p>This will display the values of the output variables defined in the main.tf file. In this example, the output values include the WireGuard configuration for the network, and the IP addresses of the VMs. </p>
+</details>
+<details>
+    <summary><b>Step 6: Test Your Deployment</b></summary>
+<p>To test your deployment, you will need to use an SSH client to connect to the VMs. We recommend using PuTTY with agent forwarding and your SSH key. </p>
+<ul>
+<li>
+<p>Download and install <a href="https://www.putty.org/">PuTTY</a>. </p>
+</li>
+<li>
+<p>Open PuTTY and enter the IP address of the VM you want to connect to in the &quot;Host Name&quot; field. </p>
+</li>
+<li>
+<p>Under &quot;Connection&quot;, expand &quot;SSH&quot;, expand &quot;Auth&quot;, Select &quot;Credentials&quot; </p>
+</li>
+<li>
+<p>Click the &quot;Browse&quot; button next to &quot;Private key file for authentication&quot; and select the path to your SSH key. </p>
+</li>
+<li>
+<p>Click the &quot;Open&quot; button to open the connection to the VM. </p>
+</li>
+</ul>
+<p>When prompted, enter your username (ubuntu) and press Enter. </p>
+</details>
+<details>
+    <summary><b>Step 7: Clean Up Your Deployment</b></summary>
+<p>When you're finished testing your deployment, you can clean up the resources you created by running the following command: </p>
+<pre><code>terraform destroy -parallelism=1 -auto-approve -var-file=&quot;deployments\yourfile.tfvar&quot; 
+</code></pre>
+</details>
+<h1 id="conclusion-1"><a class="header" href="#conclusion-1">Conclusion</a></h1>
+<p>In this tutorial, you learned how to install Terraform, create a configuration file, and use Terraform to deploy infrastructure on the Threefold Grid from a Windows computer. You also learned how to use .tfvars files to provide values for the variables in your configuration, and how to view the output values of your deployment and clean up your resources when you're finished. </p>
+<p>I hope this tutorial was helpful! If you have any questions or need further assistance, please don't hesitate to ask. I'm happy to help you get started with Terraform and deploying your infrastructure on the Threefold Grid. </p>
+<p>I invite you to join us in building on the Threefold Grid in 2023! </p>
+<h1 id="resources-2"><a class="header" href="#resources-2">Resources</a></h1>
+<details>
+    <summary><b>Example Main.tf</b></summary> 
+<pre><code>variable &quot;MNEMONICS&quot; {
+  type        = string
+  description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+}
+
+variable &quot;NETWORK&quot; {
+  type        = string
+  default     = &quot;main&quot;
+  description = &quot;The network to connect the node to.&quot;
+}
+
+variable &quot;SSH_KEY&quot; {
+  type = string
+}
+
+
+terraform {
+  required_providers {
+    grid = {
+      source = &quot;threefoldtech/grid&quot;
+    }
+  }
+}
+
+provider &quot;grid&quot; {
+    mnemonics = &quot;${var.MNEMONICS}&quot;
+    network = &quot;${var.NETWORK}&quot;  
+}
+
+resource &quot;grid_network&quot; &quot;net1&quot; {
+    nodes = [311, 312]
+    ip_range = &quot;10.32.0.0/16&quot;
+    name = &quot;internal&quot;
+    description = &quot;Internal subnet&quot;
+    add_wg_access = true
+}
+resource &quot;grid_deployment&quot; &quot;d1&quot; {
+  node = 311
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+    vms {
+    name = &quot;vm1&quot;
+    description =&quot;Test vm 1&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+resource &quot;grid_deployment&quot; &quot;d2&quot; {
+  node = 312
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+    vms {
+    name = &quot;vm2&quot;
+    description =&quot;Test vm 2&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+output &quot;wg_config&quot; {
+value = grid_network.net1.access_wg_config
+}
+output &quot;node1_vm1_ip&quot; {
+value = grid_deployment.d1.vms[0].ip
+}
+output &quot;public_ip&quot; {
+value = grid_deployment.d1.vms[0].computedip
+}
+output &quot;public_ip6&quot; {
+value = grid_deployment.d1.vms[0].computedip6
+}
+output &quot;ygg_ip&quot; {
+value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-a-maintf"><a class="header" href="#what-is-a-maintf">What is a Main.tf?</a></h1>
+<p>       A main.tf file is a configuration file that defines the infrastructure resources that should be created and managed by Terraform. It is typically the main entry point for a Terraform configuration, and it is used to specify the provider, resources, and outputs for a configuration.</p>
+<p>       The main.tf file is written in the HashiCorp Configuration Language (HCL), which is a declarative language that is used to define the desired state of an infrastructure. In the main.tf file, you can specify the properties of the resources that should be created, as well as any dependencies or relationships between those resources.</p>
+<p>For example, you might use a main.tf file to define the following resources:</p>
+<ul>
+<li>Virtual machines</li>
+<li>Zero-Databases</li>
+<li>Containers</li>
+<li>Cloud storage buckets</li>
+</ul>
+<h1 id="what-makes-up-the-file"><a class="header" href="#what-makes-up-the-file">What makes up the file</a></h1>
+<details>
+	<summary><b>Terraform Block</b></summary> 
+```
+terraform {
+ required_providers {
+  grid = {
+   source = "threefoldtech/grid"
+   }
+  }
+ } 
+```
+<ul>
+<li>
+<p>The terraform block is the top-level block in the configuration file. It is used to configure the behavior of Terraform itself.</p>
+</li>
+<li>
+<p>The terraform block includes a single sub-block called required_providers.</p>
+<ul>
+<li><strong>required_providers block</strong>
+<ul>
+<li>
+<p>The required_providers block is used to specify the Terraform providers that are required by the configuration. A provider is a plugin that implements the logic for a specific resource type, such as a cloud platform or a configuration management tool.</p>
+</li>
+<li>
+<p>The required_providers block includes a single sub-block called grid, which specifies the threefoldtech/grid provider. This provider is required to manage resources in the Threefold Grid.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details>
+	<summary><b>Provider Block</b></summary> 
+<pre><code>provider &quot;grid&quot; {
+}
+</code></pre>
+<ul>
+<li>
+<p>The provider block is used to configure a Terraform provider. It specifies the provider's name and any provider-specific configuration options.</p>
+</li>
+<li>
+<p>There is a single provider block that configures the grid provider. The provider block does not include any arguments, which means that it is using the default configuration for the grid provider.</p>
+</li>
+</ul>
+</details>
+<details>
+	<summary><b>Grid Network Block </b></summary>
+<pre><code>resource &quot;grid_network&quot; &quot;net1&quot; {
+	nodes = [3000]
+	ip_range = &quot;10.20.0.0/16&quot;
+	name = &quot;mynetwork&quot;
+	description = &quot;My internal Grid network&quot;
+	add_wg_access = true
+}
+</code></pre>
+<p>This block is defining a new resource of type grid_network, with the identifier net1. The grid_network block is used to create a network in the Threefold Grid. A network is a virtual network that connects nodes in the Grid and allows them to communicate with each other. the grid_network resource has the identifier net1, These identifiers are used to refer to the resources elsewhere in the configuration.</p>
+<p>For example, the network_name argument of the grid_deployment resource refers to the name attribute of the grid_network resource with the identifier net1</p>
+<p>The block contains several arguments that are specific to the grid_network resource type:</p>
+<ul>
+<li>nodes: The nodes argument is a list of node IDs that should be included in the network. When a node is added to a network, it is assigned an IP address from the network's IP range, and it becomes available to host applications or workloads.</li>
+<li>ip_range: the ip_range argument specifies the IP range of the network. An IP range is a range of IP addresses that are available for use on a network. It is specified using the CIDR notation, which consists of an IP address followed by a slash and the number of bits of the address that are used for the network prefix.</li>
+<li>name: The name of a network is a human-readable identifier that is used to refer to the network within the Threefold Grid. It is not required to be unique, but it is typically used to distinguish between different networks in the Grid.</li>
+<li>description: A description of the network.</li>
+<li>add_wg_access: The add_wg_access argument in the grid_network resource controls whether WireGuard access should be enabled for the network. When add_wg_access is set to true, the grid provider will create a WireGuard access point for the network. This allows users to connect to the network using the WireGuard VPN protocol.</li>
+</ul>
+</details>
+<details>
+	<summary><b>Grid Deployment Block</b></summary>
+```
+resource "grid_deployment" "d1" {
+  node = 3000
+  network_name = grid_network.net1.name
+  ip_range = lookup(grid_network.net1.nodes_ip_range, 3000, "")
+  disks {
+    name = "root"
+    size = 50
+  }
+    vms {
+    name = "tftest"
+    description ="Terraform deployment test"
+    flist = "https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist"
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = "root"
+        mount_point = "/data"
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY ="ADD YOUR SSH KEY HERE"
+    }
+  }
+}
+```
+The grid_deployment block is used to create a deployment in the Threefold Grid. A deployment is a logical grouping of nodes, disks, and virtual machines that can be used to host applications or workloads.
+<p>The grid_deployment block includes the following arguments:</p>
+<ul>
+<li>node: The ID of the node where the deployment should be created.</li>
+<li>network_name: The name of the network to which the deployment should be connected.</li>
+<li>ip_range: The IP range of the deployment. The deployment will assign IP addresses from this range to the nodes, disks, and virtual machines in the deployment.</li>
+</ul>
+<p>The grid_deployment block also includes the following sub-blocks:</p>
+<ul>
+<li>
+<p>disks: The disks block is used to specify one or more disks that should be created and attached to the deployment. A disk is a block storage device that can be used to store data. Each disk block in the disks block specifies the properties of a single disk. The disk block includes the following arguments:
+- name: The name of the disk
+- size: The size of the disk in GB.</p>
+</li>
+<li>
+<p>vms: The vms block is used to specify one or more virtual machines that should be created and attached to the deployment. A virtual machine (VM) is a logical representation of a computer that is hosted on a node in the Grid. Each vm block in the vms block specifies the properties of a single VM. The vm block includes the following arguments:</p>
+<ul>
+<li>
+<p>name: The name of the VM, which is &quot;tftest&quot; in this case.</p>
+</li>
+<li>
+<p>description: A description of the VM, which is &quot;Terraform deployment test&quot; in this case.</p>
+</li>
+<li>
+<p>flist: The URL of a file list that specifies the root filesystem of the VM. The files and links are on the Threefold Hub</p>
+</li>
+<li>
+<p>cpu: The number of CPU cores that should be allocated to the VM. In this case, the VM is allocated 4 CPU cores.</p>
+</li>
+<li>
+<p>publicip: A flag that indicates whether the VM should be assigned a public IPv4 address. If set to true, the grid provider will assign a public IPv4 address to the VM.</p>
+</li>
+<li>
+<p>publicip6: A flag that indicates whether the VM should be assigned a public IPv6 address. If set to true, the grid provider will assign a public IPv6 address to the VM.</p>
+</li>
+<li>
+<p>memory: The amount of memory (in MB) that should be allocated to the VM. In this case, the VM is allocated 8192MB of memory.</p>
+<ul>
+<li>
+<p>The vm block also includes the following sub-blocks:</p>
+<ul>
+<li>mounts:The mounts block is used to specify one or more disk mounts that should be created for the VM. A disk mount is a connection between a disk and a mount point on the VM, which allows the disk to be accessed from the VM. Each mount block in the mounts block specifies the properties of a single disk mount. The mount block includes the following arguments:
+<ul>
+<li>disk_name: The name of the disk that should be mounted.</li>
+<li>mount_point: The mount point on the VM where the disk should be mounted.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>env_vars: A map of environment variables that should be set on the VM. Each key-value pair in the map represents an environment variable and its value. In this case, the env_vars map includes a single environment variable called SSH_KEY, which is set to the value &quot;ADD YOUR SSH KEY HERE&quot;.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details>
+	<summary><b>Output Blocks</b></summary>
+<p>The output blocks are used to output the values of variables or resources to the user. They are used to display the results of the Terraform run, or to make the values of certain resources or variables available to other Terraform configurations.</p>
+<pre><code>output &quot;wg_config&quot; {
+	value = grid_network.net1.access_wg_config
+}
+</code></pre>
+<p>This block is defining an output variable called wg_config. The value of the output will be the access_wg_config attribute of the grid_network resource with the identifier net1. This output can be used to display the WireGuard configuration for the network.</p>
+<pre><code>output &quot;node1_vm1_ip&quot; {
+	value = grid_deployment.d1.vms[0].ip
+}
+</code></pre>
+<p>This block is defining an output variable called node1_vm1_ip. The value of the output will be the ip attribute of the first virtual machine in the vms list of the grid_deployment resource with the identifier d1.</p>
+<pre><code>output &quot;public_ip&quot; {
+	value = grid_deployment.d1.vms[0].computedip
+}
+</code></pre>
+<p>This block is defining an output variable called public_ip. The value of the output will be the computedip attribute of the first virtual machine in the vms list of the grid_deployment resource with the identifier d1. This output can be used to display the public IP address of the virtual machine.</p>
+<pre><code>output &quot;public_ip6&quot; {
+			value = grid_deployment.d1.vms[0].computedip6
+}
+</code></pre>
+<p>This block is defining an output variable called public_ip6. The value of the output will be the computedip6 attribute of the first virtual machine in the vms list of the grid_deployment resource with the identifier d1.</p>
+<p>The computedip6 attribute represents the public IPv6 address of the virtual machine, as computed by the grid provider. This output can be used to display the public IPv6 address of the virtual machine.</p>
+<pre><code>output &quot;ygg_ip&quot; {
+	value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+<p>This block is defining an output variable called ygg_ip. The value of the output will be the ygg_ip attribute of the first virtual machine in the vms list of the grid_deployment resource with the identifier d1.</p>
+<p>The ygg_ip attribute represents the Planetary Network IP address of the virtual machine. The Planetary Network is an experimental networking protocol that provides an encrypted IPv6 network. This output can be used to display the Planetary network IP address of the virtual machine.</p>
+<p>I hope this explanation helps! Let me know if you have any questions.</p>
+</details>
+<h1 id="resources-3"><a class="header" href="#resources-3">Resources</a></h1>
+<details>
+	<summary><b>Single Node Network Example Main.tf</b></summary>
+<pre><code>terraform {
+  required_providers {
+    grid = {
+      source = &quot;threefoldtech/grid&quot;
+    }
+  }
+}
+
+provider &quot;grid&quot; {
+}
+
+resource &quot;grid_network&quot; &quot;net1&quot; {
+    nodes = [3000]
+    ip_range = &quot;10.20.0.0/16&quot;
+    name = &quot;mynetwork&quot;
+    description = &quot;My internal Grid network&quot;
+    add_wg_access = true
+}
+resource &quot;grid_deployment&quot; &quot;d1&quot; {
+  node = 3000
+  network_name = grid_network.net1.name
+  ip_range = lookup(grid_network.net1.nodes_ip_range, 3000, &quot;&quot;)
+  disks {
+    name = &quot;root&quot;
+    size = 50
+  }
+    vms {
+    name = &quot;tftest&quot;
+    description =&quot;Terraform deployment test&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;root&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY =&quot;ADD YOUR SSH KEY HERE&quot;
+    }
+  }
+}
+output &quot;wg_config&quot; {
+    value = grid_network.net1.access_wg_config
+}
+output &quot;node1_vm1_ip&quot; {
+    value = grid_deployment.d1.vms[0].ip
+}
+output &quot;public_ip&quot; {
+    value = grid_deployment.d1.vms[0].computedip
+}
+output &quot;public_ip6&quot; {
+    value = grid_deployment.d1.vms[0].computedip6
+}
+output &quot;ygg_ip&quot; {
+    value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+<p>This main.tf file is used to deploy the following resources in the Threefold Grid:</p>
+<ul>
+<li>A network called &quot;mynetwork&quot; with a range of IP addresses from 10.20.0.0/16. The network includes a single node with ID 3000, and it has WireGuard access enabled.</li>
+<li>A deployment called &quot;d1&quot; on node 3000. The deployment includes a single virtual machine (VM) with the following properties:
+<ul>
+<li>A root disk with a size of 50GB.</li>
+<li>A VM with the name &quot;tftest&quot;, a description of &quot;Terraform deployment test&quot;, 4 CPU cores, 8192MB of memory, and a root filesystem specified by the file list at https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist. The VM is assigned a public IPv4 address, a public IPv6 address, and an IP address on the Planetary network. The VM has an environment variable called SSH_KEY set to the value &quot;ADD YOUR SSH KEY HERE&quot;. The root disk is mounted at the /data mount point on the VM.</li>
+</ul>
+</li>
+</ul>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="example-multi-node-terraform-maintf"><a class="header" href="#example-multi-node-terraform-maintf">Example Multi Node Terraform Main.tf</a></h1>
+<p>up to date as of 01/03/2023</p>
+<h1 id="the-maintf"><a class="header" href="#the-maintf">The Main.TF</a></h1>
+<p>This is a configuration file written in Terraform, which is a tool for building, changing, and versioning infrastructure safely and efficiently. The file describes resources that will be created in the Grid platform by ThreeFold Tech.</p>
+<p>The file is made up of </p>
+<ul>
+<li>
+<p><strong>Variable Blocks</strong></p>
+<p>The file first defines several variables that the user can specify when running the Terraform configuration. These include </p>
+<ul>
+<li>the &quot;MNEMONICS&quot; (a mnemonic phrase used to generate a seed for a node), </li>
+<li>the &quot;NETWORK&quot; to connect the node to (with a default value of &quot;main&quot;), </li>
+<li>and &quot;SSH_KEY&quot; (the type of which is specified as a string).</li>
+</ul>
+</li>
+<li>
+<p><strong>Terraform Blocks</strong></p>
+<p>The file then specifies that it will use the &quot;grid&quot; provider (which is provided by ThreeFold Tech) and specifies the</p>
+<ul>
+<li>&quot;MNEMONICS&quot; and </li>
+<li>&quot;NETWORK&quot; 
+variables as arguments for the provider.</li>
+</ul>
+</li>
+<li>
+<p><strong>Resource Blocks</strong></p>
+<p>The file then creates three resources: </p>
+<ul>
+<li>a &quot;grid_network&quot; resource named &quot;net1&quot; and </li>
+<li>two &quot;grid_deployment&quot; resources named &quot;d1&quot; and &quot;d2&quot;. The &quot;grid_network&quot; resource creates an internal network with the specified IP range and adds WireGuard access. The &quot;grid_deployment&quot; resources create virtual machines (VMs) on nodes 311 and 312, respectively, with the specified properties (e.g. CPU, memory, etc.). The VMs are also connected to the &quot;internal&quot; network created by the &quot;grid_network&quot; resource and have disks attached to them.</li>
+</ul>
+</li>
+<li>
+<p><strong>Output Block</strong></p>
+<p>Finally, the file defines several output variables that will be displayed to the user after running the configuration, such as </p>
+<ul>
+<li>the IP address of the first VM, </li>
+<li>the public IP address of the VM, and </li>
+<li>the VM's WireGuard IP address.</li>
+</ul>
+</li>
+</ul>
+<details>
+    <summary><b>The Multi-Node Example Main.tf</b></Summary>
+<pre><code>variable &quot;MNEMONICS&quot; {
+  type        = string
+  description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+}
+
+variable &quot;NETWORK&quot; {
+  type        = string
+  default     = &quot;main&quot;
+  description = &quot;The network to connect the node to.&quot;
+}
+
+
+variable &quot;SSH_KEY&quot; {
+  type = string
+}
+
+
+terraform {
+  required_providers {
+    grid = {
+      source = &quot;threefoldtech/grid&quot;
+    }
+  }
+}
+
+provider &quot;grid&quot; {
+    mnemonics = &quot;${var.MNEMONICS}&quot;
+    network = &quot;${var.NETWORK}&quot;  
+}
+
+resource &quot;grid_network&quot; &quot;net1&quot; {
+    nodes = [311, 312]
+    ip_range = &quot;10.32.0.0/16&quot;
+    name = &quot;internal&quot;
+    description = &quot;Internal subnet&quot;
+    add_wg_access = true
+}
+resource &quot;grid_deployment&quot; &quot;d1&quot; {
+  node = 311
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+    vms {
+    name = &quot;vm1&quot;
+    description =&quot;Test vm 1&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+resource &quot;grid_deployment&quot; &quot;d2&quot; {
+  node = 312
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+    vms {
+    name = &quot;vm2&quot;
+    description =&quot;Test vm 2&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+output &quot;wg_config&quot; {
+value = grid_network.net1.access_wg_config
+}
+output &quot;node1_vm1_ip&quot; {
+value = grid_deployment.d1.vms[0].ip
+}
+output &quot;public_ip&quot; {
+value = grid_deployment.d1.vms[0].computedip
+}
+output &quot;public_ip6&quot; {
+value = grid_deployment.d1.vms[0].computedip6
+}
+output &quot;ygg_ip&quot; {
+value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+</details>
+<details>
+    <summary><b> How To Deploy</b></Summary>
+<p>To deploy the main.tf IF the file is located in /deployments/testdeployments, you would need to navigate to the /deployments/testdeployments directory and run the following command:</p>
+<pre><code>terraform init
+</code></pre>
+<p>This command will initialize the current working directory as a Terraform configuration directory and install the required provider(s) specified in the configuration.</p>
+<p>Next, you would need to create a file called env.tfvars in the /deployments directory, which should contain the values for the variables defined in main.tf. For example:</p>
+<pre><code>MNEMONICS = &quot;abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon&quot;
+NETWORK = &quot;testnet&quot;
+SSH_KEY = &quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGxLxD7Vb+Q2uG5jJnCzGzo5P5M5ty5LXc5vF8WxZ6IgZ+fta0rmecv+8tGJ10dOm1tF9A0vG8W+jPfZ0+GAZMLL+oN8wz+1hE2GJbT+T3r1WbL/ZpDdZoLLIo+zRfWGfrHc2QhF9T3SSrTbTnZpTdDxTn7vF8BwWFrzjdYiei+9GvM8QtdxZjJcZiEf1LhG8Qzwrc5a5n0if5cXpjm5x&quot;
+</code></pre>
+<p>Then, you can run the following command to deploy the configuration:</p>
+<pre><code>terraform apply -parallelism=1 -auto-approve -var-file=&quot;/deployments/env.tfvars&quot;
+</code></pre>
+<p>This command will apply the changes specified in the configuration and create the resources defined in main.tf. The -var-file flag specifies the path to the env.tfvars file, which contains the values for the variables defined in the configuration.</p>
+<p>After the resources have been created, you can view the output variables by running:</p>
+<pre><code>terraform output
+</code></pre>
+</details>
+<details>
+    <summary><b>How Can I make My Own</b></Summary> 
+<p>Here is a detailed explanation of each block and sub-block in the provided main.tf file:</p>
+<pre><code>variable &quot;MNEMONICS&quot; {
+  type        = string
+  description = &quot;The mnemonic phrase used to generate the seed for the node.&quot;
+}
+</code></pre>
+<p>This block defines a variable called &quot;MNEMONICS&quot; of type &quot;string&quot;. When the configuration is run, the user will be prompted to provide a value for this variable. The &quot;description&quot; field provides a brief explanation of the purpose of this variable.</p>
+<p>An example value for this variable could be:</p>
+<pre><code>MNEMONICS = &quot;abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon&quot;
+Copy code
+variable &quot;NETWORK&quot; {
+  type        = string
+  default     = &quot;main&quot;
+  description = &quot;The network to connect the node to.&quot;
+}
+</code></pre>
+<p>This block defines a variable called &quot;NETWORK&quot; of type &quot;string&quot;. The &quot;default&quot; field specifies that the default value for this variable is &quot;main&quot;, so if the user does not specify a value for this variable when running the configuration, the value &quot;main&quot; will be used. The &quot;description&quot; field provides a brief explanation of the purpose of this variable.</p>
+<p>An example value for this variable could be:</p>
+<pre><code>NETWORK = &quot;testnet&quot;
+</code></pre>
+<p>This block defines a variable called &quot;SSH_KEY&quot; of type &quot;string&quot;. No default value is specified, so the user will be required to provide a value for this variable when running the configuration.</p>
+<p>An example value for this variable could be:</p>
+<pre><code>SSH_KEY = &quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGxLxD7Vb+Q2uG5jJnCzGzo5P5M5ty5LXc5vF8WxZ6IgZ+fta0rmecv+8tGJ10d
+</code></pre>
+<pre><code>terraform {
+  required_providers {
+    grid = {
+      source = &quot;threefoldtech/grid&quot;
+    }
+  }
+}
+</code></pre>
+<p>This block specifies that the configuration will use the &quot;grid&quot; provider, which is provided by ThreeFold Tech. The &quot;source&quot; field specifies the location of the provider, which in this case is &quot;threefoldtech/grid&quot;.</p>
+<pre><code>provider &quot;grid&quot; {
+    mnemonics = &quot;${var.MNEMONICS}&quot;
+    network = &quot;${var.NETWORK}&quot;  
+}
+</code></pre>
+<p>This block specifies that the provider is the &quot;grid&quot; provider and that it should use the values of the &quot;MNEMONICS&quot; and &quot;NETWORK&quot; variables as arguments.</p>
+<pre><code>resource &quot;grid_network&quot; &quot;net1&quot; {
+    nodes = [311, 312]
+    ip_range = &quot;10.32.0.0/16&quot;
+    name = &quot;internal&quot;
+    description = &quot;Internal subnet&quot;
+    add_wg_access = true
+}
+</code></pre>
+<p>This block creates a &quot;grid_network&quot; resource named &quot;net1&quot;. The &quot;grid_network&quot; resource creates an internal network on the specified nodes (in this case, nodes 311 and 312) with the specified IP range, name, and description. The &quot;add_wg_access&quot; field specifies that WireGuard access should be added to the network.</p>
+<pre><code>resource &quot;grid_deployment&quot; &quot;d1&quot; {
+  node = 311
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+  vms {
+    name = &quot;vm1&quot;
+    description =&quot;Test vm 1&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+</code></pre>
+<p>This block creates a &quot;grid_deployment&quot; resource named &quot;d1&quot;. The &quot;grid_deployment&quot; resource creates a VM on node 311, which is connected to the &quot;internal&quot; network created by the &quot;grid_network&quot; resource. The VM has the specified name, description, and properties (e.g. CPU, memory, etc.). The &quot;flist&quot; field specifies the URL of the file list to use for the VM. The &quot;publicip&quot; and &quot;publicip6&quot; fields specify that the VM should have a public IP address and a public IPv6 address, respectively. The &quot;mounts&quot; block specifies that the VM should have a disk attached to it at the specified mount point. The &quot;env_vars&quot; block specifies environment variables that should be set for the VM, in this case setting the value of the &quot;SSH_KEY&quot; variable as the value of the &quot;SSH_KEY&quot; environment variable.</p>
+<pre><code>resource &quot;grid_deployment&quot; &quot;d2&quot; {
+  node = 312
+  network_name = grid_network.net1.name
+  disks {
+    name = &quot;data&quot;
+    size = 25
+  }
+  vms {
+    name = &quot;vm2&quot;
+    description =&quot;Test vm 2&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;data&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY = &quot;${var.SSH_KEY}&quot;
+    }
+  }
+}
+</code></pre>
+<p>This block is similar to the previous &quot;grid_deployment&quot; block (for &quot;d1&quot;), except that it creates a VM on node 312 instead of node 311.</p>
+<pre><code>output &quot;wg_config&quot; {
+  value = grid_network.net1.access_wg_config
+}
+</code></pre>
+<p>This block defines an output variable called &quot;wg_config&quot; that will display the WireGuard configuration for the &quot;internal&quot; network created by the &quot;grid_network&quot; resource.</p>
+<pre><code>output &quot;node1_vm1_ip&quot; {
+  value = grid_deployment.d1.vms[0].ip
+}
+</code></pre>
+<p>This block defines an output variable called &quot;node1_vm1_ip&quot; that will display the IP address of the first VM created by the &quot;grid_deployment&quot; resource &quot;d1&quot;.</p>
+<pre><code>output &quot;public_ip&quot; {
+  value = grid_deployment.d1.vms[0].computedip
+}
+</code></pre>
+<p>This block defines an output variable called &quot;public_ip&quot; that will display the public IP address of the first VM created by the &quot;grid_deployment&quot; resource &quot;d1&quot;.</p>
+<pre><code>output &quot;public_ip6&quot; {
+  value = grid_deployment.d1.vms[0].computedip6
+}
+</code></pre>
+<p>This block defines an output variable called &quot;public_ip6&quot; that will display the public IPv6 address of the first VM created by the &quot;grid_deployment&quot; resource &quot;d1&quot;.</p>
+<pre><code>output &quot;ygg_ip&quot; {
+  value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+<p>This block defines an output variable called &quot;ygg_ip&quot; that will display the Yggdrasil IP address of the first VM created by the &quot;grid_deployment&quot; resource &quot;d1&quot;.</p>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="deploy-mastodon-on-the-threefold-decentralized-grid"><a class="header" href="#deploy-mastodon-on-the-threefold-decentralized-grid">Deploy Mastodon On the Threefold Decentralized Grid</a></h1>
+<p>     It is my recommendation that you setup your server using the Ubuntu 20.04 image deployable on the <a href="https://Play.grid.tf">Playground</a> I have prepared documentation on doing this. read all of this post before you deploy any resources, you've been warned its not fun deleting half your deployments that were done before you read a requirement.</p>
+<p>you can checkout my example deployment at <a href="https://social.threefoldcloud.com">Social.ThreeFoldCloud.com</a> </p>
+<p>For Mastadon you will want to deploy the 20.04 image with appropriate resources for the size of the server you intend to host,</p>
+<ul>
+<li>
+<p>you can find a break down of what cpu and ram needs are expected <a href="https://github.com/McKael/mastodon-documentation/blob/master/Running-Mastodon/Resources-needed.md">here</a>, for this tutorial you will be running without docker.</p>
+</li>
+<li>
+<p>This should be deployed with both public ipv4 &amp; public ipv6, planetary is optional but usable for encrypted communication to the server.</p>
+</li>
+</ul>
+<p>Your mastodon server will require access to a smtp server there is a couple options for this, any way you accomplish this is acceptable but it is possible to host these resources on the grid.</p>
+<ul>
+<li>
+<p>you can host a smtp relay server on the grid by deploying the 20.04 image and following this <a href="https://www.linuxbabe.com/mail-server/postfix-smtp-relay-ubuntu-sendinblue">tutorial</a> </p>
+</li>
+<li>
+<p>you can host a full fledged smtp server on the grid by deploying the 20.04 cloud image and following this <a href="https://www.linuxbabe.com/mail-server/ubuntu-20-04-iredmail-server-installation">tutorial</a>, due to some isps blocking port 25, and the needed reliability I suggest running your smtp server on a reliable gateway farm like those of the foundation, greenedge and dany sing. these can often be identified by their gateway domain addresses on the <a href="https://dashboard.grid.tf/explorer/nodes">Threefold Grid Explorer</a> </p>
+<ul>
+<li><a href="https://mail.threefoldcloud.com">Mail.ThreeFoldCloud.com</a>, is a example of this.</li>
+</ul>
+</li>
+</ul>
+<p>you need to configure the DNS records for your mastadon deployment before you install mastadon on the server and follow the tutorial as they have to be properly configured to acquire your ssl certs. you will need A, AAAA, NS, and C Name records for your site. I use Go daddy for my records they should be configured the same way a threefold gateway address is configured, i cover that in this <a href="https://www.youtube.com/watch?v=axvKipK7MQM&amp;ab_channel=DrewSmith">video</a>, these are the records for my deployment, </p>
+<p>and how they relate to the deployments</p>
+<ul>
+<li>
+<p>A: Public ipv4</p>
+</li>
+<li>
+<p>AAAA: Public ipv6 </p>
+</li>
+<li>
+<p>ns: _acme-Chanllenge.social.threefoldcloud.com -&gt; social.threefoldcloud.com </p>
+</li>
+<li>
+<p>C_name: *.social.threefoldcloud.com -&gt; social.threefoldcloud.com </p>
+</li>
+</ul>
+<p>Once you have your have your Ubuntu 20.04 booted you will want to run</p>
+<pre><code>       apt update -y 
+
+	   apt upgrade -y 
+</code></pre>
+<p>There is currently an incompatible ubuntu update, that may or may not be resolved by the time you do this, if you experience a warning about a failed grub installation tell it not to retry, and to continue without installing grub and the issue will not return in further updates. this is documented <a href="https://github.com/threefoldtech/test_feedback/issues/319">here</a>, this issue is resolved by not skipping the step of running update &amp; upgrade and handling the warning at the beginning of each deployment. it will break the install scripts in the tutorials if you do not update and upgrade first.</p>
+<p>once you have a fully updated vm, restart your vm with</p>
+<pre><code>         shutdown -r now 
+</code></pre>
+<p>You will now be able to follow the <a href="https://docs.joinmastodon.org/admin/install/">install Mastadon from source guide</a> </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="peertube-on-the-threefold-grid"><a class="header" href="#peertube-on-the-threefold-grid">Peertube On the Threefold Grid</a></h1>
+<p>       There are two options for deploying peer tube on the <a href="https://play.grid.tf">Playground</a>, you can deploy using the one click applet and get a subdomain of a gateway node or you can setup your server using the Ubuntu 20.04 image deployable on the <a href="https://Play.grid.tf">Playground</a> for a much more customizable experience. I have prepared documentation on doing this. read all of this post before you deploy any resources, you've been warned its not fun deleting half your deployments that were done before you read a requirement.</p>
+<p>you can checkout my example deployment at <a href="https://videos.threefoldcloud.com">Videos.ThreeFoldCloud.com</a></p>
+<p>For Peertube you will want to deploy the 20.04 image with appropriate resources for the size of the server you intend to host,</p>
+<ul>
+<li>
+<p>you can find a break down of what cpu and ram needs are expected <a href="https://joinpeertube.org/en_US/faq#should-i-have-a-big-server-to-run-peertube">here</a> </p>
+</li>
+<li>
+<p>This should be deployed with both public ipv4 &amp; public ipv6, planetary is optional but usable for encrypted communication to the server.</p>
+</li>
+</ul>
+<p>Your Peertube server will require access to a smtp server there is a couple options for this, any way you accomplish this is acceptable but it is possible to host these resources on the grid.</p>
+<ul>
+<li>
+<p>you can host a smtp relay server on the grid by deploying the 20.04 image and following this <a href="https://www.linuxbabe.com/mail-server/postfix-smtp-relay-ubuntu-sendinblue">tutorial</a></p>
+</li>
+<li>
+<p>you can host a full fledged smtp server on the grid by deploying the 20.04 cloud image and following this <a href="https://www.linuxbabe.com/mail-server/ubuntu-20-04-iredmail-server-installation">tutorial</a>, due to some isps blocking port 25, and the needed reliability I suggest running your smtp server on a reliable gateway farm like those of the foundation, greenedge and dany sing. these can often be identified by their gateway domain addresses on the <a href="https://dashboard.grid.tf/explorer/nodes">Threefold Grid Explorer</a></p>
+<ul>
+<li><a href="https://mail.threefoldcloud.com">Mail.ThreeFoldCloud.com</a>, is a example of this.</li>
+</ul>
+</li>
+</ul>
+<p>you need to configure the DNS records for your Peertube deployment before you install Peertube on the server and follow the tutorial as they have to be properly configured to acquire your ssl certs. you will need A, AAAA, NS, and C Name records for your site. I use Go daddy for my records they should be configured the same way a threefold gateway address is configured, i cover that in this <a href="https://www.youtube.com/watch?v=axvKipK7MQM&amp;ab_channel=DrewSmith">video</a>,</p>
+<p>how they relate to the deployments</p>
+<ul>
+<li>
+<p>A: Public ipv4</p>
+</li>
+<li>
+<p>AAAA: Public ipv6</p>
+</li>
+<li>
+<p>ns: _acme-Chanllenge.videos.threefoldcloud.com -&gt; videos.threefoldcloud.com</p>
+</li>
+<li>
+<p>C_name: *.videos.threefoldcloud.com -&gt; videos.threefoldcloud.com</p>
+</li>
+</ul>
+<p>. </p>
+<p>Once you have your have your Ubuntu 20.04 booted you will want to run</p>
+<pre><code>       apt update -y  
+
+       apt upgrade -y  
+       
+        apt install unzip -y 
+</code></pre>
+<p>There is currently an incompatible ubuntu update, that may or may not be resolved by the time you do this, if you experience a warning about a failed grub installation tell it not to retry, and to continue without installing grub and the issue will not return in further updates. this is documented <a href="https://github.com/threefoldtech/test_feedback/issues/319">here</a>, this issue is resolved by not skipping the step of running update &amp; upgrade and handling the warning at the beginning of each deployment. it will break the install scripts in the tutorials if you do not update and upgrade first.</p>
+<p>once you have a fully updated vm, restart your vm with</p>
+<pre><code>         shutdown -r now  
+</code></pre>
+<p>You will now be able to follow the <a href="https://docs.joinpeertube.org/dependencies">Dependancies Guide</a></p>
+<p>followed by the <a href="https://docs.joinpeertube.org/install-any-os">Any Os Guide</a></p>
+<p>if you need more help, Checkout my <a href="https://github.com/Parkers145/info_manual3/blob/development/wiki/play/playground.md">Playground Deployment Manual</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="funkwhale-on-the-threefold-grid"><a class="header" href="#funkwhale-on-the-threefold-grid">Funkwhale On the Threefold Grid</a></h1>
+<p>       There are two options for deploying Funkwhale on the <a href="https://play.grid.tf">Playground</a>, you can deploy using the one click applet and get a subdomain of a gateway node or you can setup your server using the Ubuntu 20.04 image deployable on the <a href="https://Play.grid.tf">Playground</a> for a much more customizable experience. I have prepared documentation on doing this. read all of this post before you deploy any resources, you've been warned its not fun deleting half your deployments that were done before you read a requirement.</p>
+<p>you can checkout my example deployment at <a href="https://music.threefoldcloud.com">Music.ThreeFoldCloud.com</a> </p>
+<p>For Funkwhale you will want to deploy the 20.04 image with appropriate resources for the size of the server you intend to host,</p>
+<ul>
+<li>
+<p>you can find a break down of what cpu and ram needs are expected <a href="https://docs.funkwhale.audio/installation/">here</a></p>
+</li>
+<li>
+<p>This should be deployed with both public ipv4 &amp; public ipv6, planetary is optional but usable for encrypted communication to the server.</p>
+</li>
+</ul>
+<p>Your Funkwhale server will require access to a smtp server there is a couple options for this, any way you accomplish this is acceptable but it is possible to host these resources on the grid.</p>
+<ul>
+<li>
+<p>you can host a smtp relay server on the grid by deploying the 20.04 image and following this <a href="https://www.linuxbabe.com/mail-server/postfix-smtp-relay-ubuntu-sendinblue">tutorial</a> </p>
+</li>
+<li>
+<p>you can host a full fledged smtp server on the grid by deploying the 20.04 cloud image and following this <a href="https://www.linuxbabe.com/mail-server/ubuntu-20-04-iredmail-server-installation">tutorial</a>, due to some isps blocking port 25, and the needed reliability I suggest running your smtp server on a reliable gateway farm like those of the foundation, greenedge and dany sing. these can often be identified by their gateway domain addresses on the <a href="https://dashboard.grid.tf/explorer/nodes">Threefold Grid Explorer</a> </p>
+<ul>
+<li><a href="https://mail.threefoldcloud.com">Mail.ThreeFoldCloud.com</a>, is a example of this.</li>
+</ul>
+</li>
+</ul>
+<p>you need to configure the DNS records for your Peertube deployment before you install Peertube on the server and follow the tutorial as they have to be properly configured to acquire your ssl certs. you will need A, AAAA, NS, and C Name records for your site. I use Go daddy for my records they should be configured the same way a threefold gateway address is configured, i cover that in this <a href="https://www.youtube.com/watch?v=axvKipK7MQM&amp;ab_channel=DrewSmith">video</a>, </p>
+<p>how they relate to the deployments</p>
+<ul>
+<li>
+<p>A: Public ipv4</p>
+</li>
+<li>
+<p>AAAA: Public ipv6 </p>
+</li>
+<li>
+<p>ns: _acme-Chanllenge.music.threefoldcloud.com -&gt; music.threefoldcloud.com </p>
+</li>
+<li>
+<p>C_name: *.music.threefoldcloud.com -&gt; music.threefoldcloud.com </p>
+</li>
+</ul>
+<p>.</p>
+<p>Once you have your have your Ubuntu 20.04 booted you will want to run</p>
+<pre><code>       apt update -y 
+
+	   apt upgrade -y 
+</code></pre>
+<p>There is currently an incompatible ubuntu update, that may or may not be resolved by the time you do this, if you experience a warning about a failed grub installation tell it not to retry, and to continue without installing grub and the issue will not return in further updates. this is documented <a href="https://github.com/threefoldtech/test_feedback/issues/319">here</a>, this issue is resolved by not skipping the step of running update &amp; upgrade and handling the warning at the beginning of each deployment. it will break the install scripts in the tutorials if you do not update and upgrade first.</p>
+<p>once you have a fully updated vm, restart your vm with</p>
+<pre><code>         shutdown -r now 
+</code></pre>
+<p>You will now be able to follow the <a href="https://docs.funkwhale.audio/installation/index.html">Quick Installation Tutorial</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="setting-up-smtp-services-on-the-threefold-grid"><a class="header" href="#setting-up-smtp-services-on-the-threefold-grid">Setting up SMTP Services on the Threefold Grid</a></h1>
+<p>       There are two options for deploying SMTP on the on the grid a full smtp server or a smtp relay server both of these will be deployed using the Ubuntu 20.04 image deployable on the <a href="https://Play.grid.tf">Playground</a> . I have prepared documentation on doing this. read all of this post before you deploy any resources, you've been warned its not fun deleting half your deployments that were done before you read a requirement.</p>
+<p>you can checkout my example deployment at <a href="https://mail.threefoldcloud.com">Mail.ThreeFoldCloud.com</a> </p>
+<p>For this you will want to deploy the 20.04 image with appropriate resources for the size of the server you intend to host,</p>
+<ul>
+<li>
+<p>you can find a break down of what cpu and ram needs are expected for a full smtp server <a href="https://docs.iredmail.org/iredmail-easy.getting.start.html#:%7E:text=iRedMail%20requires%20at%20least%204,to%20support%20500%20ActiveSync%20clients.">here</a>
+you can find a break down of what cpu and ram needs are expected for a smtp relay server <a href="https://askubuntu.com/questions/279408/mail-server-system-requirements">here</a></p>
+</li>
+<li>
+<p>This should be deployed with both public ipv4 &amp; public ipv6, planetary is optional but usable for encrypted communication to the server.</p>
+</li>
+</ul>
+<p>you need to configure the DNS records for your mail server deployment before you install your mail client on the server and follow the tutorial as they have to be properly configured to acquire your ssl certs. you will need A, AAAA, NS, and C Name records for your site. I use Go daddy for my records they should be configured the same way a threefold gateway address is configured, i cover that in this <a href="https://www.youtube.com/watch?v=axvKipK7MQM&amp;ab_channel=DrewSmith">video</a>, </p>
+<p>how they relate to the deployments</p>
+<ul>
+<li>
+<p>A: Public ipv4</p>
+</li>
+<li>
+<p>AAAA: Public ipv6 </p>
+</li>
+<li>
+<p>ns: _acme-Chanllenge.mail.threefoldcloud.com -&gt; mail.threefoldcloud.com </p>
+</li>
+<li>
+<p>C_name: *.mail.threefoldcloud.com -&gt; mail.threefoldcloud.com </p>
+</li>
+<li>
+<p>mx: Mail.threefoldcloud.com </p>
+</li>
+<li>
+<p>TXT: &quot;v=spf1 ip4:185.206.122.163 ip6:2a10:b600:1:0:94a1:d5ff:fe9d:3632 include:threefoldcloud.com -all &quot; where you have replaced the ips and domains with your ips and domains. these will be the Ip addresses from your deployment hosting iredmail.</p>
+</li>
+</ul>
+<p>.
+Once you have your have your Ubuntu 20.04 booted you will want to run</p>
+<pre><code>       apt update -y 
+
+	   apt upgrade -y 
+</code></pre>
+<p>There is currently an incompatible ubuntu update, that may or may not be resolved by the time you do this, if you experience a warning about a failed grub installation tell it not to retry, and to continue without installing grub and the issue will not return in further updates. this is documented <a href="https://github.com/threefoldtech/test_feedback/issues/319">here</a>, this issue is resolved by not skipping the step of running update &amp; upgrade and handling the warning at the beginning of each deployment. it will break the install scripts in the tutorials if you do not update and upgrade first.</p>
+<p>once you have a fully updated vm, restart your vm with</p>
+<pre><code>         shutdown -r now 
+</code></pre>
+<ul>
+<li>
+<p>you can host a smtp relay server on the grid by following this <a href="https://www.linuxbabe.com/mail-server/postfix-smtp-relay-ubuntu-sendinblue">tutorial</a> </p>
+</li>
+<li>
+<p>you can host a full fledged smtp server on the grid by  following this <a href="https://www.linuxbabe.com/mail-server/ubuntu-20-04-iredmail-server-installation">tutorial</a>, due to some isps blocking port 25, and the needed reliability I suggest running your smtp server on a reliable gateway farm like those of the Foundation, Greenedge and Dany Sing. these can often be identified by their gateway domain addresses on the <a href="https://dashboard.grid.tf/explorer/nodes">Threefold Grid Explorer</a> </p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="creating-a-cloud-linux-desktop-environment-on-the-threefold-grid"><a class="header" href="#creating-a-cloud-linux-desktop-environment-on-the-threefold-grid">Creating a Cloud Linux Desktop environment on the Threefold Grid</a></h1>
+<p><strong>The End Result of This Tutorial</strong></p>
+<p>https://www.youtube.com/watch?v=FVy-nOcyKJQ&amp;t=501s</p>
+<p>An often requested feature is desktop environments hosted on the Threefold Grid. I have recently found a viable solution solution to this using relatively user friendly tools and this will be a tutorial on how how you can accomplish the same. </p>
+<p>For this tutorial we will be using a </p>
+<ul>
+<li>Full VM deployment with 4 cores, 4096 mb of ram and 50 gb of storage</li>
+<li>Ubuntu 22.04 image</li>
+<li>Chrome Remote Desktop </li>
+<li>Putty / SSH client of your choice. </li>
+</ul>
+<h1 id="steps-to-complete-the-project"><a class="header" href="#steps-to-complete-the-project">Steps to Complete the Project</a></h1>
+<details>
+    <summary><b>Update and Upgrade Your VM</b></summary> 
+<p>After Connecting to your VM via SSH, run these commands in your terminal for Ubuntu 22.04 </p>
+<pre><code>apt update &amp;&amp; apt upgrade -y 
+</code></pre>
+<p>If you encouter an error about a grub update on a pink screen, simply press yes and proceed, this is a incompatability between that update and the hypervisor firmware, it will not affect peformance, but this error can be avoided by running this command prior to updating </p>
+<pre><code>apt-mark hold grub-efi-amd64-signed
+</code></pre>
+<details>
+            <summary>Jump to Update and Upgrade Your VM Video Section</summary>
+<p>https://www.youtube.com/watch?v=FVy-nOcyKJQ&amp;t=199s</p>
+</details>
+<details>
+            <summary>Jump to Update and Upgrade Your VM Expected Behavior Section</summary>
+<p>Console Input </p>
+<p>Command Success </p>
+</details>
+</details>
+<details>
+    <summary><b>Restart Your VM</b></summary> 
+<pre><code>reboot -f
+</code></pre>
+<details>
+        <summary>Jump to Restart Your VM Video Section</summary>
+<p>https://www.youtube.com/watch?v=FVy-nOcyKJQ&amp;t=236s</p>
+</details>
+<details>
+            <summary>Jump to Restart Your VM Expected Behavior Section</summary>
+<p>Console Input </p>
+<p>Command Success </p>
+</details>
+</details>
+<details>
+    <summary><b>Install the Desktop Enviroment</b></summary> 
+<p>Once you have update your VM you will want to run this command, this is a large download and the install takes awhile </p>
+<pre><code>apt install ubuntu-desktop
+</code></pre>
+<h1 id="download-chrome-remote-desktop"><a class="header" href="#download-chrome-remote-desktop">Download Chrome Remote Desktop</a></h1>
+<pre><code>wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+</code></pre>
+<h1 id="install-chrome-remote-desktop"><a class="header" href="#install-chrome-remote-desktop">Install Chrome Remote Desktop</a></h1>
+<pre><code>apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.deb
+</code></pre>
+<h1 id="set-desktop-environment-display-manager-for-chrome"><a class="header" href="#set-desktop-environment-display-manager-for-chrome">Set Desktop environment display manager for chrome</a></h1>
+<pre><code>bash -c echo “exec /etc/X11/Xsession /usr/bin/gnome-session” &gt; /etc/chrome-remote-desktop-session’
+</code></pre>
+<h1 id="create-a-new-user"><a class="header" href="#create-a-new-user">Create a new user</a></h1>
+<pre><code>adduser parker 
+</code></pre>
+<h1 id="make-user-a-sudoer"><a class="header" href="#make-user-a-sudoer">make user a sudoer</a></h1>
+<pre><code>usermod -aG sudo parker
+</code></pre>
+<h1 id="restart-your-vm"><a class="header" href="#restart-your-vm">restart your VM</a></h1>
+<pre><code>reboot -f
+</code></pre>
+<h1 id="run-command-from-chrome-web-browser-under-add-by-ssh"><a class="header" href="#run-command-from-chrome-web-browser-under-add-by-ssh">run command from chrome web browser under add by ssh</a></h1>
+<p>Go to https://remotedesktop.google.com/ and login/create account as necessary</p>
+<p>then select setup via ssh 
+<img src="https://user-images.githubusercontent.com/44621168/214385290-25d4a8e2-c636-4eca-a651-8e32fcd7fe4d.png" alt="1" /></p>
+<p>follow the prompts begin-&gt;</p>
+<p><img src="https://user-images.githubusercontent.com/44621168/214385298-08389aa1-fd4f-425b-971b-c384be00e187.png" alt="2" /></p>
+<p>next-&gt;
+<img src="https://user-images.githubusercontent.com/44621168/214385315-5aa7be91-0c89-4a10-b141-17989583d4d3.png" alt="3" /></p>
+<p><img src="https://user-images.githubusercontent.com/44621168/214491333-2ea38344-6beb-470a-b031-3d5098c2145a.png" alt="3" /></p>
+<p>Command Success </p>
+<p><img src="https://user-images.githubusercontent.com/44621168/214385334-1081f255-f2ab-45d5-933c-7f85c7202c85.png" alt="4" /></p>
+</details>
+</details>
+<details>
+    <summary><b>Return to Your VM Console and Switch To Your User</b></summary> 
+<pre><code>su parker
+</code></pre>
+<h1 id="paste-the-key-from-the-browser-into-your-vms-console"><a class="header" href="#paste-the-key-from-the-browser-into-your-vms-console">Paste the key from the browser into your vms console</a></h1>
+</details>
+</details>
+<details>
+    <summary><b>Paste The Key From The Browser Into Your VMs Console</b></summary> 
+<p>you should now be able to login into your into Linux desktop by returning to the remote access tab. 
+<img src="https://user-images.githubusercontent.com/44621168/214385374-2652b858-f961-43e6-922f-1ad71f0cc6e3.jpeg" alt="6" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </body>
+</html>

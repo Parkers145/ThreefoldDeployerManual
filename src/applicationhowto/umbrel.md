@@ -450,15 +450,15 @@ copy this file we will pasting it into a file in the next step.
 https://youtu.be/NEXuWCggFB8
 
 
-if you’re running Windows, you might want to use Putty to connect to your Grid VMs. This is possible, but you will need to make sure the ssh key you created your playground profile with is save in the right format. Here’s a quick step by step:
+if youï¿½re running Windows, you might want to use Putty to connect to your Grid VMs. This is possible, but you will need to make sure the ssh key you created your playground profile with is save in the right format. Hereï¿½s a quick step by step:
 
 
 <details>
 	<summary><b>Format your SSH Key For Putty Using PuttyGen</b></summary>
 
-First run PuttyGen. Even if you already have a key you want to use, this is the best way to get the public key in the proper format. If you don’t already have a key, choose RSA and hit generate. When you’re done, hit Save private key and write the .ppk file to disk. We’ll use this file in the next step to connect.
+First run PuttyGen. Even if you already have a key you want to use, this is the best way to get the public key in the proper format. If you donï¿½t already have a key, choose RSA and hit generate. When youï¿½re done, hit Save private key and write the .ppk file to disk. Weï¿½ll use this file in the next step to connect.
 
-If you already had a key or want to return to this step later, hit the Load button and select the ppk file. At the top of the PuttyGen window, you’ll see a field with the public key:
+If you already had a key or want to return to this step later, hit the Load button and select the ppk file. At the top of the PuttyGen window, youï¿½ll see a field with the public key:
 
 ![image](https://user-images.githubusercontent.com/44621168/214651082-2b45b153-2a9b-4026-a627-1dacee5fcb77.png)
 
@@ -472,15 +472,15 @@ Once you have your SSH key Sorted, You will be ready to
 <details>
 	<summary><b>Connect with Putty</b></summary>
 
-After you’ve added the key to your playground profile or Terraform file, create your deployment. There’s no way to change the SSH key in an existing deployment, you must delete and redeploy. Copy the IP address once the deployment is successful and then open Putty.
+After youï¿½ve added the key to your playground profile or Terraform file, create your deployment. Thereï¿½s no way to change the SSH key in an existing deployment, you must delete and redeploy. Copy the IP address once the deployment is successful and then open Putty.
 
-In Putty’s config screen, navigate to Connection > SSH > Auth:
+In Puttyï¿½s config screen, navigate to Connection > SSH > Auth:
 
 ![image](https://user-images.githubusercontent.com/44621168/214651140-7dd0999b-44cb-40fd-9c00-034aa550d8af.png)
 
-Hit Browse… and select your ppk file. Then go to Session at the top of the left nav bar and enter your VMs IP address in the Host Name (or IP address) field. Then hit the Open button at the bottom of the window to start your session. When you are prompted for a user name, enter root and you should then get access to a terminal with no password prompt.
+Hit Browseï¿½ and select your ppk file. Then go to Session at the top of the left nav bar and enter your VMs IP address in the Host Name (or IP address) field. Then hit the Open button at the bottom of the window to start your session. When you are prompted for a user name, enter root and you should then get access to a terminal with no password prompt.
 
-If you’re prompted for a password, something went wrong and you won’t be able to log in. Go back and check the steps above, then feel free to post questions or problems in this thread.
+If youï¿½re prompted for a password, something went wrong and you wonï¿½t be able to log in. Go back and check the steps above, then feel free to post questions or problems in this thread.
   </details>
 </details>
 
