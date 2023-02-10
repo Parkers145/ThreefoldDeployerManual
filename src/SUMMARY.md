@@ -32,4 +32,4 @@
 - [Deploy Funkwhale in A Full VM](applicationhowto/manualfunkwhale.md)
 - [Host Smtp Services in A Full VM](applicationhowto/manualiredmail.md)
 - [Linux Desktop VM with Chrome RDP](applicationhowto/desktopchromerdp.md)
-- [Deploying Umbrel On The Threefold Grid](applicationhowto/umbrel.md)
+<!-- - [Deploying Umbrel On The Threefold Grid](applicationhowto/umbrel.md) -->

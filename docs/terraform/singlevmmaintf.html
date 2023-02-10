@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Detailed Single Full VM Main.tf Explanation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Threefold Deployer Manual</a></li><li class="chapter-item expanded affix "><li class="part-title">How to use the Playground to Create Deployments</li><li class="chapter-item expanded "><a href="../playground/setupthreefoldconnect.html"><strong aria-hidden="true">1.</strong> Set-up Your Playground</a></li><li class="chapter-item expanded "><a href="../playground/deploy.html"><strong aria-hidden="true">2.</strong> Deploy Your First Workload</a></li><li class="chapter-item expanded "><a href="../playground/support.html"><strong aria-hidden="true">3.</strong> Get Support</a></li><li class="chapter-item expanded affix "><li class="part-title">How To Use Your Deployments</li><li class="chapter-item expanded "><a href="../playground/setupubuntu.html"><strong aria-hidden="true">4.</strong> Setting up an Ubuntu VM</a></li><li class="chapter-item expanded "><a href="../playground/accessubuntu.html"><strong aria-hidden="true">5.</strong> Accessing Your Ubuntu VM</a></li><li class="chapter-item expanded "><a href="../flist/createfullvmflist.html"><strong aria-hidden="true">6.</strong> Create a Custom Ubuntu Full VM Image</a></li><li class="chapter-item expanded "><a href="../playground/ubuntunet.html"><strong aria-hidden="true">7.</strong> Your Cloud Ubuntu VM's Network Interfaces</a></li><li class="chapter-item expanded affix "><li class="part-title">How to use Terraform to Create Deployments</li><li class="chapter-item expanded "><a href="../terraform/setuptfcterraform.html"><strong aria-hidden="true">8.</strong> Setup Your Wallets and Accounts for Use With Terraform</a></li><li class="chapter-item expanded "><a href="../terraform/gettingstarted.html"><strong aria-hidden="true">9.</strong> Installing and Deploying With Terraform(detailed overview)</a></li><li class="chapter-item expanded "><a href="../terraform/7stepslinux.html"><strong aria-hidden="true">10.</strong> How To Deploy A Terraform Example Configuration on the Threefold Grid from Linux in 7 steps (quickstart)</a></li><li class="chapter-item expanded "><a href="../terraform/7stepswindows.html"><strong aria-hidden="true">11.</strong> Deploying an Example Configuration with Terraform on Windows Using Putty In 7 Steps (quickstart)</a></li><li class="chapter-item expanded "><a href="../terraform/singlevmmaintf.html" class="active"><strong aria-hidden="true">12.</strong> Detailed Single Full VM Main.tf Explanation</a></li><li class="chapter-item expanded "><a href="../terraform/multivmmaintf.html"><strong aria-hidden="true">13.</strong> Detailed Multi Full VM Main.tf Explanation</a></li><li class="chapter-item expanded affix "><li class="part-title">How to Install Specific Applications in a Ubuntu VM on The Threefold Grid</li><li class="chapter-item expanded "><a href="../applicationhowto/manualmastodon.html"><strong aria-hidden="true">14.</strong> Deploy Mastadon in A Full VM</a></li><li class="chapter-item expanded "><a href="../applicationhowto/manualpeertube.html"><strong aria-hidden="true">15.</strong> Deploy Peertube in A Full VM</a></li><li class="chapter-item expanded "><a href="../applicationhowto/manualfunkwhale.html"><strong aria-hidden="true">16.</strong> Deploy Funkwhale in A Full VM</a></li><li class="chapter-item expanded "><a href="../applicationhowto/manualiredmail.html"><strong aria-hidden="true">17.</strong> Host Smtp Services in A Full VM</a></li><li class="chapter-item expanded "><a href="../applicationhowto/desktopchromerdp.html"><strong aria-hidden="true">18.</strong> Linux Desktop VM with Chrome RDP</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="what-is-a-maintf"><a class="header" href="#what-is-a-maintf">What is a Main.tf?</a></h1>
+<p>       A main.tf file is a configuration file that defines the infrastructure resources that should be created and managed by Terraform. It is typically the main entry point for a Terraform configuration, and it is used to specify the provider, resources, and outputs for a configuration.</p>
+<p>       The main.tf file is written in the HashiCorp Configuration Language (HCL), which is a declarative language that is used to define the desired state of an infrastructure. In the main.tf file, you can specify the properties of the resources that should be created, as well as any dependencies or relationships between those resources.</p>
+<p>For example, you might use a main.tf file to define the following resources:</p>
+<ul>
+<li>Virtual machines</li>
+<li>Zero-Databases</li>
+<li>Containers</li>
+<li>Cloud storage buckets</li>
+</ul>
+<h1 id="what-makes-up-the-file"><a class="header" href="#what-makes-up-the-file">What makes up the file</a></h1>
+<details>
+	<summary><b>Terraform Block</b></summary> 
+```
+terraform {
+ required_providers {
+  grid = {
+   source = "threefoldtech/grid"
+   }
+  }
+ } 
+```
+<ul>
+<li>
+<p>The terraform block is the top-level block in the configuration file. It is used to configure the behavior of Terraform itself.</p>
+</li>
+<li>
+<p>The terraform block includes a single sub-block called required_providers.</p>
+<ul>
+<li><strong>required_providers block</strong>
+<ul>
+<li>
+<p>The required_providers block is used to specify the Terraform providers that are required by the configuration. A provider is a plugin that implements the logic for a specific resource type, such as a cloud platform or a configuration management tool.</p>
+</li>
+<li>
+<p>The required_providers block includes a single sub-block called grid, which specifies the threefoldtech/grid provider. This provider is required to manage resources in the Threefold Grid.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details>
+	<summary><b>Provider Block</b></summary> 
+<pre><code>provider &quot;grid&quot; {
+}
+</code></pre>
+<ul>
+<li>
+<p>The provider block is used to configure a Terraform provider. It specifies the provider's name and any provider-specific configuration options.</p>
+</li>
+<li>
+<p>There is a single provider block that configures the grid provider. The provider block does not include any arguments, which means that it is using the default configuration for the grid provider.</p>
+</li>
+</ul>
+</details>
+<details>
+	<summary><b>Grid Network Block </b></summary>
+<pre><code>resource &quot;grid_network&quot; &quot;net1&quot; {
+	nodes = [3000]
+	ip_range = &quot;10.20.0.0/16&quot;
+	name = &quot;mynetwork&quot;
+	description = &quot;My internal Grid network&quot;
+	add_wg_access = true
+}
+</code></pre>
+<p>This block is defining a new resource of type grid_network, with the identifier net1. The grid_network block is used to create a network in the Threefold Grid. A network is a virtual network that connects nodes in the Grid and allows them to communicate with each other. the grid_network resource has the identifier net1, These identifiers are used to refer to the resources elsewhere in the configuration.</p>
+<p>For example, the network_name argument of the grid_deployment resource refers to the name attribute of the grid_network resource with the identifier net1</p>
+<p>The block contains several arguments that are specific to the grid_network resource type:</p>
+<ul>
+<li>nodes: The nodes argument is a list of node IDs that should be included in the network. When a node is added to a network, it is assigned an IP address from the network's IP range, and it becomes available to host applications or workloads.</li>
+<li>ip_range: the ip_range argument specifies the IP range of the network. An IP range is a range of IP addresses that are available for use on a network. It is specified using the CIDR notation, which consists of an IP address followed by a slash and the number of bits of the address that are used for the network prefix.</li>
+<li>name: The name of a network is a human-readable identifier that is used to refer to the network within the Threefold Grid. It is not required to be unique, but it is typically used to distinguish between different networks in the Grid.</li>
+<li>description: A description of the network.</li>
+<li>add_wg_access: The add_wg_access argument in the grid_network resource controls whether WireGuard access should be enabled for the network. When add_wg_access is set to true, the grid provider will create a WireGuard access point for the network. This allows users to connect to the network using the WireGuard VPN protocol.</li>
+</ul>
+</details>
+<details>
+	<summary><b>Grid Deployment Block</b></summary>
+```
+resource "grid_deployment" "d1" {
+  node = 3000
+  network_name = grid_network.net1.name
+  ip_range = lookup(grid_network.net1.nodes_ip_range, 3000, "")
+  disks {
+    name = "root"
+    size = 50
+  }
+    vms {
+    name = "tftest"
+    description ="Terraform deployment test"
+    flist = "https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist"
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = "root"
+        mount_point = "/data"
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY ="ADD YOUR SSH KEY HERE"
+    }
+  }
+}
+```
+The grid_deployment block is used to create a deployment in the Threefold Grid. A deployment is a logical grouping of nodes, disks, and virtual machines that can be used to host applications or workloads.
+<p>The grid_deployment block includes the following arguments:</p>
+<ul>
+<li>node: The ID of the node where the deployment should be created.</li>
+<li>network_name: The name of the network to which the deployment should be connected.</li>
+<li>ip_range: The IP range of the deployment. The deployment will assign IP addresses from this range to the nodes, disks, and virtual machines in the deployment.</li>
+</ul>
+<p>The grid_deployment block also includes the following sub-blocks:</p>
+<ul>
+<li>
+<p>disks: The disks block is used to specify one or more disks that should be created and attached to the deployment. A disk is a block storage device that can be used to store data. Each disk block in the disks block specifies the properties of a single disk. The disk block includes the following arguments:
+- name: The name of the disk
+- size: The size of the disk in GB.</p>
+</li>
+<li>
+<p>vms: The vms block is used to specify one or more virtual machines that should be created and attached to the deployment. A virtual machine (VM) is a logical representation of a computer that is hosted on a node in the Grid. Each vm block in the vms block specifies the properties of a single VM. The vm block includes the following arguments:</p>
+<ul>
+<li>
+<p>name: The name of the VM, which is &quot;tftest&quot; in this case.</p>
+</li>
+<li>
+<p>description: A description of the VM, which is &quot;Terraform deployment test&quot; in this case.</p>
+</li>
+<li>
+<p>flist: The URL of a file list that specifies the root filesystem of the VM. The files and links are on the Threefold Hub</p>
+</li>
+<li>
+<p>cpu: The number of CPU cores that should be allocated to the VM. In this case, the VM is allocated 4 CPU cores.</p>
+</li>
+<li>
+<p>publicip: A flag that indicates whether the VM should be assigned a public IPv4 address. If set to true, the grid provider will assign a public IPv4 address to the VM.</p>
+</li>
+<li>
+<p>publicip6: A flag that indicates whether the VM should be assigned a public IPv6 address. If set to true, the grid provider will assign a public IPv6 address to the VM.</p>
+</li>
+<li>
+<p>memory: The amount of memory (in MB) that should be allocated to the VM. In this case, the VM is allocated 8192MB of memory.</p>
+<ul>
+<li>
+<p>The vm block also includes the following sub-blocks:</p>
+<ul>
+<li>mounts:The mounts block is used to specify one or more disk mounts that should be created for the VM. A disk mount is a connection between a disk and a mount point on the VM, which allows the disk to be accessed from the VM. Each mount block in the mounts block specifies the properties of a single disk mount. The mount block includes the following arguments:
+<ul>
+<li>disk_name: The name of the disk that should be mounted.</li>
+<li>mount_point: The mount point on the VM where the disk should be mounted.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>env_vars: A map of environment variables that should be set on the VM. Each key-value pair in the map represents an environment variable and its value. In this case, the env_vars map includes a single environment variable called SSH_KEY, which is set to the value &quot;ADD YOUR SSH KEY HERE&quot;.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details>
+	<summary><b>Output Blocks</b></summary>
+<p>The output blocks are used to output the values of variables or resources to the user. They are used to display the results of the Terraform run, or to make the values of certain resources or variables available to other Terraform configurations.</p>
+<pre><code>output &quot;wg_config&quot; {
+	value = grid_network.net1.access_wg_config
+}
+</code></pre>
+<p>This block is defining an output variable called wg_config. The value of the output will be the access_wg_config attribute of the grid_network resource with the identifier net1. This output can be used to display the WireGuard configuration for the network.</p>
+<pre><code>output &quot;node1_vm1_ip&quot; {
+	value = grid_deployment.d1.vms[0].ip
+}
+</code></pre>
+<p>This block is defining an output variable called node1_vm1_ip. The value of the output will be the ip attribute of the first virtual machine in the vms list of the grid_deployment resource with the identifier d1.</p>
+<pre><code>output &quot;public_ip&quot; {
+	value = grid_deployment.d1.vms[0].computedip
+}
+</code></pre>
+<p>This block is defining an output variable called public_ip. The value of the output will be the computedip attribute of the first virtual machine in the vms list of the grid_deployment resource with the identifier d1. This output can be used to display the public IP address of the virtual machine.</p>
+<pre><code>output &quot;public_ip6&quot; {
+			value = grid_deployment.d1.vms[0].computedip6
+}
+</code></pre>
+<p>This block is defining an output variable called public_ip6. The value of the output will be the computedip6 attribute of the first virtual machine in the vms list of the grid_deployment resource with the identifier d1.</p>
+<p>The computedip6 attribute represents the public IPv6 address of the virtual machine, as computed by the grid provider. This output can be used to display the public IPv6 address of the virtual machine.</p>
+<pre><code>output &quot;ygg_ip&quot; {
+	value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+<p>This block is defining an output variable called ygg_ip. The value of the output will be the ygg_ip attribute of the first virtual machine in the vms list of the grid_deployment resource with the identifier d1.</p>
+<p>The ygg_ip attribute represents the Planetary Network IP address of the virtual machine. The Planetary Network is an experimental networking protocol that provides an encrypted IPv6 network. This output can be used to display the Planetary network IP address of the virtual machine.</p>
+<p>I hope this explanation helps! Let me know if you have any questions.</p>
+</details>
+<h1 id="resources"><a class="header" href="#resources">Resources</a></h1>
+<details>
+	<summary><b>Single Node Network Example Main.tf</b></summary>
+<pre><code>terraform {
+  required_providers {
+    grid = {
+      source = &quot;threefoldtech/grid&quot;
+    }
+  }
+}
+
+provider &quot;grid&quot; {
+}
+
+resource &quot;grid_network&quot; &quot;net1&quot; {
+    nodes = [3000]
+    ip_range = &quot;10.20.0.0/16&quot;
+    name = &quot;mynetwork&quot;
+    description = &quot;My internal Grid network&quot;
+    add_wg_access = true
+}
+resource &quot;grid_deployment&quot; &quot;d1&quot; {
+  node = 3000
+  network_name = grid_network.net1.name
+  ip_range = lookup(grid_network.net1.nodes_ip_range, 3000, &quot;&quot;)
+  disks {
+    name = &quot;root&quot;
+    size = 50
+  }
+    vms {
+    name = &quot;tftest&quot;
+    description =&quot;Terraform deployment test&quot;
+    flist = &quot;https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist&quot;
+    cpu = 4
+    publicip = true
+    publicip6 = true
+    memory = 8192
+    mounts {
+        disk_name = &quot;root&quot;
+        mount_point = &quot;/data&quot;
+    }
+    planetary = true
+    env_vars = {
+      SSH_KEY =&quot;ADD YOUR SSH KEY HERE&quot;
+    }
+  }
+}
+output &quot;wg_config&quot; {
+    value = grid_network.net1.access_wg_config
+}
+output &quot;node1_vm1_ip&quot; {
+    value = grid_deployment.d1.vms[0].ip
+}
+output &quot;public_ip&quot; {
+    value = grid_deployment.d1.vms[0].computedip
+}
+output &quot;public_ip6&quot; {
+    value = grid_deployment.d1.vms[0].computedip6
+}
+output &quot;ygg_ip&quot; {
+    value = grid_deployment.d1.vms[0].ygg_ip
+}
+</code></pre>
+<p>This main.tf file is used to deploy the following resources in the Threefold Grid:</p>
+<ul>
+<li>A network called &quot;mynetwork&quot; with a range of IP addresses from 10.20.0.0/16. The network includes a single node with ID 3000, and it has WireGuard access enabled.</li>
+<li>A deployment called &quot;d1&quot; on node 3000. The deployment includes a single virtual machine (VM) with the following properties:
+<ul>
+<li>A root disk with a size of 50GB.</li>
+<li>A VM with the name &quot;tftest&quot;, a description of &quot;Terraform deployment test&quot;, 4 CPU cores, 8192MB of memory, and a root filesystem specified by the file list at https://hub.grid.tf/tf-official-vms/ubuntu-22.04-lts.flist. The VM is assigned a public IPv4 address, a public IPv6 address, and an IP address on the Planetary network. The VM has an environment variable called SSH_KEY set to the value &quot;ADD YOUR SSH KEY HERE&quot;. The root disk is mounted at the /data mount point on the VM.</li>
+</ul>
+</li>
+</ul>
+</details>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../terraform/7stepswindows.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../terraform/multivmmaintf.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../terraform/7stepswindows.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../terraform/multivmmaintf.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
