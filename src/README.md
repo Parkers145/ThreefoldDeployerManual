@@ -31,4 +31,5 @@
 - [Linux Desktop VM with Chrome RDP](applicationhowto/desktopchromerdp.html)
 - [Deploying Umbrel On The Threefold Grid](applicationhowto/umbrel.html)
 
-
+## Applets 
+- [Deploy Algorand](applets/algorand.html)
