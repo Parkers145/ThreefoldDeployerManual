@@ -37,3 +37,4 @@
 ### Applets
 
 - [Deploy Algorand](applets/algorand.md)
+- [Deploy Caprover](applets/caprover.md)

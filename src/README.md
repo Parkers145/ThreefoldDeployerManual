@@ -33,3 +33,4 @@
 
 ## Applets 
 - [Deploy Algorand](applets/algorand.html)
+- [Deploy Caprover](applets/caprover.html)
