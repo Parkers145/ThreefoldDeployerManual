@@ -18,12 +18,11 @@
 ### Run Default Node
 The basic type. you select any network you want. and for the node type select Default.
 
-![](img/defaultdep.png)
-<img src="img/defaultdep.png"  width="60%" height="60%">
+<img src="img/defaultdep.png" class="thumbnail"  width="60%" height="60%">
 
 after the deployment is done. `ssh` to the node and run `goal node status` 
 
-![](img/defaulttest.png)
+<img src="img/defaulttest.png" class="thumbnail"  width="80%" height="80%">
 
 here you see your node run against mainnet.
 
