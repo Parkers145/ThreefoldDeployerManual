@@ -1,16 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\docs\\applicationhowto",
-    "\\docs\\FontAwesome\\css",
-    "\\docs\\FontAwesome\\fonts",
     "\\src",
-    "\\src\\applicationhowto",
-    "\\src\\flist",
-    "\\src\\playground",
-    "\\src\\terraform",
-    "\\src\\usingyourvm"
+    "\\src\\applets"
   ],
-  "SelectedNode": "\\src\\usingyourvm\\connectputty.md",
+  "SelectedNode": "\\book.toml",
   "PreviewInSolutionExplorer": false
 }
