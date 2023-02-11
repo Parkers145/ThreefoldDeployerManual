@@ -1,6 +1,6 @@
 # CapRover
 
-<img src="img/caprover_1.png" class="thumbnail"  width="90%" height="90%">
+<img src="img/caprover_1.png"  width="90%" height="90%">
 
 About CapRover
 
