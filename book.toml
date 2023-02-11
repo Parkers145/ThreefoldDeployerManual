@@ -8,4 +8,4 @@ src = "src"
 create-missing = false
 
 [output.html]
-additional-css = ["custom.css"]
+additional-css = ["cards.css", "thumbnails.css"]
