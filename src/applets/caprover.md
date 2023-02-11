@@ -1,6 +1,6 @@
 # CapRover
 
-<img src="img/caprover_1.png"  width="90%" height="90%">
+<img src="img/caprover_1.png" class="hover"  width="90%" height="90%">
 
 About CapRover
 
@@ -40,7 +40,7 @@ It has following benefits :
 - Login to your profile and select caprover in left side nav menu
 
 <div class="div-img">
-<img src="img/new_cap1.png"  width="60%" height="60%">
+<img src="img/new_cap1.png" class="hover"  width="60%" height="60%">
 <div>
 
 - When Choosing your domain, keep in mind that you need to have control of the entire domain so that you can use wildcard records. 
@@ -51,7 +51,7 @@ It has following benefits :
 </summary>
 
 <div class="div-img">
-<img src="img/caprover_deploy_leader.png"  width="60%" height="60%">
+<img src="img/caprover_deploy_leader.png" class="hover"  width="60%" height="60%">
 <div>
 
 - Select a capacity package:
@@ -69,7 +69,7 @@ It has following benefits :
 </summary>
 
 <div class="div-img">
-<img src="img/caprover_deploy_worker.png"  width="60%" height="60%">
+<img src="img/caprover_deploy_worker.png" class="hover"  width="60%" height="60%">
 <div>
 
 - Click `Add` button to add a new worker.
@@ -94,7 +94,7 @@ Deployment will take couple of minutes.
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
 
 <div class="div-img">
-<img src="img/caprover_detail_weblet.png"  width="60%" height="60%">
+<img src="img/caprover_detail_weblet.png" class="hover"  width="60%" height="60%">
 <div>
 
 - The public IPv4 address is visible in here
@@ -154,7 +154,7 @@ Click on details if you want to see more details
 - e.g. I picked ```apps.openly.life``` which is a domain name that will point to the ip address of the CapRover instance (which we only know after deployment).
 
 <div class="div-img">
-<img src="img/domain_name_caprover_config.png"  width="60%" height="60%">
+<img src="img/domain_name_caprover_config.png" class="hover"  width="60%" height="60%">
 <div>
 
 > Note how the *.apps.openly.life points to the public IPv4 address that has been returned from the deployment.
@@ -168,20 +168,20 @@ Click on details if you want to see more details
 You'll have to add a default docker registry so other CapRover nodes in the cluster can download images from, and it can be self-hosted (managed by CapRover itself), to add it, go to `Cluster` -> `Docker Registry Configuration`.
 
 <div class="div-img">
-<img src="img/caprover_docker_registry.png"  width="60%" height="60%">
+<img src="img/caprover_docker_registry.png" class="hover"  width="60%" height="60%">
 <div>
 
 - Click `Add Self-Hosted Registry` button, then click `Enable Self-Hosted Registry`
 
 <div class="div-img">
-<img src="img/caprover_docker_default_registry.png"  width="60%" height="60%">
+<img src="img/caprover_docker_default_registry.png" class="hover"  width="60%" height="60%">
 <div>
 
 You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.
 
 ## Step 2: Attach a new node to the cluster
 
-<img src="img/caprover_add_worker.png"  width="60%" height="60%">
+<img src="img/caprover_add_worker.png" class="hover"  width="60%" height="60%">
 <div>
 
 - Add the public IPv4 address that has been returned from the worker deployment in the `New node IP Address` field.
@@ -202,19 +202,19 @@ You can check [official documentation](https://caprover.com/docs/app-scaling-and
 > The password is generated and visible behind the `Show Details` button of your CapRover deployment.
 
 <div class="div-img">
-<img src="img/caprover_login.png"  width="60%" height="60%">
+<img src="img/caprover_login.png" class="hover"  width="60%" height="60%">
 <div>
 
 You should now see
 
 <div class="div-img">
-<img src="img/captain_login+weblet_caprover_.png"  width="60%" height="60%">
+<img src="img/captain_login+weblet_caprover_.png" class="hover"  width="60%" height="60%">
 <div>
 
 ## Step 1: Enable https
 
 <div class="div-img">
-<img src="img/enable_https_caprover.png"  width="60%" height="60%">
+<img src="img/enable_https_caprover.png" class="hover"  width="60%" height="60%">
 <div>
 
 You need to specify your email address.
@@ -222,7 +222,7 @@ You need to specify your email address.
 You will have to login again.
 
 <div class="div-img">
-<img src="img/caprover_https_activated.png"  width="60%" height="60%">
+<img src="img/caprover_https_activated.png" class="hover"  width="60%" height="60%">
 <div>
 
 > Now force https.
@@ -233,14 +233,14 @@ You will have to login again, and you should notice https is now used.
 You'll have to add a default docker registry so other CapRover nodes in the cluster can download images from, and it can be self-hosted (managed by CapRover itself), to add it, go to `Cluster` -> `Docker Registry Configuration`.
 
 <div class="div-img">
-<img src="img/caprover_docker_registry.png"  width="60%" height="60%">
+<img src="img/caprover_docker_registry.png" class="hover"  width="60%" height="60%">
 <div>
 
 You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.
 ## Step 3: Deploy an app
 
 <div class="div-img">
-<img src="img/deploy_app_caprover1.png"  width="60%" height="60%">
+<img src="img/deploy_app_caprover1.png" class="hover"  width="60%" height="60%">
 <div>
 
 just go to apps & follow the instructions, there is much more info on caprover website.
@@ -248,13 +248,13 @@ just go to apps & follow the instructions, there is much more info on caprover w
 ## Step 4: Enable monitoring
 
 <div class="div-img">
-<img src="img/caprover_monitoring_start_.png"  width="60%" height="60%">
+<img src="img/caprover_monitoring_start_.png" class="hover"  width="60%" height="60%">
 <div>
 
 You should now see
 
 <div class="div-img">
-<img src="img/caprover_monitoring_2_.png"  width="60%" height="60%">
+<img src="img/caprover_monitoring_2_.png" class="hover"  width="60%" height="60%">
 <div>
 
 ## Step 5: Lets add nodes to caprover
@@ -262,7 +262,7 @@ You should now see
 - Go to the settings
 
 <div class="div-img">
-<img src="img/caprover_cluster.png"  width="60%" height="60%">
+<img src="img/caprover_cluster.png" class="hover"  width="60%" height="60%">
 <div>
 
 - Fill in your mnemonic from TF-Chain, make sure it's the right network you are connected to
@@ -272,19 +272,19 @@ You should now see
 Now go to `Cluster -> Deploy a new node on Threefold grid`, specify the details of the resources you need and then click **Search resources...** :
 
 <div class="div-img">
-<img src="img/cluster_add_nodes.png"  width="60%" height="60%">
+<img src="img/cluster_add_nodes.png" class="hover"  width="60%" height="60%">
 <div>
 
 If there are enough resources, a new window will appear listing possible nodes to deploy this node to, select one of them and click **Deploy**:
 
 <div class="div-img">
-<img src="img/caprover_select_node.png"  width="60%" height="60%"><
+<img src="img/caprover_select_node.png" class="hover"  width="60%" height="60%"><
 <div>
 
 You should then see something like
 
 <div class="div-img">
-<img src="img/caprover_add_node2.png"  width="60%" height="60%">
+<img src="img/caprover_add_node2.png" class="hover"  width="60%" height="60%">
 <div>
 
 This should typically take less than 2 minutes.
@@ -294,7 +294,7 @@ This should typically take less than 2 minutes.
 Go out of the form and back to `Cluster`.
 
 <div class="div-img">
-<img src="img/caprover_node_added.png"  width="60%" height="60%">
+<img src="img/caprover_node_added.png" class="hover"  width="60%" height="60%">
 <div>
 
 ## Step 6: Change your password
