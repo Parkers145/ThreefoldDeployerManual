@@ -23,7 +23,6 @@ ___
 ___
 </summary>
 
-___
 The basic type. you select any network you want. and for the node type select Default.
 
 <img src="img/defaultdep.png" class="thumbnail"  width="60%" height="60%">
@@ -44,7 +43,6 @@ ___
 ___
 </summary>
 
-___
 Relay nodes are where other nodes connect. Therefore, a relay node must be able to support a large number of connections and handle the processing load associated with all the data flowing to and from these connections. Thus, relay nodes require significantly more power than non-relay nodes. Relay nodes are always configured in archival mode.
 
 The relay node must be publicaly accessable. so it must have public ip.
@@ -67,7 +65,6 @@ ___
 ___
 </summary>
 
-___
 Participation means participation in the Algorand consensus protocol. An account that participates in the Algorand consensus protocol is eligible and available to be selected to propose and vote on new blocks in the Algorand blockchain.
 Participation node is responsible for hosting participation keys for one or more online accounts.
 
@@ -104,7 +101,6 @@ ___
 ___
 </summary>
 
-___
 The primary purpose of this Indexer is to provide a REST API interface of API calls to support searching the Algorand Blockchain. The Indexer REST APIs retrieve the blockchain data from a PostgreSQL compatible database that must be populated. This database is populated using the same indexer instance or a separate instance of the indexer which must connect to the algod process of a running Algorand node to read block data. This node must also be an Archival node to make searching the entire blockchain possible.
 
 <img src="img/indexernode.png" class="thumbnail"  width="80%" height="80%">
