@@ -37,23 +37,30 @@ It has following benefits :
   -  https://play.test.grid.tf for Testnet.
   -  https://play.grid.tf for Mainnet.
 
-- Login to your profile and select caprover in left side nav menu
-
-<div class="div-img">
-<img src="img/new_cap1.png" class="thumbnail50-100">
-<div>
-
-- When Choosing your domain, keep in mind that you need to have control of the entire domain so that you can use wildcard records. 
+<div class="card">
+  <img src="img/new_cap1.png" class="thumbnail50-100">
+  <div class="container">
+    <h4><b>How To Deploy</b></h4>
+    <p>
+	
+- Login to your profile on the playground and select Caprover in the left side navigation menu
+- The first thing you will need to configure is the Domain Name for your depployment
+	- This needs to be a domain you own as you will be using Wildcard Records in the DNS records
+	</p>
+  </div>
+</div>
 
 </details>
 
 <details><summary>Deploying a leader node
 </summary>
 
-<div class="div-img">
-<img src="img/caprover_deploy_leader.png" class="thumbnail50-100">
-<div>
-
+<div class="card">
+  <img src="img/caprover_deploy_leader.png" class="thumbnail50-100">
+  <div class="container">
+    <h4><b>Deploying a leader node</b></h4>
+    <p>
+	
 - Select a capacity package:
   - **Minimum**: {cpu: 1, memory: 1024, diskSize: 50 }
   - **Standard**: {cpu: 2, memory: 1024 * 2, diskSize: 100 }
@@ -62,16 +69,20 @@ It has following benefits :
 
 - Choose a node to deploy Caprover on.
 - Either use the **Capacity Filter**. Which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick.
+	</p>
+  </div>
+</div>
 
 </details>
 
 <details><summary>Deploying a worker node
 </summary>
 
-<div class="div-img">
-<img src="img/caprover_deploy_worker.png" class="thumbnail50-100">
-<div>
-
+<div class="card">
+  <img src="img/caprover_deploy_worker.png" class="thumbnail50-100">
+  <div class="container">
+    <h4><b>Deploying A Worker Node</b></h4>
+    <p>
 - Click `Add` button to add a new worker.
 - Select a capacity package:
   - **Minimum**: {cpu: 1, memory: 1024, diskSize: 50 }
@@ -85,18 +96,20 @@ It has following benefits :
 - Or use **Manual** and type a specific node number to deploy on.
 
 Deployment will take couple of minutes.
+	</p>
+  </div>
+</div>
 
 </details>
 
 <details><summary>How to find my deployments ip address?
 </summary>
 
+<div class="card">
+  <img src="img/caprover_detail_weblet.png" class="thumbnail50-100">
+  <div class="container">
+    <p>
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
-
-<div class="div-img">
-<img src="img/caprover_detail_weblet.png" class="thumbnail50-100">
-<div>
-
 - The public IPv4 address is visible in here
 - Now you can configure the domain name (see above, don't forget to point the wildcard domain to the public IP address)
 
@@ -146,18 +159,26 @@ Click on details if you want to see more details
     "description": "caprover leader machine/node"
 }
 ```
+</p>
+  </div>
+</div>
+
+
 </details>
 
 <details><summary>Setting your DNS records
 </summary>
 
-- e.g. I picked ```apps.openly.life``` which is a domain name that will point to the ip address of the CapRover instance (which we only know after deployment).
-
-<div class="div-img">
-<img src="img/domain_name_caprover_config.png" class="thumbnail50-100">
-<div>
-
+<div class="card">
+  <img src="img/domain_name_caprover_config.png" class="thumbnail50-100">
+  <div class="container">
+    <p>
+- e.g. I picked ```apps.openly.life``` which is a domain name that will point to the ip address of the CapRover instance (which we only know after deployment).	
 > Note how the *.apps.openly.life points to the public IPv4 address that has been returned from the deployment.
+	</p>
+  </div>
+</div>
+
 </details>
 
 <details><summary>how to add a new worker node to your cluster
@@ -165,28 +186,38 @@ Click on details if you want to see more details
 
 ## Step 1: Add a default docker registry
 
+<div class="card">
+  <img src="img/caprover_docker_registry.png">
+  <div class="container">
+    <p>
 You'll have to add a default docker registry so other CapRover nodes in the cluster can download images from, and it can be self-hosted (managed by CapRover itself), to add it, go to `Cluster` -> `Docker Registry Configuration`.
+    - Click `Add Self-Hosted Registry` button,
+	</p>
+  </div>
+</div>
 
-<div class="div-img">
-<img src="img/caprover_docker_registry.png" class="thumbnail50-100">
-<div>
-
-- Click `Add Self-Hosted Registry` button, then click `Enable Self-Hosted Registry`
-
-<div class="div-img">
-<img src="img/caprover_docker_default_registry.png" class="thumbnail50-100">
-<div>
-
+<div class="card">
+  <img src="img/caprover_docker_default_registry.png">
+  <div class="container">
+    <p>
+then click `Enable Self-Hosted Registry`
 You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.
+	</p>
+  </div>
+</div>
 
 ## Step 2: Attach a new node to the cluster
 
-<img src="img/caprover_add_worker.png" class="thumbnail50-100">
-<div>
-
+<div class="card">
+  <img src="img/caprover_add_worker.png">
+  <div class="container">
+    <p>
 - Add the public IPv4 address that has been returned from the worker deployment in the `New node IP Address` field.
 - Add your `SSH private key` (you can use this command `cat ~/.ssh/id_rsa` to get your private key).
 - Click `Join cluster` button.
+	</p>
+  </div>
+</div>
 
 </details>
 
@@ -195,39 +226,50 @@ You can check [official documentation](https://caprover.com/docs/app-scaling-and
 
 ## How to access the admin interface ?
 
+<div class="card">
+  <img src="img/captain_login+weblet_caprover_.png" class="thumbnail50-100">
+  <div class="container">
+    <p>
 - make sure your public IP address (in my case ```185.206.122.136```) is filled in in the domain name record.
 
 > admin url: <https://captain.apps.openly.life/>   (note prefix captain, and the usage of our wildcard domain).
 </br>
 > The password is generated and visible behind the `Show Details` button of your CapRover deployment.
+	</p>
+  </div>
+</div>
 
-<div class="div-img">
-<img src="img/caprover_login.png" class="thumbnail50-100">
-<div>
-
+<div class="card">
+  <img src="img/caprover_login.png">
+  <div class="container">
+    <p>
 You should now see
-
-<div class="div-img">
-<img src="img/captain_login+weblet_caprover_.png" class="thumbnail50-100">
-<div>
+	</p>
+  </div>
+</div>
 
 ## Step 1: Enable https
 
-<div class="div-img">
-<img src="img/enable_https_caprover.png" class="thumbnail50-100">
-<div>
+<div class="card">
+  <img src="img/enable_https_caprover.png">
+  <div class="container">
+    <p>
+You will need to login and specify an email address in order to enable https
+	</p>
+  </div>
+</div>
 
-You need to specify your email address.
-
-You will have to login again.
-
-<div class="div-img">
-<img src="img/caprover_https_activated.png" class="thumbnail50-100">
-<div>
-
+<div class="card">
+  <img src="img/caprover_https_activated.png">
+  <div class="container">
+    <p>
 > Now force https.
 
 You will have to login again, and you should notice https is now used.
+	</p>
+  </div>
+</div>
+
 
 ## Step 2: Add a default docker registry
 You'll have to add a default docker registry so other CapRover nodes in the cluster can download images from, and it can be self-hosted (managed by CapRover itself), to add it, go to `Cluster` -> `Docker Registry Configuration`.
