@@ -1,20 +1,15 @@
-.div-img {
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	padding-top: 20%;
+.thumbnail {
+	width: 50%;
+	height: auto;
+	position: relative;
 }
 
-img {
-	transition: transform .2s;
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
-	background-color: rgb(173, 173, 237);
-	border-radius: 10px;
-	border: 1px solid black;
-}
-
-	img:hover {
-		transform: scale(1.5);
-	}
+	.thumbnail:hover {
+		width: 100%;
+		height: auto;
+		display: block;
+		z-index: 999;
+		cursor: pointer;
+		-webkit-transition-property: all;
+		-webkit-transition-duration: 0.3s;
+		-webkit-transition-timing-function: ease;
