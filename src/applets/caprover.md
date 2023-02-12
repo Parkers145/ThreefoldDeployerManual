@@ -328,7 +328,7 @@ Y<div class="card">
     <p>
 - Go to the settings</p>
   </div>
-  <img src="img/caprover_cluster.png" class="thumbnail50-100">
+  <img src="img/caprover_cluster.png">
   <div class="container">
     <p>
 
