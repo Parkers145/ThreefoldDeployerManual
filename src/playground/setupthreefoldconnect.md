@@ -196,52 +196,52 @@ The process is simple.
 	Go to [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
 	You can download it for Android or iOS.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png?raw=true" width="15%" height="15%">
 
 	___
 	We will show here the steps for Android, but it is very similar with iOS.
 	Once you've clicked on the Android button, you can click install on the Google Store page:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png?raw=true" width="15%" height="15%">
 
 	___
 	Once the app is downloaded, open it:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png?raw=true" width="15%" height="15%">
 
 	___
 	On the Lobstr app, click on **Create Account**:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png?raw=true" width="15%" height="15%">
 
 	___
 	You will then need to enter your email address:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png?raw=true" width="15%" height="15%">
 
 	___
 	Then, choose a safe password for your account:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png?raw=true" width="15%" height="15%">
 
 	___
 	Once this is done, you will need to verify your email.
 
 	Click on **Verify Email** and then go check your email inbox.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png?raw=true" width="15%" height="15%">
 
 	___
 	Simply click on **Verify Email** on the email you've received.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png?raw=true" width="15%" height="15%">
 
 	___
 	Once your email is verified, you can sign in to your Lobstr account:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png?raw=true" width="15%" height="15%">
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true" width="15%" height="15%">
 
 	___
 </details>
@@ -256,7 +256,7 @@ The process is simple.
 
 	Using the TF Connect wallet is very useful and quick. When you buy XLM and swap XLM tokens for TFTs, they will be directly available on your TF Connect app wallet.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true" width="15%" height="15%">
 
 	___
 	To connect your TF Connect app wallet, you will need to find your Stellar address and chain secret key.
@@ -264,38 +264,38 @@ The process is simple.
 
 	Click on **I have a public or secret key**.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_12.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_12.png?raw=true" width="15%" height="15%">
 
 	___
 	As you can see on this next picture, you need the Stellar address and secret key to properly connect your TF Connect app wallet to Lobstr:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_18.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_18.png?raw=true" width="15%" height="15%">
 
 	___
 	To find your Stellar address and secret key, go on the TF Connect app and select the **Wallet** section:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_13.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_13.png?raw=true" width="15%" height="15%">
 
 	___
 	At the top of the section, click on the **copy** button to copy your Stellar Address:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_17.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_17.png?raw=true" width="15%" height="15%">
 
 	___
 	Now, we will find the Stellar secret key.
 	At the botton of the section, click on the encircled **i** button:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_14.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_14.png?raw=true" width="15%" height="15%">
 
 	___
 	Then, click on the **eye** button to reveal your secret key:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_15.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_15.png?raw=true" width="15%" height="15%">
 
 	___
 	You can now simply click on the **copy** button on the right:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_16.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_16.png?raw=true" width="15%" height="15%">
 
 	___
 	That's it! You've now connected your TF Connect app wallet to your Lobstr account.
@@ -310,12 +310,12 @@ The process is simple.
 
 	On the Lobstr app, click on the top right menu button:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_19.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_19.png?raw=true" width="15%" height="15%">
 
 	___
 	Then, click on **Buy Crypto**:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_20.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_20.png?raw=true" width="15%" height="15%">
 
 	___
 	By default, the crypto selected is XLM. This is alright for us as we will quickly swap the XLM for TFT.
@@ -323,51 +323,51 @@ The process is simple.
 	On the Buy Crypto page, you can choose the type of Fiat currency you want.
 	By default it is in USD. To select some othe fiat currency, you can click on **ALL** and see the available fiat currencies:
 	)
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_21.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_21.png?raw=true" width="15%" height="15%">
 
 	___
 	You can search or select the current you want for the transfer:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_22.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_22.png?raw=true" width="15%" height="15%">
 
 	___
 	You will then need to decide how much XLM you want to buy. Note that there can be a minimum amount.
 	Once you chose the desired amount, click on **Continue**.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_23.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_23.png?raw=true" width="15%" height="15%">
 
 	___
 	Lobstr will then ask you to proceed to a payment method. In this case, it is Moonpay.
 	Note that in some cases, your credit card won't accept Moonpay payments. You will simply need to confirm with them that you agree with transacting with Moonpay. This can be done by phone. Check with your bank and credit card company if this applies.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_24.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_24.png?raw=true" width="15%" height="15%">
 
 	___
 	Once you've set up your Moonpay payment method, you will need to process and confirm the transaction:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_25.png?raw=true"  width="15%" height="15%">
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_26.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_25.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_26.png?raw=true" width="15%" height="15%">
 
 	___
 	You will then see a processing window.
 	This process is usually fast. Within a few minutes, you should receive your XLM.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_27.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_27.png?raw=true" width="15%" height="15%">
 
 	___
 	Once you've received your XLM, you will receive a notification:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_28.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_28.png?raw=true" width="15%" height="15%">
 
 	___
 	When your transaction is complete, you will see this message:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_29.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_29.png?raw=true" width="15%" height="15%">
 
 	___
 	On the Trade History page, you can choose to download the csv file version of your transaction:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_30.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_30.png?raw=true" width="15%" height="15%">
 
 	That's it! You've bought XLM on Lobstr and Moonpay.
 
@@ -381,23 +381,23 @@ The process is simple.
 
 	Go to the Lobstr Home menu and select **Swap**:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_31.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_31.png?raw=true" width="15%" height="15%">
 
 	___
 	On the **Swap** page, write "tft" and select the Threefold token:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_32.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_32.png?raw=true" width="15%" height="15%">
 
 	___
 	Select the amount of XLM you want to swap. It is recommended to keep at least 1 XLM in your wallet for transaction fees.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_33.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_33.png?raw=true" width="15%" height="15%">
 
 	___
 	Within a few seconds, you will receive a confirmation that your swap is completed:
 	Note that the TFT is directly sent on your TF Connect app wallet.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_34.png?raw=true"  width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_34.png?raw=true" width="15%" height="15%">
 
 	___
 	That's it. You've swapped XLM for TFT.
