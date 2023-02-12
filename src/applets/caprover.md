@@ -38,7 +38,7 @@ It has following benefits :
   -  https://play.grid.tf for Mainnet.
 
 <div class="card">
-  <img src="img/new_cap1.png" class="thumbnail50-100">
+  <img src="img/new_cap1.png">
   <div class="container">
     <h4><b>How To Deploy</b></h4>
     <p>
@@ -56,7 +56,7 @@ It has following benefits :
 </summary>
 
 <div class="card">
-  <img src="img/caprover_deploy_leader.png" class="thumbnail50-100">
+  <img src="img/caprover_deploy_leader.png">
   <div class="container">
     <h4><b>Deploying a leader node</b></h4>
     <p>
@@ -79,7 +79,7 @@ It has following benefits :
 </summary>
 
 <div class="card">
-  <img src="img/caprover_deploy_worker.png" class="thumbnail50-100">
+  <img src="img/caprover_deploy_worker.png">
   <div class="container">
     <h4><b>Deploying A Worker Node</b></h4>
     <p>
@@ -106,7 +106,7 @@ Deployment will take couple of minutes.
 </summary>
 
 <div class="card">
-  <img src="img/caprover_detail_weblet.png" class="thumbnail50-100">
+  <img src="img/caprover_detail_weblet.png">
   <div class="container">
     <p>
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
@@ -170,7 +170,7 @@ Click on details if you want to see more details
 </summary>
 
 <div class="card">
-  <img src="img/domain_name_caprover_config.png" class="thumbnail50-100">
+  <img src="img/domain_name_caprover_config.png">
   <div class="container">
     <p>
 - e.g. I picked ```apps.openly.life``` which is a domain name that will point to the ip address of the CapRover instance (which we only know after deployment).	
@@ -272,72 +272,91 @@ You will have to login again, and you should notice https is now used.
 
 
 ## Step 2: Add a default docker registry
-You'll have to add a default docker registry so other CapRover nodes in the cluster can download images from, and it can be self-hosted (managed by CapRover itself), to add it, go to `Cluster` -> `Docker Registry Configuration`.
 
-<div class="div-img">
-<img src="img/caprover_docker_registry.png" class="thumbnail50-100">
-<div>
+<div class="card">
+  <div class="container">
+    <p>You'll have to add a default docker registry so other CapRover nodes in the cluster can download images from, and it can be self-hosted (managed by CapRover itself), to add it, go to `Cluster` -> `Docker Registry Configuration`.</p>
+  </div>
+  <img src="img/caprover_docker_registry.png">
+  <div class="container">
+    <p>You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.	</p>
+  </div>
+</div>
 
-You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.
 ## Step 3: Deploy an app
 
-<div class="div-img">
-<img src="img/deploy_app_caprover1.png" class="thumbnail50-100">
-<div>
-
-just go to apps & follow the instructions, there is much more info on caprover website.
+<div class="card">
+  <img src="img/deploy_app_caprover1.png">
+  <div class="container">
+    <p>just go to apps & follow the instructions, there is much more info on caprover website.</p>
+  </div>
+</div>
 
 ## Step 4: Enable monitoring
 
-<div class="div-img">
-<img src="img/caprover_monitoring_start_.png" class="thumbnail50-100">
-<div>
+<div class="card">
+  <div class="container">
+    <p>Go to the monitoring tab and click the start monitoring button in the bottom right corner</P>
+  </div>
+  <img src="img/caprover_monitoring_start_.png">
+</div>
 
-You should now see
-
-<div class="div-img">
-<img src="img/caprover_monitoring_2_.png" class="thumbnail50-100">
-<div>
+Y<div class="card">
+  <div class="container">
+    <p>You should now see</p>
+  </div>
+  <img src="img/caprover_monitoring_2_.png">
+</div>
 
 ## Step 5: Lets add nodes to caprover
 
-- Go to the settings
-
-<div class="div-img">
-<img src="img/caprover_cluster.png" class="thumbnail50-100">
-<div>
-
+<div class="card">
+  <div class="container">
+    <p>
+- Go to the settings</p>
+  </div>
+  <img src="img/caprover_cluster.png" class="thumbnail50-100">
+  <div class="container">
+    <p>
 - Fill in your mnemonic from TF-Chain, make sure it's the right network you are connected to
 - Set your store secret for storing deployment information securely on TF-Chain.
 - Add your SSH-key
+	</p>
+  </div>
+</div>
 
-Now go to `Cluster -> Deploy a new node on Threefold grid`, specify the details of the resources you need and then click **Search resources...** :
+<div class="card">
+  <div class="container">
+    <p>Now go to `Cluster -> Deploy a new node on Threefold grid`, specify the details of the resources you need and then click **Search resources...** :</p>
+  </div>
+  <img src="img/cluster_add_nodes.png">
+</div>
 
-<div class="div-img">
-<img src="img/cluster_add_nodes.png" class="thumbnail50-100">
-<div>
+<div class="card">
+  <div class="container">
+    <p>If there are enough resources, a new window will appear listing possible nodes to deploy this node to, select one of them and click **Deploy**:</p>
+  </div>
+  <img src="img/caprover_select_node.png">
+</div>
 
-If there are enough resources, a new window will appear listing possible nodes to deploy this node to, select one of them and click **Deploy**:
-
-<div class="div-img">
-<img src="img/caprover_select_node.png" class="thumbnail50-100"><
-<div>
-
-You should then see something like
-
-<div class="div-img">
-<img src="img/caprover_add_node2.png" class="thumbnail50-100">
-<div>
-
-This should typically take less than 2 minutes.
-
+<div class="card">
+  <div class="container">
+    <p>You should then see something like</p>
+  </div>
+  <img src="img/caprover_add_node2.png">
+  <div class="container">
+    <p>This should typically take less than 2 minutes.
 > Important: the deployment process takes some time before it is known in CapRover.
+Go out of the form and back to `Cluster`.</p>
+  </div>
+</div>
 
-Go out of the form and back to `Cluster`.
-
-<div class="div-img">
-<img src="img/caprover_node_added.png" class="thumbnail50-100">
-<div>
+<div class="card">
+  <div class="container">
+    <p>you can now exit out of the form and navigate back to to `Cluster`.</p>
+  </div>
+  <img src="img/caprover_node_added.png">
+</div>
 
 ## Step 6: Change your password
 
