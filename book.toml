@@ -6,6 +6,7 @@ src = "src"
 
 [build]
 create-missing = false
+build-dir = "/var/www/html"
 
 [output.html]
 additional-css = ["cards.css", "thumbnails.css"]
