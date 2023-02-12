@@ -2,7 +2,7 @@
 # Setting Up Your Wallets and Accounts to Deploy on The Grid
 ***
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_wallet_5.png?raw=true"  class="thumbnail25-100">
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_wallet_5.png?raw=true" class="thumbnail25-100">
 
 The easiest way to fund your deployments on the grid is by using a Threefold Connect Wallet. It is possible to fund your deployments with any stellar wallet. For those with an established Stellar wallet with a balance of TFT, start at "Sending your Stellar TFT to TFChain to be Used for Deployment"
 
@@ -54,22 +54,22 @@ Then, the next step is crucial! Make sure no one is around looking at your scree
 ___
 Once you've hit Next, you will be asked to write down 3 random words of your seed phrase. This is a necessary step to ensure you have taken the time to write down your seed phrase.
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_9.png?raw=true"  class="thumbnail25-100">
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_9.png?raw=true" class="thumbnail25-100">
 
 ___
 Then, you'll be asked to confirm your TF 3bot name and the associated email.
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_10.png?raw=true"  class="thumbnail25-100">
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_10.png?raw=true" class="thumbnail25-100">
 
 ___
 Finally, you will be asked to choose a 4-digit pin. This will be needed to use the Threefold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_11.png?raw=true"  class="thumbnail25-100">
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_11.png?raw=true" class="thumbnail25-100">
 
 ___
 That's it! You've created your Threefold Connect account. You can press the hamburger menu on the top left to explore the Threefold Connect App.
 
-<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_12.png?raw=true"  class="thumbnail25-100">
+<img src="https://github.com/threefoldfoundation/info_threefold_pub/blob/wethreepedia_mik/wiki/wethreepedia/farming/img/farming_tf_wallet_12.png?raw=true" class="thumbnail25-100">
 
 ___
 In the next step, we will create a Threefold Connect Wallet. You'll see, it's very simple!
@@ -196,52 +196,52 @@ The process is simple.
 	Go to [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
 	You can download it for Android or iOS.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_1.png?raw=true" class="thumbnail25-100">
 
 	___
 	We will show here the steps for Android, but it is very similar with iOS.
 	Once you've clicked on the Android button, you can click install on the Google Store page:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_2.png?raw=true" class="thumbnail25-100">
 
 	___
 	Once the app is downloaded, open it:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_3.png?raw=true" class="thumbnail25-100">
 
 	___
 	On the Lobstr app, click on **Create Account**:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_4.png?raw=true" class="thumbnail25-100">
 
 	___
 	You will then need to enter your email address:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_5.png?raw=true" class="thumbnail25-100">
 
 	___
 	Then, choose a safe password for your account:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_6.png?raw=true" class="thumbnail25-100">
 
 	___
 	Once this is done, you will need to verify your email.
 
 	Click on **Verify Email** and then go check your email inbox.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_7.png?raw=true" class="thumbnail25-100">
 
 	___
 	Simply click on **Verify Email** on the email you've received.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_8.png?raw=true" class="thumbnail25-100">
 
 	___
 	Once your email is verified, you can sign in to your Lobstr account:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_9.png?raw=true" class="thumbnail25-100">
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true" class="thumbnail25-100">
 
 	___
 </details>
@@ -256,7 +256,7 @@ The process is simple.
 
 	Using the TF Connect wallet is very useful and quick. When you buy XLM and swap XLM tokens for TFTs, they will be directly available on your TF Connect app wallet.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_10.png?raw=true" class="thumbnail25-100">
 
 	___
 	To connect your TF Connect app wallet, you will need to find your Stellar address and chain secret key.
@@ -264,38 +264,38 @@ The process is simple.
 
 	Click on **I have a public or secret key**.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_12.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_12.png?raw=true" class="thumbnail25-100">
 
 	___
 	As you can see on this next picture, you need the Stellar address and secret key to properly connect your TF Connect app wallet to Lobstr:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_18.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_18.png?raw=true" class="thumbnail25-100">
 
 	___
 	To find your Stellar address and secret key, go on the TF Connect app and select the **Wallet** section:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_13.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_13.png?raw=true" class="thumbnail25-100">
 
 	___
 	At the top of the section, click on the **copy** button to copy your Stellar Address:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_17.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_17.png?raw=true" class="thumbnail25-100">
 
 	___
 	Now, we will find the Stellar secret key.
 	At the botton of the section, click on the encircled **i** button:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_14.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_14.png?raw=true" class="thumbnail25-100">
 
 	___
 	Then, click on the **eye** button to reveal your secret key:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_15.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_15.png?raw=true" class="thumbnail25-100">
 
 	___
 	You can now simply click on the **copy** button on the right:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_16.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_16.png?raw=true" class="thumbnail25-100">
 
 	___
 	That's it! You've now connected your TF Connect app wallet to your Lobstr account.
@@ -310,12 +310,12 @@ The process is simple.
 
 	On the Lobstr app, click on the top right menu button:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_19.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_19.png?raw=true" class="thumbnail25-100">
 
 	___
 	Then, click on **Buy Crypto**:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_20.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_20.png?raw=true" class="thumbnail25-100">
 
 	___
 	By default, the crypto selected is XLM. This is alright for us as we will quickly swap the XLM for TFT.
@@ -323,51 +323,51 @@ The process is simple.
 	On the Buy Crypto page, you can choose the type of Fiat currency you want.
 	By default it is in USD. To select some othe fiat currency, you can click on **ALL** and see the available fiat currencies:
 	)
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_21.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_21.png?raw=true" class="thumbnail25-100">
 
 	___
 	You can search or select the current you want for the transfer:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_22.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_22.png?raw=true" class="thumbnail25-100">
 
 	___
 	You will then need to decide how much XLM you want to buy. Note that there can be a minimum amount.
 	Once you chose the desired amount, click on **Continue**.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_23.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_23.png?raw=true" class="thumbnail25-100">
 
 	___
 	Lobstr will then ask you to proceed to a payment method. In this case, it is Moonpay.
 	Note that in some cases, your credit card won't accept Moonpay payments. You will simply need to confirm with them that you agree with transacting with Moonpay. This can be done by phone. Check with your bank and credit card company if this applies.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_24.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_24.png?raw=true" class="thumbnail25-100">
 
 	___
 	Once you've set up your Moonpay payment method, you will need to process and confirm the transaction:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_25.png?raw=true" width="15%" height="15%">
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_26.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_25.png?raw=true" class="thumbnail25-100">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_26.png?raw=true" class="thumbnail25-100">
 
 	___
 	You will then see a processing window.
 	This process is usually fast. Within a few minutes, you should receive your XLM.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_27.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_27.png?raw=true" class="thumbnail25-100">
 
 	___
 	Once you've received your XLM, you will receive a notification:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_28.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_28.png?raw=true" class="thumbnail25-100">
 
 	___
 	When your transaction is complete, you will see this message:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_29.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_29.png?raw=true" class="thumbnail25-100">
 
 	___
 	On the Trade History page, you can choose to download the csv file version of your transaction:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_30.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_30.png?raw=true" class="thumbnail25-100">
 
 	That's it! You've bought XLM on Lobstr and Moonpay.
 
@@ -381,23 +381,23 @@ The process is simple.
 
 	Go to the Lobstr Home menu and select **Swap**:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_31.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_31.png?raw=true" class="thumbnail25-100">
 
 	___
 	On the **Swap** page, write "tft" and select the Threefold token:
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_32.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_32.png?raw=true" class="thumbnail25-100">
 
 	___
 	Select the amount of XLM you want to swap. It is recommended to keep at least 1 XLM in your wallet for transaction fees.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_33.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_33.png?raw=true" class="thumbnail25-100">
 
 	___
 	Within a few seconds, you will receive a confirmation that your swap is completed:
 	Note that the TFT is directly sent on your TF Connect app wallet.
 
-	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_34.png?raw=true" width="15%" height="15%">
+	<img src="https://github.com/Mik-TF/gettft_tutorial/blob/main/img/gettft_34.png?raw=true" class="thumbnail25-100">
 
 	___
 	That's it. You've swapped XLM for TFT.
@@ -423,52 +423,52 @@ It is simple. The main steps are:
 
 	If you don't have the Polkadot extension installed on your browser, you will be able to click on the download link directly on the Threefold Dashboard page:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_1.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_1.png?raw=true" class="thumbnail50-100">
 
 	___
 	This link will lead you to the Polkadot extension download page: https://polkadot.js.org/extension/
 	
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_2.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_2.png?raw=true" class="thumbnail50-100">
 
 	___
 	Then, simply click on "Add to Chrome".
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_3.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_3.png?raw=true" class="thumbnail50-100">
 
 	___
 	Then, confirm by clicking on "Add extension".
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_4.png?raw=true" class="thumbnail50-100">
 
 	___
 	You can now access the extension by clicking on the browser's extension button on the top right of the screen, and by then clicking on *polkadot{.js} extension*:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_5.png?raw=true" class="thumbnail50-100">
 
 	___
 	Make sure to carefully read the Polkadot message then click on **Understood, let me continue**:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_6.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_6.png?raw=true" class="thumbnail50-100">
 
 	___
 	Then click on the **plus** symbol to create a new account:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_7.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_7.png?raw=true" class="thumbnail50-100">
 
 	___
 	For this next step, you should be very careful. Your seed phrase is your only access to your account. Make sure to keep a copy somewhere safe and offline.
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_8.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_8.png?raw=true" class="thumbnail50-100">
 
 	___
 	After, choose a name for your account and a password:
 	
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_9.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_9.png?raw=true" class="thumbnail50-100">
 
 	___
 	Your account is now created. You can see it when you open the Polkadot extension on your browser:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_10.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_10.png?raw=true" class="thumbnail50-100">
 
 </details>
 
@@ -477,31 +477,31 @@ It is simple. The main steps are:
 	___
 	Now, when you go on the [Threefold Dashboard](https://dashboard.grid.tf/), you can click on the **Connect** button on the top right corner:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_11.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_11.png?raw=true" class="thumbnail50-100">
 
 	___
 	You will then need to grant the Threefold Dashboard access to your Polkadot account.
 
 	Accept the terms and then write your password to confirm:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_12.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_12.png?raw=true" class="thumbnail50-100">
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true" class="thumbnail50-100">
 
 	___
 	Then, simply click on your account name to access the Threefold Dashboard:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_14.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_14.png?raw=true" class="thumbnail50-100">
 
 	___
 	Once you open your account, you will want to create a Twin ID. Make sure it is written **::1** in the box and click **Create**. 
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_15.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_15.png?raw=true" class="thumbnail50-100">
 
 	___
 	You will also be asked to confirm the transaction.
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_13.png?raw=true" class="thumbnail50-100">
 
 	That's it! You've successfully created an account on the TFChain thanks to the Polkadot extension. You can now access the Threefold Dashboard.
 
@@ -519,36 +519,36 @@ It is simple. The main steps are:
 
 	Make sure the chain **stellar** is selected. Then click **Deposit**, as we want to deposit TFT from the Stellar Chain to the TFChain.
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_16.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_16.png?raw=true" class="thumbnail50-100">
 
 	___
 	Next, you will want to scan the QR code shown on the screen. Scan the QR code with your Threefold Connect app.
 
 	> Note that you can also manually enter your Stellar Chain address as well as the Twin ID.
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_17.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_17.png?raw=true" class="thumbnail50-100">
 
 	___
 	Now open up your Threefold Connect app and follow those steps:
 
 	Click on the **Home** menu:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_18.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_18.png?raw=true" class="thumbnail50-100">
 
 	___
 	Click on **Wallet**:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_19.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_19.png?raw=true" class="thumbnail50-100">
 
 	___
 	Then, click on **Send Coins**:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_20.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_20.png?raw=true" class="thumbnail50-100">
 
 	___
 	On the next page, select the **Stellar** chain, then click on **SCAN QR**:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_21.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_21.png?raw=true" class="thumbnail50-100">
 
 	___
 	This will automatically write the correct address and twin ID.
@@ -559,19 +559,19 @@ It is simple. The main steps are:
 	>
 	> The transfer fees are of 1 TFT per transfer.
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_22.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_22.png?raw=true" class="thumbnail50-100">
 
 	___
 	You will then simply need to confirm the transaction. It is a good opportunity to make sure everything is OK.
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_23.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_23.png?raw=true" class="thumbnail50-100">
 
 	___
 	You should then receive your TFT on your Dashboard account within a few minutes.
 
 	You can see your TFT balanced on the top of the screen. Here's an example of what it could look like:
 
-	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_24.png?raw=true"  class="thumbnail50-100">
+	<img src="https://github.com/Mik-TF/dashboardTutorialShort/blob/main/img/dashboard_24.png?raw=true" class="thumbnail50-100">
 
 	> Note: You might need to refresh (reload) the webpage to see the new TFT added to the account.
 
