@@ -1,3 +1,18 @@
+variable "MNEMONICS" {
+  type        = string
+  description = "The mnemonic phrase used to generate the seed for the node."
+}
+
+variable "NETWORK" {
+  type        = string
+  default     = "main"
+  description = "The network to connect the node to."
+}
+
+variable "SSH_KEY" {
+  type = string
+}
+
 terraform {
   required_providers {
     grid = {
@@ -7,8 +22,8 @@ terraform {
 }
 
 provider "grid" {
-    mnemonics = "Words Here "
-    network   = "main"  
+    mnemonics = "${var.MNEMONICS}"
+    network   = "${var.NETWORK}"  
 }
 
 # this data source is used to break circular dependency in cases similar to the following:
@@ -49,7 +64,7 @@ resource "grid_deployment" "d1" {
     entrypoint = "/sbin/zinit init"
     memory     = 4096
     env_vars = {
-      SSH_KEY = "ssh-key"
+      SSH_KEY = "${var.SSH_KEY}"
       OWNCLOUD_DOMAIN = data.grid_gateway_domain.domain.fqdn
       OWNCLOUD_ADMIN_USERNAME = "adminUsername"
       OWNCLOUD_ADMIN_PASSWORD = "adminPassword"
@@ -57,7 +72,7 @@ resource "grid_deployment" "d1" {
       OWNCLOUD_MAIL_DOMAIN = "emailDomain"
       OWNCLOUD_MAIL_FROM_ADDRESS = "emailName"
       OWNCLOUD_MAIL_SMTP_HOST = "smtpHost"
-      OWNCLOUD_MAIL_SMTP_PORT = "${smtpPort}`"
+      OWNCLOUD_MAIL_SMTP_PORT = "smtp-port"
       OWNCLOUD_MAIL_SMTP_NAME = "smtpHostUser"
       OWNCLOUD_MAIL_SMTP_PASSWORD = "smtpHostPassword"
     }
