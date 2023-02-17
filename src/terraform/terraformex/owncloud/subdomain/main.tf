@@ -50,7 +50,7 @@ resource "grid_deployment" "d1" {
     entrypoint = "/sbin/zinit init"
     memory     = 4096
     env_vars = {
-	  SSH_KEY = "ssh-key"
+      SSH_KEY = "ssh-key"
       OWNCLOUD_DOMAIN = "domain"
       OWNCLOUD_ADMIN_USERNAME = "adminUsername"
       OWNCLOUD_ADMIN_PASSWORD = "adminPassword"
