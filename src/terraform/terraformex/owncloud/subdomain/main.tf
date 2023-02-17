@@ -1,4 +1,3 @@
-
 terraform {
   required_providers {
     grid = {
@@ -51,7 +50,7 @@ resource "grid_deployment" "d1" {
     memory     = 4096
     env_vars = {
       SSH_KEY = "ssh-key"
-      OWNCLOUD_DOMAIN = "domain"
+      OWNCLOUD_DOMAIN = data.grid_gateway_domain.domain.fqdn
       OWNCLOUD_ADMIN_USERNAME = "adminUsername"
       OWNCLOUD_ADMIN_PASSWORD = "adminPassword"
       OWNCLOUD_MAIL_SMTP_SECURE = "smtp_secure"
@@ -86,4 +85,3 @@ output "node1_zmachine1_ip" {
 output "ygg_ip" {
   value = grid_deployment.d1.vms[0].ygg_ip
 }
-
