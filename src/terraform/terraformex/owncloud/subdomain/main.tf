@@ -8,6 +8,8 @@ terraform {
 }
 
 provider "grid" {
+    mnemonics = "Words Here "
+    network   = "main"  
 }
 
 # this data source is used to break circular dependency in cases similar to the following:
