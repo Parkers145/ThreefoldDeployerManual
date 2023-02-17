@@ -56,6 +56,10 @@ resource "grid_deployment" "d1" {
   solution_type = local.solution_type
   name          = local.name
   network_name  = grid_network.net1.name
+  disks { 
+	 name = "Disk1" 
+	 size = "25" 
+  } 
   vms {
     name  = "vm1"
     flist = "https://hub.grid.tf/tf-official-apps/owncloud-10.9.1.flist"
@@ -63,6 +67,11 @@ resource "grid_deployment" "d1" {
     # publicip = true
     entrypoint = "/sbin/zinit init"
     memory     = 4096
+    mounts { 
+	 disk_name = "Disk1" 
+	 mount_point = "/data1" 
+	}
+    planetary = true
     env_vars = {
       SSH_KEY = "${var.SSH_KEY}"
       OWNCLOUD_DOMAIN = data.grid_gateway_domain.domain.fqdn
@@ -76,7 +85,7 @@ resource "grid_deployment" "d1" {
       OWNCLOUD_MAIL_SMTP_NAME = "smtpHostUser"
       OWNCLOUD_MAIL_SMTP_PASSWORD = "smtpHostPassword"
     }
-    planetary = true
+    
   }
 }
 resource "grid_name_proxy" "p1" {
