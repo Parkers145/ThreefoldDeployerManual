@@ -35,12 +35,12 @@ provider "grid" {
 
 locals {
   solution_type = "Owncloud"
-  name          = "MyOwnCloud"
-  node          = 34
+  name          = "parker"
+  node          = 8
 }
 
 data "grid_gateway_domain" "domain" {
-  node = 45
+  node = 8
   name = local.name
 }
 
@@ -64,7 +64,7 @@ resource "grid_deployment" "d1" {
     name  = "vm1"
     flist = "https://hub.grid.tf/tf-official-apps/owncloud-10.9.1.flist"
     cpu   = 2
-    # publicip = true
+    publicip = true
     entrypoint = "/sbin/zinit init"
     memory     = 4096
     mounts { 
@@ -102,9 +102,9 @@ output "node1_zmachine1_ip" {
   value = grid_deployment.d1.vms[0].ip
 }
 
-# output "computed_public_ip" {
-#     value = split("/",grid_deployment.d1.vms[0].computedip)[0]
-# }
+output "computed_public_ip" {
+  value = split("/",grid_deployment.d1.vms[0].computedip)[0]
+}
 
 output "ygg_ip" {
   value = grid_deployment.d1.vms[0].ygg_ip
